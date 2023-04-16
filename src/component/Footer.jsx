@@ -1,5 +1,5 @@
 import React from 'react';
-import { Envelope,Phone } from 'phosphor-react';
+import { Envelope,Phone, LinkedinLogo,TwitterLogo, FacebookLogo  } from 'phosphor-react';
 
 
 const Footer = ()=>{
@@ -59,7 +59,15 @@ const Footer = ()=>{
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div>
+                <p>Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.</p>
+                <div>
+                <p>Style Guide</p>
+                <p>Licenses</p>
+                <p>Changelog</p>
+                <p>Password</p>
+                </div>
+            </div>
         </div>
     )
 }
