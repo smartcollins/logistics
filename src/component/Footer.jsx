@@ -6,18 +6,17 @@ import { Envelope,Phone, LinkedinLogo,TwitterLogo, FacebookLogo  } from 'phospho
 const Footer = ()=>{
     let a = color.blueBg
     return(
-        // <div className='bg-red-500'>
-        <div style={{backgroundColor:a}}>
+        <div style={{backgroundColor:a}} className=' capitalize'>
             <div className=' bg-white/5 flex items-center justify-between'>
-                <div>
+                <div className='bg-red-500 w-full'>
                     <p>TransitFlow</p>
                 </div>
-                <p>Pages</p>
-                <p>Utility</p>
-                <p>Subscribe</p>
+                <p className='bg-red-400 w-2/4'>Pages</p>
+                <p className='bg-red-300 w-2/4'>Utility</p>
+                <p className='bg-red-200 w-full'>Subscribe</p>
             </div>
             <div className='flex items-center justify-between'>
-                <div>
+                <div className='bg-red-500 w-full normal-case'>
                     <p>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                     <div>
                         <div>
@@ -38,21 +37,21 @@ const Footer = ()=>{
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='bg-red-400 w-2/4'>
                     <p>about us</p>
                     <p>our team</p>
                     <p>our project</p>
                     <p>pricing</p>
                     <p>contact</p>
                 </div>
-                <div>
+                <div className='bg-red-300 w-2/4'>
                     <p>style guide</p>
                     <p>changelog</p>
                     <p>licenses</p>
                     <p>protected</p>
                     <p>not found</p>
                 </div>
-                <div>
+                <div className='bg-red-200 w-full'>
                     <input type="text" placeholder='Email here*' />
                     <div className='flex items-center justify-between'>
                         <button>send now</button>
