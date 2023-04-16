@@ -6,9 +6,9 @@ import { Envelope,Phone, LinkedinLogo,TwitterLogo, FacebookLogo  } from 'phospho
 const Footer = ()=>{
     let a = color.blueBg
     return(
-        <div style={{backgroundColor:a}} className=' capitalize'>
-            <div className=' bg-white/5 flex items-center justify-between'>
-                <div className='bg-red-500 w-full'>
+        <div style={{backgroundColor:a}} className=' capitalize text-white'>
+            <div className=' bg-white/5 flex items-center justify-between py-4'>
+                <div style={{backgroundColor:color.blueBg}} className='bg-red-500 w-full'>
                     <p>TransitFlow</p>
                 </div>
                 <p className='bg-red-400 w-2/4'>Pages</p>
@@ -16,7 +16,7 @@ const Footer = ()=>{
                 <p className='bg-red-200 w-full'>Subscribe</p>
             </div>
             <div className='flex items-center justify-between'>
-                <div className='bg-red-500 w-full normal-case'>
+                <div style={{backgroundColor:color.blueBg}} className=' w-full normal-case'>
                     <p>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                     <div>
                         <div>
@@ -61,9 +61,9 @@ const Footer = ()=>{
                     </div>
                 </div>
             </div>
-            <div className='flex items-center justify-between'>
-                <p>Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.</p>
-                <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between border-t border-t-white'>
+                <p className=' w-full'>Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.</p>
+                <div style={{color:color.grayTxt}} className='flex items-center justify-between bg-red-400 w-3/4'>
                 <p>Style Guide</p>
                 <p>Licenses</p>
                 <p>Changelog</p>
