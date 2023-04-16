@@ -49,6 +49,15 @@ const Footer = ()=>{
                     <p>protected</p>
                     <p>not found</p>
                 </div>
+                <div>
+                    <input type="text" placeholder='Email here*' />
+                    <div>
+                        <button>send now</button>
+                        <LinkedinLogo size={16} color="#6949ff" weight="fill" />
+                        <TwitterLogo size={16} color="#6949ff" weight="fill" />
+                        <FacebookLogo size={16} color="#6949ff" weight="fill" />
+                    </div>
+                </div>
             </div>
             <div></div>
         </div>
