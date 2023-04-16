@@ -11,15 +11,15 @@ const Footer = ()=>{
                 <div style={{backgroundColor:color.blueBg}} className='bg-red-500 w-full'>
                     <p>TransitFlow</p>
                 </div>
-                <p className='bg-red-400 w-2/4'>Pages</p>
-                <p className='bg-red-300 w-2/4'>Utility</p>
+                <p className='bg-red-400 w-2/5'>Pages</p>
+                <p className='bg-red-300 w-2/5'>Utility</p>
                 <p className='bg-red-200 w-full'>Subscribe</p>
             </div>
-            <div className='flex items-center justify-between'>
+            <div className='flex items-start justify-between'>
                 <div style={{backgroundColor:color.blueBg}} className=' w-full normal-case'>
                     <p>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
-                    <div>
-                        <div>
+                    <div className='flex items-center gap-4'>
+                        <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
                             <Envelope size={16} color="#6949ff" weight="fill" />
                         </div>
                         <div>
@@ -27,8 +27,8 @@ const Footer = ()=>{
                             <p>contact@logistics.com</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div className='flex items-center gap-4'>
+                        <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
                             <Phone size={16} color="#6949ff" weight="fill" />
                         </div>
                         <div>
@@ -37,14 +37,14 @@ const Footer = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className='bg-red-400 w-2/4'>
+                <div className='bg-red-400 w-2/5 space-y-2'>
                     <p>about us</p>
                     <p>our team</p>
                     <p>our project</p>
                     <p>pricing</p>
                     <p>contact</p>
                 </div>
-                <div className='bg-red-300 w-2/4'>
+                <div className='bg-red-300 w-2/5 space-y-2'>
                     <p>style guide</p>
                     <p>changelog</p>
                     <p>licenses</p>
