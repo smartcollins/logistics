@@ -8,7 +8,7 @@ const Footer = ()=>{
     return(
         // <div className='bg-red-500'>
         <div style={{backgroundColor:a}}>
-            <div className=' bg-white/5'>
+            <div className=' bg-white/5 flex items-center justify-between'>
                 <div>
                     <p>TransitFlow</p>
                 </div>
@@ -16,7 +16,7 @@ const Footer = ()=>{
                 <p>Utility</p>
                 <p>Subscribe</p>
             </div>
-            <div>
+            <div className='flex items-center justify-between'>
                 <div>
                     <p>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                     <div>
@@ -54,7 +54,7 @@ const Footer = ()=>{
                 </div>
                 <div>
                     <input type="text" placeholder='Email here*' />
-                    <div>
+                    <div className='flex items-center justify-between'>
                         <button>send now</button>
                         <LinkedinLogo size={16} color="#6949ff" weight="fill" />
                         <TwitterLogo size={16} color="#6949ff" weight="fill" />
@@ -62,9 +62,9 @@ const Footer = ()=>{
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='flex items-center justify-between'>
                 <p>Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.</p>
-                <div>
+                <div className='flex items-center justify-between'>
                 <p>Style Guide</p>
                 <p>Licenses</p>
                 <p>Changelog</p>
