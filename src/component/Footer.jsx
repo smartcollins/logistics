@@ -1,10 +1,13 @@
 import React from 'react';
+import color from '../data/color'
 import { Envelope,Phone, LinkedinLogo,TwitterLogo, FacebookLogo  } from 'phosphor-react';
 
 
 const Footer = ()=>{
+    let a = color.blueBg
     return(
-        <div>
+        // <div className='bg-red-500'>
+        <div style={{backgroundColor:a}}>
             <div>
                 <div>
                     <p>TransitFlow</p>
