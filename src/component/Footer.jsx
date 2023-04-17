@@ -7,18 +7,18 @@ const Footer = ()=>{
     let a = color.blueBg
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
     return(
-        <div style={{backgroundColor:a}} className=' capitalize text-white'>
-            <div className=' bg-white/5 flex items-center justify-between font-[Rubik] font-semibold text-lg'>
+        <div style={{backgroundColor:a}} className=' capitalize text-white px-40'>
+            <div className=' bg-white/5 flex items-center justify-between space-x-8 font-[Rubik] font-semibold text-lg'>
                 <div style={{backgroundColor:color.blueBg}} className='w-full py-4'>
                     <p>TransitFlow</p>
                 </div>
                 <p className='w-2/5'>Pages</p>
                 <p className='w-2/5'>Utility</p>
-                <p className='w-2/5'>Subscribe</p>
+                <p className='w-2/4'>Subscribe</p>
             </div>
-            <div className='flex items-start justify-between'>
+            <div className='flex items-start justify-between space-x-8 py-4'>
                 <div style={{backgroundColor:color.blueBg}} className=' w-full normal-case space-y-4 mb-4'>
-                    <p>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
+                    <p className='w-3/4'>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                     <div className='flex items-center gap-4'>
                         <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
                             <Envelope size={20} color="#f6b426" />
@@ -52,7 +52,7 @@ const Footer = ()=>{
                     <p>protected</p>
                     <p>not found</p>
                 </div>
-                <div className='w-2/5'>
+                <div className='w-2/4 space-y-4'>
                     <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
                     <div className='flex items-center justify-between'>
                         <button style={{background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`}} className='p-4 text-black'>send now</button>
