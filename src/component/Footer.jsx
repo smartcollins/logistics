@@ -14,7 +14,7 @@ const Footer = ()=>{
                 </div>
                 <p className='bg-red-400 w-2/5'>Pages</p>
                 <p className='bg-red-300 w-2/5'>Utility</p>
-                <p className='bg-red-200 w-full'>Subscribe</p>
+                <p className='bg-red-200 w-2/5'>Subscribe</p>
             </div>
             <div className='flex items-start justify-between'>
                 <div style={{backgroundColor:color.blueBg}} className=' w-full normal-case space-y-4 mb-4'>
