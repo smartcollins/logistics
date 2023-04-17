@@ -7,8 +7,8 @@ const Footer = ()=>{
     let a = color.blueBg
     return(
         <div style={{backgroundColor:a}} className=' capitalize text-white'>
-            <div className=' bg-white/5 flex items-center justify-between py-4'>
-                <div style={{backgroundColor:color.blueBg}} className='bg-red-500 w-full'>
+            <div className=' bg-white/5 flex items-center justify-between font-[Rubik] font-semibold text-lg'>
+                <div style={{backgroundColor:color.blueBg}} className='bg-red-500 w-full py-4'>
                     <p>TransitFlow</p>
                 </div>
                 <p className='bg-red-400 w-2/5'>Pages</p>
@@ -16,11 +16,11 @@ const Footer = ()=>{
                 <p className='bg-red-200 w-full'>Subscribe</p>
             </div>
             <div className='flex items-start justify-between'>
-                <div style={{backgroundColor:color.blueBg}} className=' w-full normal-case'>
+                <div style={{backgroundColor:color.blueBg}} className=' w-full normal-case space-y-4 mb-4'>
                     <p>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                     <div className='flex items-center gap-4'>
                         <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
-                            <Envelope size={16} color="#6949ff" weight="fill" />
+                            <Envelope size={20} color="#f6b426" />
                         </div>
                         <div>
                             <p>Email</p>
@@ -29,7 +29,7 @@ const Footer = ()=>{
                     </div>
                     <div className='flex items-center gap-4'>
                         <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
-                            <Phone size={16} color="#6949ff" weight="fill" />
+                            <Phone size={20} color="#f6b426" />
                         </div>
                         <div>
                             <p>Call us</p>
@@ -61,7 +61,7 @@ const Footer = ()=>{
                     </div>
                 </div>
             </div>
-            <div className='flex items-center justify-between border-t border-t-white'>
+            <div className='flex items-center justify-between border-t border-t-white py-4'>
                 <p className=' w-full'>Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.</p>
                 <div style={{color:color.grayTxt}} className='flex items-center justify-between bg-red-400 w-3/4'>
                 <p>Style Guide</p>
