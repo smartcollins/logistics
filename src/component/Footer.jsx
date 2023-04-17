@@ -9,12 +9,12 @@ const Footer = ()=>{
     return(
         <div style={{backgroundColor:a}} className=' capitalize text-white'>
             <div className=' bg-white/5 flex items-center justify-between font-[Rubik] font-semibold text-lg'>
-                <div style={{backgroundColor:color.blueBg}} className='bg-red-500 w-full py-4'>
+                <div style={{backgroundColor:color.blueBg}} className='w-full py-4'>
                     <p>TransitFlow</p>
                 </div>
-                <p className='bg-red-400 w-2/5'>Pages</p>
-                <p className='bg-red-300 w-2/5'>Utility</p>
-                <p className='bg-red-200 w-2/5'>Subscribe</p>
+                <p className='w-2/5'>Pages</p>
+                <p className='w-2/5'>Utility</p>
+                <p className='w-2/5'>Subscribe</p>
             </div>
             <div className='flex items-start justify-between'>
                 <div style={{backgroundColor:color.blueBg}} className=' w-full normal-case space-y-4 mb-4'>
@@ -38,21 +38,21 @@ const Footer = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className='bg-red-400 w-2/5 space-y-2'>
+                <div className='w-2/5 space-y-2'>
                     <p>about us</p>
                     <p>our team</p>
                     <p>our project</p>
                     <p>pricing</p>
                     <p>contact</p>
                 </div>
-                <div className='bg-red-300 w-2/5 space-y-2'>
+                <div className='w-2/5 space-y-2'>
                     <p>style guide</p>
                     <p>changelog</p>
                     <p>licenses</p>
                     <p>protected</p>
                     <p>not found</p>
                 </div>
-                <div className='bg-red-200 w-2/5'>
+                <div className='w-2/5'>
                     <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
                     <div className='flex items-center justify-between'>
                         <button style={{background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`}} className='p-4 text-black'>send now</button>
@@ -64,7 +64,7 @@ const Footer = ()=>{
             </div>
             <div className='flex items-center justify-between border-t border-t-white py-4'>
                 <p className=' w-full'>Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.</p>
-                <div style={{color:color.grayTxt}} className='flex items-center justify-between bg-red-400 w-3/4'>
+                <div style={{color:color.grayTxt}} className='flex items-center justify-between w-3/4'>
                 <p>Style Guide</p>
                 <p>Licenses</p>
                 <p>Changelog</p>
