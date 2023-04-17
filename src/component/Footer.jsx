@@ -55,10 +55,10 @@ const Footer = ()=>{
                 <div className='w-2/4 space-y-4'>
                     <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
                     <div className='flex items-center justify-between'>
-                        <button style={{background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`}} className='p-4 text-black'>send now</button>
-                        <LinkedinLogo size={16} color="#ffffff" weight="fill" />
-                        <TwitterLogo size={16} color="#ffffff" weight="fill" />
-                        <FacebookLogo size={16} color="#ffffff" weight="fill" />
+                        <button style={{background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`}} className='p-4 text-black w-2/4'>send now</button>
+                        <LinkedinLogo size={20} color="#ffffff" weight="fill" />
+                        <TwitterLogo size={20} color="#ffffff" weight="fill" />
+                        <FacebookLogo size={20} color="#ffffff" weight="fill" />
                     </div>
                 </div>
             </div>
