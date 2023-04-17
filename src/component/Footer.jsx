@@ -5,6 +5,7 @@ import { Envelope,Phone, LinkedinLogo,TwitterLogo, FacebookLogo  } from 'phospho
 
 const Footer = ()=>{
     let a = color.blueBg
+    // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
     return(
         <div style={{backgroundColor:a}} className=' capitalize text-white'>
             <div className=' bg-white/5 flex items-center justify-between font-[Rubik] font-semibold text-lg'>
@@ -51,13 +52,13 @@ const Footer = ()=>{
                     <p>protected</p>
                     <p>not found</p>
                 </div>
-                <div className='bg-red-200 w-full'>
-                    <input type="text" placeholder='Email here*' />
+                <div className='bg-red-200 w-2/5'>
+                    <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
                     <div className='flex items-center justify-between'>
-                        <button>send now</button>
-                        <LinkedinLogo size={16} color="#6949ff" weight="fill" />
-                        <TwitterLogo size={16} color="#6949ff" weight="fill" />
-                        <FacebookLogo size={16} color="#6949ff" weight="fill" />
+                        <button style={{background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`}} className='p-4 text-black'>send now</button>
+                        <LinkedinLogo size={16} color="#ffffff" weight="fill" />
+                        <TwitterLogo size={16} color="#ffffff" weight="fill" />
+                        <FacebookLogo size={16} color="#ffffff" weight="fill" />
                     </div>
                 </div>
             </div>
