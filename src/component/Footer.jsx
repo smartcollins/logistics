@@ -10,6 +10,12 @@ const Footer = () => {
         <div style={{ backgroundColor: a }} className=' capitalize text-white px-40'>
             <div className=' bg-white/5 flex items-center justify-between space-x-8 font-[Rubik] font-semibold text-lg'>
                 <div style={{ backgroundColor: color.blueBg }} className='w-full py-4'>
+                    <div className='h-full bg-red-200'>
+                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
+                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
+                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
+                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
+                    </div>
                     <p>TransitFlow</p>
                 </div>
                 <p className='w-2/5'>Pages</p>
