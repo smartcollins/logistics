@@ -1,6 +1,6 @@
 import React from 'react';
 import color from '../data/color';
-import { Clock, Envelope, Phone } from 'phosphor-react';
+import { Clock, Envelope, Phone, TwitterLogo, FacebookLogo,LinkedinLogo } from 'phosphor-react';
 
 
 const Nav = ()=>{
@@ -46,7 +46,17 @@ const Nav = ()=>{
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div>
+                <div></div>
+                <div className='flex items-center justify-between'>
+                    <div>
+                        <LinkedinLogo size={20} color="#ffffff" weight="fill" />
+                        <TwitterLogo size={20} color="#ffffff" weight="fill" />
+                        <FacebookLogo size={20} color="#ffffff" weight="fill" />
+                    </div>
+                    <button className='p-4 text-black bg-white w-2/4'>send now</button>
+                </div>
+            </div>
         </div>
     )
 }
