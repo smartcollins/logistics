@@ -46,15 +46,21 @@ const Nav = ()=>{
                     </div>
                 </div>
             </div>
-            <div>
-                <div></div>
-                <div className='flex items-center justify-between'>
-                    <div>
+            <div className='bg-red-500 flex items-center gap-4'>
+                <div className='flex items-center justify-between bg-red-200 w-full'>
+                    <p>home</p>
+                    <p>about</p>
+                    <p>pages</p>
+                    <p>projects</p>
+                    <p>contact</p>
+                </div>
+                <div className='flex items-center justify-between w-full'>
+                    <div className='flex items-center justify-between'>
                         <LinkedinLogo size={20} color="#ffffff" weight="fill" />
                         <TwitterLogo size={20} color="#ffffff" weight="fill" />
                         <FacebookLogo size={20} color="#ffffff" weight="fill" />
                     </div>
-                    <button className='p-4 text-black bg-white w-2/4'>send now</button>
+                    <button className='p-4 text-black bg-white w-2/4'>request quote</button>
                 </div>
             </div>
         </div>
