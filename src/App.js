@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 import Footer from './component/Footer';
+import Nav from './component/Nav';
 import ErrorPage from './component/ErrorPage';
 
 function App() {
@@ -9,6 +10,11 @@ function App() {
     {
       path: "/",
       element: <Footer />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/nav",
+      element: <Nav />,
       errorElement: <ErrorPage />,
     }
   ])
