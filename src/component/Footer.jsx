@@ -9,12 +9,12 @@ const Footer = () => {
     return (
         <div style={{ backgroundColor: a }} className=' capitalize text-white px-40'>
             <div className=' bg-white/5 flex items-center justify-between space-x-8 font-[Rubik] font-semibold text-lg'>
-                <div style={{ backgroundColor: color.blueBg }} className='w-full py-4'>
-                    <div className='h-full bg-red-200'>
-                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
-                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
-                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
-                        <span className='h-4 w-4 px-4 bg-[#ffb82b]'></span>
+                <div style={{ backgroundColor: color.blueBg }} className='w-full py-4 flex items-center gap-4'>
+                    <div className='h-full grid grid-cols-2 gap-1'>
+                        <span className=' h-3 w-3 bg-[#ffb82b] origin-bottom rotate-[-30deg]'></span>
+                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
+                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
+                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
                     </div>
                     <p>TransitFlow</p>
                 </div>
