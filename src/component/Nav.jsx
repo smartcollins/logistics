@@ -1,5 +1,6 @@
 import React from 'react';
 import color from '../data/color';
+import Logo from './Logo';
 import { Clock, Envelope, Phone, TwitterLogo, FacebookLogo,LinkedinLogo, InstagramLogo } from 'phosphor-react';
 
 
@@ -7,15 +8,7 @@ const Nav = ()=>{
     return(
         <div className='text-white capitalize'>
             <div style={{ backgroundColor: color.blueBg }} className='flex items-center justify-between'>
-                <div className=' py-4 flex items-center gap-4 w-2/4'>
-                    <div className='h-full grid grid-cols-2 gap-1'>
-                        <span className=' h-3 w-3 bg-[#ffb82b] origin-bottom rotate-[-30deg]'></span>
-                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
-                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
-                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
-                    </div>
-                    <p>TransitFlow</p>
-                </div>
+                <Logo/>
                 <div className='flex items-center justify-between gap-4  w-full'>
                     <div className='flex items-center gap-4 w-full '>
                         <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
