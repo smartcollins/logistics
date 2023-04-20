@@ -1,11 +1,12 @@
 import React from 'react';
 import color from '../data/color';
+import home from '../images/home.jpg'
 
 
 
 const Banner = ()=>{
     return(
-        <div className='bg-red-400'>
+        <div className='bg-red-400 bg-no-repeat bg-cover bg-center' style={{backgroundImage: `url(${home})`}}>
             <div className='w-2/4'>
             {/* linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%) */}
             <p style={{borderLeft:`2px solid ${color.grdt}`}} className='bg-[#041c37]/50 w-fit px-2'>Logistics & Supply Chain Solutions</p>
