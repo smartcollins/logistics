@@ -7,7 +7,7 @@ import home from '../images/home.jpg'
 const Banner = ()=>{
     return(
         <div className='bg-red-400 bg-no-repeat bg-cover bg-center relative h-[70vh]' style={{backgroundImage: `url(${home})`}}>
-            <div className=' absolute top-2/4 -translate-y-2/4 bg-red-500'>
+            <div className=' absolute top-2/4 -translate-y-2/4'>
             {/* linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%) */}
             <p style={{borderLeft:`2px solid ${color.grdt}`}} className='bg-[#041c37]/50 w-fit px-2'>Logistics & Supply Chain Solutions</p>
             <p className=' w-[25%] font-[Rubik] font-semibold text-4xl leading-normal'>Your Gateway to any Destination in the World</p>
