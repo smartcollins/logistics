@@ -1,14 +1,15 @@
 import React from 'react';
 import color from '../data/color';
 import Logo from './Logo';
-import { Clock, Envelope, Phone, TwitterLogo, FacebookLogo,LinkedinLogo, InstagramLogo } from 'phosphor-react';
+import Banner from './Banner';
+import { Clock, Envelope, Phone, TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react';
 
 
-const Nav = ()=>{
-    return(
+const Nav = () => {
+    return (
         <div className='text-white capitalize'>
             <div style={{ backgroundColor: color.blueBg }} className='flex items-center justify-between'>
-                <Logo/>
+                <Logo />
                 <div className='flex items-center justify-between gap-4  w-full'>
                     <div className='flex items-center gap-4 w-full '>
                         <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
@@ -19,7 +20,7 @@ const Nav = ()=>{
                             <p>Sunday Closed</p>
                         </div>
                     </div>
-                <div className='flex items-center gap-4 w-full '>
+                    <div className='flex items-center gap-4 w-full '>
                         <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
                             <Envelope size={20} color="#f6b426" />
                         </div>
@@ -57,6 +58,7 @@ const Nav = ()=>{
                     <button className='p-4 text-black bg-white w-2/4 capitalize'>request quote</button>
                 </div>
             </div>
+            <Banner />
         </div>
     )
 }
