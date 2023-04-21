@@ -1,5 +1,5 @@
 import React from 'react';
-import home from '../images/home.jpg'
+import home from '../images/br-home.png'
 import color from '../data/color';
 
 const Banner = () => {
