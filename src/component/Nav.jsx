@@ -2,6 +2,7 @@ import React from 'react';
 import color from '../data/color';
 import Logo from './Logo';
 import Banner from './Banner';
+import banner from '../data/banner'
 import { Clock, Envelope, Phone, TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react';
 
 
@@ -58,7 +59,7 @@ const Nav = () => {
                     <button className='p-4 text-black bg-white w-2/4 capitalize'>request quote</button>
                 </div>
             </div>
-            <Banner />
+            {banner.map((item,idx)=><Banner key={idx} {...item} />)}
         </div>
     )
 }
