@@ -3,7 +3,8 @@ import color from '../data/color';
 import Logo from './Logo';
 import Banner from './Banner';
 import banner from '../data/banner'
-import { Clock, Envelope, Phone, TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react';
+// import { Clock, Envelope, Phone, TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react';
+import { Clock, Envelope, Phone } from 'phosphor-react';
 
 
 const Nav = () => {
@@ -41,7 +42,7 @@ const Nav = () => {
                     </div>
                 </div>
             </div>
-            <div className=' bg-[#091242]/5 font-medium flex items-center justify-between'>
+            {/* <div className=' bg-[#091242]/5 font-medium flex items-center justify-between'>
                 <div className='flex items-center bg-red-200 w-2/4 text-center'>
                     <p className='border-r h-full py-4 last:border-none border-r-white w-full'>home</p>
                     <p className='border-r h-full py-4 last:border-none border-r-white w-full'>about</p>
@@ -58,7 +59,7 @@ const Nav = () => {
                     </div>
                     <button className='p-4 text-black bg-white w-2/4 capitalize'>request quote</button>
                 </div>
-            </div>
+            </div> */}
             {banner.map((item,idx)=><Banner key={idx} {...item} />)}
         </div>
     )
