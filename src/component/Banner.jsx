@@ -14,7 +14,8 @@ const Banner = ({img,txt,txt2,extra,info,btn_txt}) => {
         //     </div>
         // </div>
         // <div style={{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center relative h-[70vh]'>
-        <div style={{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center relative h-screen'>
+        <div className='h-screen'>
+            <div style={{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-4/5 relative'>
             <div className=' bg-[#091242]/5 font-medium flex items-center justify-between'>
                 <div className='flex items-center w-2/4 text-center'>
                     <p className='border-r last:border-none border-r-white w-full'>home</p>
@@ -45,6 +46,7 @@ const Banner = ({img,txt,txt2,extra,info,btn_txt}) => {
                     </div>
                 }
             </div>
+        </div>
         </div>
     )
 }
