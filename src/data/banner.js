@@ -64,6 +64,10 @@ const banner = [{
     txt: 'pricing',
     info: 'our best price'
 }, {
+    img: error,
+    txt: 'pricing',
+    info: 'our best price'
+}, {
     img: change,
     txt: 'update',
     info: 'change log'
