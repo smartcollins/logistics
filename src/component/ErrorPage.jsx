@@ -1,9 +1,13 @@
 import React from 'react';
+import banner from '../data/banner';
+import Banner from './Banner';
 
 
 const ErrorPage = ()=>{
     return(
-        <div>sffsfsf</div>
+        <div>
+            {banner.slice(11,12).map((item, idx) => <Banner key={idx} {...item} />)}
+        </div>
     )
 }
 
