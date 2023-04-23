@@ -7,7 +7,7 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
         <div className='h-[80vh] bg-red-200'>
             <div style={{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'>
                 <div className=' bg-[#091242]/5 font-medium flex items-center justify-between'>
-                    <div className='flex items-center w-2/4 text-center'>
+                    <div className='flex items-center w-2/4 text-center text-white'>
                         <p className='border-r last:border-none border-r-white w-full'>home</p>
                         <p className='border-r last:border-none border-r-white w-full'>about</p>
                         <p className='border-r last:border-none border-r-white w-full'>pages</p>
