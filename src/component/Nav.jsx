@@ -41,7 +41,8 @@ const Nav = () => {
                     </div>
                 </div>
             </div>
-            {banner.map((item, idx) => <Banner key={idx} {...item} />)}
+            {/* {banner.map((item, idx) => <Banner key={idx} {...item} />)} */}
+            {banner.slice(0,1).map((item, idx) => <Banner key={idx} {...item} />)}
         </div>
     )
 }
