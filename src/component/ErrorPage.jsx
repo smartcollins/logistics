@@ -1,6 +1,7 @@
 import React from 'react';
 import banner from '../data/banner';
 import Banner from './Banner';
+import Footer from './Footer';
 
 
 const ErrorPage = ()=>{
@@ -13,6 +14,7 @@ const ErrorPage = ()=>{
                 <p>Lets's get you to where you need to be.</p>
                 <button>Back to home</button>
             </div>
+            <Footer/>
         </div>
     )
 }
