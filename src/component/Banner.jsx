@@ -4,7 +4,7 @@ import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo } from 'phosphor
 
 const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
     return (
-        <div className='h-[80vh] bg-red-200'>
+        <div className='h-[80vh] bg-red-200 text-white capitalize'>
             <div style={{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'>
                 <div className=' bg-[#091242]/5 font-medium flex items-center justify-between'>
                     <div className='flex items-center w-2/4 text-center text-white'>
