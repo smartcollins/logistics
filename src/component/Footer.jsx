@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                     <p>TransitFlow</p>
                 </div> */}
-                <div className="w-full"><Logo/></div>
+                <div style={{ backgroundColor: color.blueBg }} className="w-full -ml-8 pl-8"><Logo/></div>
                 <p className='w-2/5'>Pages</p>
                 <p className='w-2/5'>Utility</p>
                 <p className='w-2/4'>Subscribe</p>
