@@ -1,15 +1,15 @@
 import React from 'react';
 import color from '../data/color'
 import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosphor-react';
+import Logo from './Logo';
 
 
 const Footer = () => {
-    let a = color.blueBg
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
     return (
-        <div style={{ backgroundColor: a }} className=' capitalize text-white px-40'>
-            <div className=' bg-white/5 flex items-center justify-between space-x-8 font-[Rubik] font-semibold text-lg'>
-                <div style={{ backgroundColor: color.blueBg }} className='w-full py-4 flex items-center gap-4'>
+        <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white px-40'>
+            <div className=' bg-white/5 flex items-center justify-between space-x-8 font-[Rubik] font-semibold text-lg -mx-40 px-40'>
+                {/* <div style={{ backgroundColor: color.blueBg }} className='w-full py-4 flex items-center gap-4'>
                     <div className='h-full grid grid-cols-2 gap-1'>
                         <span className=' h-3 w-3 bg-[#ffb82b] origin-bottom rotate-[-30deg]'></span>
                         <span className=' h-3 w-3 bg-[#ffb82b]'></span>
@@ -17,7 +17,8 @@ const Footer = () => {
                         <span className=' h-3 w-3 bg-[#ffb82b]'></span>
                     </div>
                     <p>TransitFlow</p>
-                </div>
+                </div> */}
+                <div className="w-full"><Logo/></div>
                 <p className='w-2/5'>Pages</p>
                 <p className='w-2/5'>Utility</p>
                 <p className='w-2/4'>Subscribe</p>
