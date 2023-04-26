@@ -1,8 +1,8 @@
 import React from 'react';
 import color from '../data/color';
 import banner from '../data/banner';
-import Banner from './Banner';
-import Footer from './Footer';
+import Banner from '../component/Banner';
+import Footer from '../component/Footer';
 
 
 const ErrorPage = () => {

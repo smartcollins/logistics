@@ -3,8 +3,8 @@
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 import Footer from './component/Footer';
 import Nav from './component/Nav';
-import ErrorPage from './component/ErrorPage';
-import Protection from './component/Protection';
+import ErrorPage from './pages/ErrorPage';
+import Protection from './pages/Protection';
 
 function App() {
   const router = createBrowserRouter([
