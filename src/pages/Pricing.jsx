@@ -6,58 +6,45 @@ import Footer from '../component/Footer'
 
 
 const Pricing = ()=>{
-    
+    const itemsAry = [{
+        title: 'standard',
+        cost: 39,
+        txt: ['single truck','full insurance','500 km','Real-time-shopping'],
+    },{
+        title: 'standard',
+        cost: 59,
+        dark: true,
+        txt: ['single truck','full insurance','500 km','Real-time-shopping'],
+    },{
+        title: 'standard',
+        cost: 89,
+        txt: ['double truck','full insurance','unlimited','Real-time-shopping'],
+    }]
+    const items = itemsAry.map((item,idx)=>(
+        <div style={ item.dark? { backgroundColor: color.blueBg, color: 'white'} : {backgroundColor: color.grayBg}} key={idx} className='bg-red-300 w-full flex flex-col space-y-4 p-8'>
+            <p className=' font-medium text-xl'>{item.title}</p>
+            <div className='flex items-end justify-center'>
+                <p className=' font-medium text-4xl font-[Rubik]'>{item.cost}</p>
+                <p className=' lowercase font-[Rubik]'>/ month</p>
+            </div>
+            <div className=' font-normal text-lg'>
+                {
+                    item.txt.map((item,idx)=><p key={idx} className=' last:border-b border-t border-[#D6D6D6] py-2'>{item}</p>)
+                }
+            </div>
+            <button style={item.dark?{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }:{backgroundColor: color.blueBg, color: 'white'}} className='bg-red-200 w-2/4 py-2 mx-auto font-medium'>choose plan</button>
+        </div>
+    ))
     return(
         <div>
             <div>{banner.slice(10, 11).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{color: color.darkTxt}} className=' capitalize bg-red-500 w-4/5 mx-auto my-4'>
-                <div className='mx-auto w-fit bg-red-400 text-white '>
-                    <p style={{ borderLeft: `4px solid ${color.grdt}` }} className='bg-[#041c37]/50 w-fit px-4 mx-auto'>pricing</p>
+            <div style={{color: color.darkTxt}} className=' capitalize w-4/5 mx-auto my-8 py-8'>
+                <div className='mx-auto w-fit '>
+                    <p style={{ borderLeft: `4px solid ${color.grdt}` }} className='bg-[#e8e8e8]/50 w-fit px-4 mx-auto'>pricing</p>
                     <p className='font-[Rubik] font-semibold text-2xl/normal'>our best pricing</p>
                 </div>
                 <div className='flex gap-4 text-center py-4'>
-                    <div className='bg-red-300 w-full flex flex-col space-y-4 p-8'>
-                        <p className=' font-medium text-xl'>standard</p>
-                        <div className='flex items-end justify-center bg-red-500'>
-                            <p className=' font-medium text-4xl font-[Rubik]'>$59</p>
-                            <p className=' lowercase font-[Rubik]'>/ month</p>
-                        </div>
-                        <div className=' font-normal text-lg'>
-                            <p className=' last:border-b border-t py-2'>single truck</p>
-                            <p className=' last:border-b border-t py-2'>full insurance</p>
-                            <p className=' last:border-b border-t py-2'>500km</p>
-                            <p className=' last:border-b border-t py-2'>real-time shopping</p>
-                        </div>
-                        <button className='bg-red-200 w-2/4 py-2 mx-auto'>choose plan</button>
-                    </div>
-                    <div className='bg-red-300 w-full flex flex-col space-y-4 p-8'>
-                        <p className=' font-medium text-xl'>standard</p>
-                        <div className='flex items-end justify-center bg-red-500'>
-                            <p className=' font-medium text-4xl font-[Rubik]'>$59</p>
-                            <p className=' lowercase font-[Rubik]'>/ month</p>
-                        </div>
-                        <div className=' font-normal text-lg'>
-                            <p className=' last:border-b border-t py-2'>single truck</p>
-                            <p className=' last:border-b border-t py-2'>full insurance</p>
-                            <p className=' last:border-b border-t py-2'>500km</p>
-                            <p className=' last:border-b border-t py-2'>real-time shopping</p>
-                        </div>
-                        <button className='bg-red-200 w-2/4 py-2 mx-auto'>choose plan</button>
-                    </div>
-                    <div className='bg-red-300 w-full flex flex-col space-y-4 p-8'>
-                        <p className=' font-medium text-xl'>standard</p>
-                        <div className='flex items-end justify-center bg-red-500'>
-                            <p className=' font-medium text-4xl font-[Rubik]'>$59</p>
-                            <p className=' lowercase font-[Rubik]'>/ month</p>
-                        </div>
-                        <div className=' font-normal text-lg'>
-                            <p className=' last:border-b border-t py-2'>single truck</p>
-                            <p className=' last:border-b border-t py-2'>full insurance</p>
-                            <p className=' last:border-b border-t py-2'>500km</p>
-                            <p className=' last:border-b border-t py-2'>real-time shopping</p>
-                        </div>
-                        <button className='bg-red-200 w-2/4 py-2 mx-auto'>choose plan</button>
-                    </div>
+                    {items}
                 </div>
             </div>
             <Footer/>
