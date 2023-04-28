@@ -3,6 +3,7 @@ import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
 import Footer from '../component/Footer'
+import Review from '../component/Review';
 
 
 const Pricing = ()=>{
@@ -39,12 +40,17 @@ const Pricing = ()=>{
         <div>
             <div>{banner.slice(10, 11).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{color: color.darkTxt}} className=' capitalize w-4/5 mx-auto my-8 py-8'>
-                <div className='mx-auto w-fit '>
-                    <p style={{ borderLeft: `4px solid ${color.grdt}` }} className='bg-[#e8e8e8]/50 w-fit px-4 mx-auto'>pricing</p>
-                    <p className='font-[Rubik] font-semibold text-2xl/normal'>our best pricing</p>
+                <div>
+                    <div className='mx-auto w-fit '>
+                        <p style={{ borderLeft: `4px solid ${color.grdt}` }} className='bg-[#e8e8e8]/50 w-fit px-4 mx-auto'>pricing</p>
+                        <p className='font-[Rubik] font-semibold text-2xl/normal'>our best pricing</p>
+                    </div>
+                    <div className='flex gap-4 text-center py-4'>
+                        {items}
+                    </div>
                 </div>
-                <div className='flex gap-4 text-center py-4'>
-                    {items}
+                <div className='bg-[#f4f4f4] mt-8'>
+                    <Review/>
                 </div>
             </div>
             <Footer/>
