@@ -19,6 +19,15 @@ const Contact = ()=>{
                     <Phone className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                     <Clock className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                 </div>
+                <div className=' grid grid-rows-4 grid-cols-2 gap-4'>
+                    <input type="text" className='bg-red-300 h-16 w-full' />
+                    <input type="text" className='bg-red-300 h-16 w-full' />
+                    <input type="text" className='bg-red-300 h-16 w-full' />
+                    <input type="text" className='bg-red-300 h-16 w-full' />
+                    {/* <input className='bg-red-300 w-full col-span-2 row-span-2'/> */}
+                    <textarea className='bg-red-300 w-full col-span-2 row-span-2' name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button>send message</button>
             </div>
         </div>
     )
