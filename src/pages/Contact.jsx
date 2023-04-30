@@ -8,7 +8,7 @@ const Contact = ()=>{
     return(
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{background: color.blueBg}} className=' w-4/5 mx-auto my-8 py-8 px-16'>
+            <div style={{background: color.blueBg}} className=' w-2/4 mx-auto my-8 py-8 px-16'>
                 <div className='mx-auto w-fit text-center'>
                     <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 w-fit px-4 mx-auto'>contact</p>
                     <p className='font-[Rubik] font-bold text-4xl/normal'>get in touch with us</p>
@@ -30,7 +30,7 @@ const Contact = ()=>{
                     {/* <input className='bg-red-300 w-full col-span-2 row-span-2'/> */}
                 </div>
                 
-                <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-2 font-medium capitalize text-center w-1/5 my-4'>send message</button>
+                <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
                 </div>
             </div>
         </div>
