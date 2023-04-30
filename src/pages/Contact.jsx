@@ -14,11 +14,12 @@ const Contact = ()=>{
                     <p className='font-[Rubik] font-bold text-4xl/normal'>get in touch with us</p>
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
-                <div className='flex items-center justify-between w-3/4 mx-auto my-4'>
+                <div className='flex items-center justify-between w-3/4 mx-auto my-8'>
                     <EnvelopeSimple className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                     <Phone className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                     <Clock className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                 </div>
+                <div className=' w-full text-center pt-4'>
                 <div className=' grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
                     <input type="text" placeholder='Your name*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
                     <input type="text" placeholder='Email*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
@@ -28,7 +29,9 @@ const Contact = ()=>{
                     {/* <textarea placeholder='Your Message' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white w-full col-span-2 row-span-2' name="" id="" cols="30" rows="10"></textarea> */}
                     {/* <input className='bg-red-300 w-full col-span-2 row-span-2'/> */}
                 </div>
-                <button>send message</button>
+                
+                <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-2 font-medium capitalize text-center w-1/5 my-4'>send message</button>
+                </div>
             </div>
         </div>
     )
