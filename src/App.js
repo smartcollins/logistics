@@ -8,6 +8,7 @@ import Pricing from './pages/Pricing';
 import Change from './pages/Change';
 import Liecenses from './pages/Liecenses';
 import Protection from './pages/Protection';
+import Contact from './pages/Contact';
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +20,11 @@ function App() {
     {
       path: "/nav",
       element: <Nav />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
       errorElement: <ErrorPage />,
     },
     {
