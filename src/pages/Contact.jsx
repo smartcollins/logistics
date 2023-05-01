@@ -17,21 +17,21 @@ const Contact = ()=>{
                     <p className='font-[Rubik] font-bold text-4xl/normal'>get in touch with us</p>
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
-                <div className='flex gap-4 mx-auto my-8 bg-red-500'>
-                    <div className='w-2/4 bg-red-200 flex flex-col items-center'>
-                        <EnvelopeSimple className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
+                <div className='flex gap-4 mx-auto my-8 text-center'>
+                    <div className='w-2/4 flex flex-col items-center'>
+                        <EnvelopeSimple className='w-16 h-16 bg-[rgb(39,50,112)] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                         <p>Contact@logistics.com</p>
                     </div>
-                    <div className='w-2/4 bg-red-200 flex flex-col items-center'>
+                    <div className='w-2/4 flex flex-col items-center'>
                         <Phone className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                         <p> (00) 112 365 489</p>
                     </div>
-                    <div className='w-2/4 bg-red-200 flex flex-col items-center'>
+                    <div className='w-2/4 flex flex-col items-center'>
                         <Clock className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
                         <p>Mon - Sat 9.00 - 18.00 Sunday Closed</p>
                     </div>
                 </div>
-                <div className=' w-full text-center pt-4'>
+                <div className=' w-full text-center'>
                 <div className=' grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
                     <input type="text" placeholder='Your name*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
                     <input type="text" placeholder='Email*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
