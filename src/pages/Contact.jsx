@@ -3,7 +3,7 @@ import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
 import client from '../images/client_logo.png'
-import {EnvelopeSimple,Phone,Clock} from 'phosphor-react'
+import {EnvelopeSimple,Phone,Clock, CaretDown, CaretRight} from 'phosphor-react'
 
 const Contact = ()=>{
     return(
@@ -34,11 +34,37 @@ const Contact = ()=>{
                 <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
                 </div>
             </div>
-            <div className='bg-red-500'>
+            <div className='bg-red-500 my-8'>
                 <img className='mx-auto' src={client} alt="client-logo" />
             </div>
             <div className='flex'>
-                <div></div>
+                <div className=' text-black'>
+                    <div className='mx-auto w-fit text-left bg-red-400'>
+                        <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>faq</p>
+                        <p className='font-[Rubik] font-bold text-4xl/normal'>Frequently Asked Questions</p>
+                        <div className=' space-y-8'>
+                            <div>
+                            <div className='flex justify-between items-center bg-red-300'>
+                                <p className=' font-semibold'>How can I pay for your logistics services?</p>
+                                <CaretDown size={25} color="#ffbb2b" />
+                            </div>
+                            <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
+                        </div>
+                        <div className='flex justify-between items-center bg-red-300'>
+                            <p className=' font-semibold'>How can I pay for your logistics services?</p>
+                            <CaretRight size={25} color="#000000" />
+                        </div>
+                        <div className='flex justify-between items-center bg-red-300'>
+                            <p className=' font-semibold'>What options for logistics plans are available?</p>
+                            <CaretRight size={25} color="#000000" />
+                        </div>
+                        <div className='flex justify-between items-center bg-red-300'>
+                            <p className=' font-semibold'>Can i specify a delivery date when ordering?</p>
+                            <CaretRight size={25} color="#000000" />
+                        </div>
+                        </div>
+                    </div>
+                </div>
                 <div></div>
             </div>
         </div>
