@@ -38,8 +38,8 @@ const Contact = ()=>{
             <div className='bg-red-500 my-8'>
                 <img className='mx-auto' src={client} alt="client-logo" />
             </div>
-            <div className='flex'>
-                <div className=' text-black bg-blue-500'>
+            <div className='flex gap-8'>
+                <div className=' text-black bg-blue-500 py-8 w-3/4'>
                     <div className='mx-auto w-fit text-left bg-red-400'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>faq</p>
                         <p className='font-[Rubik] font-bold text-4xl/normal'>Frequently Asked Questions</p>
@@ -66,20 +66,21 @@ const Contact = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className='w-full h-[57vh] overflow-clip bg-blue-400 relative'>
+                {/* <div className='w-full h-[57vh] overflow-clip bg-blue-400 relative'> */}
+                <div className='w-full h-full bg-blue-400 relative'>
                     {/* <img className='h-[70%] w-full object-cover' src={client2} alt="delivery" /> */}
-                    <img className='' src={client2} alt="delivery" />
-                    <div style={{background: color.blueBg}}  className='absolute z-50 top-3'>
+                    <img className=' ml-auto w-[65%]' src={client2} alt="delivery" />
+                    <div style={{background: color.blueBg}}  className='absolute z-50 top-1/2 -translate-y-1/2 left-4 p-8 space-y-4 w-2/4'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>let's talk</p>
-                        <p className='font-[Rubik] font-bold text-4xl/normal'>you nedd any help? get free consultation</p>
-                        <div>
-                            <Phone className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
-                            <div>
+                        <p className='font-[Rubik] font-bold text-2xl bg-red-500'>you nedd any help? get free consultation</p>
+                        <div className='flex gap-4 items-center bg-red-500 w-fit'>
+                            <Phone className='w-16 h-16 bg-[#111c55] border border-[#2d3a7b] rounded-full px-4' size={30} color="#ffffff" />
+                            <div classN>
                                 <p>have any questions</p>
                                 <p>(00) 112 365 489</p>
                             </div>
                         </div>
-                        <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>contact us</button>
+                        <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-2 font-medium text-xl capitalize text-center w-2/5'>contact us</button>
                     </div>
                 </div>
             </div>
