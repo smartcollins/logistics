@@ -35,31 +35,31 @@ const Contact = ()=>{
                 <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
                 </div>
             </div>
-            <div className='bg-red-500 my-8'>
+            <div className='my-8'>
                 <img className='mx-auto' src={client} alt="client-logo" />
             </div>
             <div className='flex gap-8'>
-                <div className=' text-black bg-blue-500 py-8 w-3/4'>
-                    <div className='mx-auto w-fit text-left bg-red-400'>
+                <div className=' text-black w-3/4'>
+                    <div className='mx-auto w-fit text-left'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>faq</p>
                         <p className='font-[Rubik] font-bold text-4xl/normal'>Frequently Asked Questions</p>
                         <div className=' space-y-8'>
-                            <div>
-                            <div className='flex justify-between items-center bg-red-300'>
-                                <p className=' font-semibold'>How can I pay for your logistics services?</p>
-                                <CaretDown size={25} color="#ffbb2b" />
+                            <div className=' space-y-2'>
+                                <div className='flex justify-between items-center'>
+                                    <p className=' font-semibold'>How can I pay for your logistics services?</p>
+                                    <CaretDown size={25} color="#ffbb2b" />
+                                </div>
+                                <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
                             </div>
-                            <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
-                        </div>
-                        <div className='flex justify-between items-center bg-red-300'>
+                        <div className='flex justify-between items-center'>
                             <p className=' font-semibold'>How can I pay for your logistics services?</p>
                             <CaretRight size={25} color="#000000" />
                         </div>
-                        <div className='flex justify-between items-center bg-red-300'>
+                        <div className='flex justify-between items-center'>
                             <p className=' font-semibold'>What options for logistics plans are available?</p>
                             <CaretRight size={25} color="#000000" />
                         </div>
-                        <div className='flex justify-between items-center bg-red-300'>
+                        <div className='flex justify-between items-center'>
                             <p className=' font-semibold'>Can i specify a delivery date when ordering?</p>
                             <CaretRight size={25} color="#000000" />
                         </div>
@@ -67,14 +67,14 @@ const Contact = ()=>{
                     </div>
                 </div>
                 {/* <div className='w-full h-[57vh] overflow-clip bg-blue-400 relative'> */}
-                <div className='w-full h-full bg-blue-400 relative'>
+                <div className='w-full h-full relative'>
                     {/* <img className='h-[70%] w-full object-cover' src={client2} alt="delivery" /> */}
                     <img className=' ml-auto w-[65%]' src={client2} alt="delivery" />
                     <div style={{background: color.blueBg}}  className='absolute z-50 top-1/2 -translate-y-1/2 left-4 p-8 space-y-4 w-2/4'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>let's talk</p>
-                        <p className='font-[Rubik] font-bold text-2xl bg-red-500'>you nedd any help? get free consultation</p>
-                        <div className='flex gap-4 items-center bg-red-500 w-fit'>
-                            <Phone className='w-16 h-16 bg-[#111c55] border border-[#2d3a7b] rounded-full px-4' size={30} color="#ffffff" />
+                        <p className='font-[Rubik] font-bold text-2xl'>you nedd any help? get free consultation</p>
+                        <div className='flex gap-4 items-center w-fit'>
+                            <Phone className=' w-12 h-12 bg-[#111c55] border border-[#2d3a7b] rounded-full px-3' size={16} color="#ffffff" />
                             <div classN>
                                 <p>have any questions</p>
                                 <p>(00) 112 365 489</p>
