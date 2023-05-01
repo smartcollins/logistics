@@ -2,7 +2,7 @@ import React from 'react';
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
-import ann from '../images/br-home.png'
+import client from '../images/client_logo.png'
 import {EnvelopeSimple,Phone,Clock} from 'phosphor-react'
 
 const Contact = ()=>{
@@ -34,13 +34,13 @@ const Contact = ()=>{
                 <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
                 </div>
             </div>
-            <div className='w-4/5 mx-auto bg-red-500 flex h-[20vh]'>
-                    <p style={{ backgroundImage: `url(${ann})` }} className=' w-full'>out of the sandbox</p>
-                    <p className='bg-red-400 w-full'>out of the sandbox</p>
-                    <p className='bg-red-400 w-full'>out of the sandbox</p>
-                    <p className='bg-red-400 w-full'>out of the sandbox</p>
-                    <p className='bg-red-400 w-full'>out of the sandbox</p>
-                </div>
+            <div className='bg-red-500'>
+                <img className='mx-auto' src={client} alt="client-logo" />
+            </div>
+            <div className='flex'>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     )
 }
