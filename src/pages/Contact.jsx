@@ -4,6 +4,7 @@ import color from '../data/color';
 import Banner from '../component/Banner';
 import client from '../images/client_logo.png'
 import client2 from '../images/client2.png'
+import Footer from '../component/Footer'
 import {EnvelopeSimple,Phone,Clock, CaretDown, CaretRight} from 'phosphor-react'
 
 const Contact = ()=>{
@@ -84,6 +85,7 @@ const Contact = ()=>{
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
