@@ -4,11 +4,12 @@ import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 import Footer from './component/Footer';
 import Nav from './component/Nav';
 import ErrorPage from './pages/ErrorPage';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
 import Change from './pages/Change';
 import Liecenses from './pages/Liecenses';
 import Protection from './pages/Protection';
-import Contact from './pages/Contact';
 
 function App() {
   const router = createBrowserRouter([
@@ -20,6 +21,11 @@ function App() {
     {
       path: "/nav",
       element: <Nav />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/team",
+      element: <Team />,
       errorElement: <ErrorPage />,
     },
     {
