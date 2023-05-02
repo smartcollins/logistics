@@ -8,6 +8,32 @@ import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock, CaretDown, CaretRight } from 'phosphor-react'
 
 const Contact = () => {
+    const inputAry = [{
+        type: 'text',
+        place: 'your name*'
+    }, {
+        type: 'email',
+        place: 'email*'
+    }, {
+        type: 'number',
+        place: 'phone number*'
+    }, {
+        type: 'text',
+        place: 'city*'
+    }];
+
+    const endAry = [
+        'What payment methods are supported?',
+        'What options for logistics plans are available?',
+        'Can i specify a delivery date when ordering?'
+    ]
+
+    const input = inputAry.map((item, idx) => <input key={idx} type={item.type} placeholder={item.place} className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl placeholder:capitalize bg-transparent border border-white h-16 w-full' />)
+    const end = endAry.map((item, idx) => <div key={idx} className='flex justify-between items-center'>
+        <p className=' font-semibold'>{item}</p>
+        <CaretRight size={25} color="#000000" />
+    </div>)
+
     return (
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
@@ -33,10 +59,7 @@ const Contact = () => {
                 </div>
                 <div className=' w-full text-center'>
                     <div className=' grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
-                        <input type="text" placeholder='Your name*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
-                        <input type="text" placeholder='Email*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
-                        <input type="number" placeholder='Phone Number*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
-                        <input type="text" placeholder='City' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
+                        {input}
                         <textarea placeholder='Your Message' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                     </div>
 
@@ -46,10 +69,10 @@ const Contact = () => {
             <div className='my-8'>
                 <img className='mx-auto' src={client} alt="client-logo" />
             </div>
-            <div className='flex gap-8'>
+            <div className='flex gap-8 bg-[#f4f4f4] py-16'>
                 <div className=' text-black w-3/4'>
                     <div className='mx-auto w-fit text-left'>
-                        <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>faq</p>
+                        <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/50 uppercase w-fit px-4'>faq</p>
                         <p className='font-[Rubik] font-bold text-4xl/normal'>Frequently Asked Questions</p>
                         <div className=' space-y-8'>
                             <div className=' space-y-2'>
@@ -59,18 +82,7 @@ const Contact = () => {
                                 </div>
                                 <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
                             </div>
-                            <div className='flex justify-between items-center'>
-                                <p className=' font-semibold'>How can I pay for your logistics services?</p>
-                                <CaretRight size={25} color="#000000" />
-                            </div>
-                            <div className='flex justify-between items-center'>
-                                <p className=' font-semibold'>What options for logistics plans are available?</p>
-                                <CaretRight size={25} color="#000000" />
-                            </div>
-                            <div className='flex justify-between items-center'>
-                                <p className=' font-semibold'>Can i specify a delivery date when ordering?</p>
-                                <CaretRight size={25} color="#000000" />
-                            </div>
+                            {end}
                         </div>
                     </div>
                 </div>
