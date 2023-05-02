@@ -54,7 +54,7 @@ const banner = [{
 }, {
     img: team,
     txt: 'team',
-    info: 'about team'
+    info: 'our team'
 }, {
     img: contact,
     txt: 'contact',
