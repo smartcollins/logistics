@@ -1,17 +1,17 @@
 import React from 'react';
+import client from '../images/client_logo.png'
+import client2 from '../images/client2.png'
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
-import client from '../images/client_logo.png'
-import client2 from '../images/client2.png'
 import Footer from '../component/Footer'
-import {EnvelopeSimple,Phone,Clock, CaretDown, CaretRight} from 'phosphor-react'
+import { EnvelopeSimple, Phone, Clock, CaretDown, CaretRight } from 'phosphor-react'
 
-const Contact = ()=>{
-    return(
+const Contact = () => {
+    return (
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{background: color.blueBg}} className=' w-2/4 mx-auto my-8 py-8 px-16'>
+            <div style={{ background: color.blueBg }} className=' w-2/4 mx-auto my-8 py-8 px-16'>
                 <div className='mx-auto w-fit text-center'>
                     <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 w-fit px-4 mx-auto'>contact</p>
                     <p className='font-[Rubik] font-bold text-4xl/normal'>get in touch with us</p>
@@ -32,17 +32,15 @@ const Contact = ()=>{
                     </div>
                 </div>
                 <div className=' w-full text-center'>
-                <div className=' grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
-                    <input type="text" placeholder='Your name*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
-                    <input type="text" placeholder='Email*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
-                    <input type="number" placeholder='Phone Number*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
-                    <input type="text" placeholder='City' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
-                    <textarea placeholder='Your Message' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
-                    {/* <textarea placeholder='Your Message' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white w-full col-span-2 row-span-2' name="" id="" cols="30" rows="10"></textarea> */}
-                    {/* <input className='bg-red-300 w-full col-span-2 row-span-2'/> */}
-                </div>
-                
-                <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
+                    <div className=' grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
+                        <input type="text" placeholder='Your name*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
+                        <input type="text" placeholder='Email*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
+                        <input type="number" placeholder='Phone Number*' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
+                        <input type="text" placeholder='City' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white h-16 w-full' />
+                        <textarea placeholder='Your Message' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
+                    </div>
+
+                    <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
                 </div>
             </div>
             <div className='my-8'>
@@ -61,26 +59,24 @@ const Contact = ()=>{
                                 </div>
                                 <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
                             </div>
-                        <div className='flex justify-between items-center'>
-                            <p className=' font-semibold'>How can I pay for your logistics services?</p>
-                            <CaretRight size={25} color="#000000" />
-                        </div>
-                        <div className='flex justify-between items-center'>
-                            <p className=' font-semibold'>What options for logistics plans are available?</p>
-                            <CaretRight size={25} color="#000000" />
-                        </div>
-                        <div className='flex justify-between items-center'>
-                            <p className=' font-semibold'>Can i specify a delivery date when ordering?</p>
-                            <CaretRight size={25} color="#000000" />
-                        </div>
+                            <div className='flex justify-between items-center'>
+                                <p className=' font-semibold'>How can I pay for your logistics services?</p>
+                                <CaretRight size={25} color="#000000" />
+                            </div>
+                            <div className='flex justify-between items-center'>
+                                <p className=' font-semibold'>What options for logistics plans are available?</p>
+                                <CaretRight size={25} color="#000000" />
+                            </div>
+                            <div className='flex justify-between items-center'>
+                                <p className=' font-semibold'>Can i specify a delivery date when ordering?</p>
+                                <CaretRight size={25} color="#000000" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className='w-full h-[57vh] overflow-clip bg-blue-400 relative'> */}
                 <div className='w-full h-full relative'>
-                    {/* <img className='h-[70%] w-full object-cover' src={client2} alt="delivery" /> */}
                     <img className=' ml-auto w-[65%]' src={client2} alt="delivery" />
-                    <div style={{background: color.blueBg}}  className='absolute z-50 top-1/2 -translate-y-1/2 left-4 p-8 space-y-4 w-2/4'>
+                    <div style={{ background: color.blueBg }} className='absolute z-50 top-1/2 -translate-y-1/2 left-4 p-8 space-y-4 w-2/4'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>let's talk</p>
                         <p className='font-[Rubik] font-bold text-2xl'>you nedd any help? get free consultation</p>
                         <div className='flex gap-4 items-center w-fit'>
@@ -90,11 +86,11 @@ const Contact = ()=>{
                                 <p>(00) 112 365 489</p>
                             </div>
                         </div>
-                        <button style={{ color: color.darkTxt,background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-2 font-bold capitalize text-center w-2/5'>contact us</button>
+                        <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-2 font-bold capitalize text-center w-2/5'>contact us</button>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
