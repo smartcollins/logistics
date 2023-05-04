@@ -4,9 +4,9 @@ import client2 from '../images/client2.png'
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
+import Caption from '../component/Caption';
 import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock, CaretDown, CaretRight } from 'phosphor-react'
-import Caption from '../component/Caption';
 
 const Contact = () => {
     const inputAry = [{

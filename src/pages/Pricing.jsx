@@ -2,9 +2,9 @@ import React from 'react';
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
+import Caption from '../component/Caption';
 import Footer from '../component/Footer'
 import Review from '../component/Review';
-import Caption from '../component/Caption';
 
 
 const Pricing = () => {
