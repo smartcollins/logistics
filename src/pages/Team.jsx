@@ -12,6 +12,7 @@ import sponsor from '../images/client_logo.png'
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
+import Caption from '../component/Caption';
 import Footer from '../component/Footer';
 import { TwitterLogo, FacebookLogo, InstagramLogo } from 'phosphor-react';
 
@@ -59,9 +60,8 @@ const Team = () => {
     return (
         <div>
             <div>{banner.slice(8, 9).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className='my-4'>
-                <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 w-fit px-4 mx-auto'>The Transporters</p>
-                <p className='font-[Rubik] font-bold text-4xl/normal mx-auto w-fit'>Meet Expert Team</p>
+            <div className='my-8'>
+                <Caption mid={true} dark={true} txt={'team'} txt2={'meet expert team'}/>
             </div>
             <div className='grid grid-cols-3 w-3/4 gap-8 my-8 mx-auto'>
                 {items}
