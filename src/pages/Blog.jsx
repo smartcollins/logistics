@@ -9,13 +9,7 @@ const Blog = () => {
     return (
         <div>
             <div>{banner.slice(6, 7).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className=' mx-auto w-fit'>
-                <Caption
-                    dark={true}
-                    txt={'our blog'}
-                    txt2={'our latest news'}
-                />
-            </div>
+                <Caption mid={true} dark={true} txt={'our blog'} txt2={'our latest news'}/>
         </div>
     )
 }
