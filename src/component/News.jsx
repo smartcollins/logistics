@@ -1,5 +1,6 @@
 import React from 'react';
 import ccc from '../images/br-blog2.png'
+import cal from '../icons/cal-Icon.svg'
 import color from '../data/color'
 
 
@@ -11,6 +12,7 @@ const News = ()=>{
                 <img className='h-full object-cover' src={ccc} alt="news" />
             </div>
             <div className=' text-center'>
+                <img src={cal} alt="calender" />
                 <p style={{color: color.darkTxt}} className=' font-bold text-2xl'>08</p>
                 <p style={{color: color.grayTxt}} className=' capitalize text-sm'>march</p>
             </div>
