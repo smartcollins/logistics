@@ -6,9 +6,9 @@ import team4 from '../images/team4.png';
 import team5 from '../images/team5.png';
 import team6 from '../images/team6.png';
 import side from '../images/team-side.png'
-import user from '../images/user-icon.svg'
-import timer from '../images/timer-icon.svg'
 import sponsor from '../images/client_logo.png'
+import user from '../icons/user-icon.svg'
+import timer from '../icons/timer-icon.svg'
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
