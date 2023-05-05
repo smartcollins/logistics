@@ -4,6 +4,7 @@ import client2 from '../images/client2.png'
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
+import Caption from '../component/Caption';
 import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock, CaretDown, CaretRight } from 'phosphor-react'
 
@@ -39,8 +40,7 @@ const Contact = () => {
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{ background: color.blueBg }} className=' w-2/4 mx-auto my-8 py-8 px-16'>
                 <div className='mx-auto w-fit text-center'>
-                    <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 w-fit px-4 mx-auto'>contact</p>
-                    <p className='font-[Rubik] font-bold text-4xl/normal'>get in touch with us</p>
+                    <Caption mid={true} txt={'contact'} txt2={'get in touch with us'}/>
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
                 <div className='flex gap-4 mx-auto my-8 text-center'>
@@ -62,7 +62,6 @@ const Contact = () => {
                         {input}
                         <textarea placeholder='Your Message' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                     </div>
-
                     <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
                 </div>
             </div>
@@ -72,8 +71,7 @@ const Contact = () => {
             <div className='flex gap-8 bg-[#f4f4f4] py-16'>
                 <div className=' text-black w-3/4'>
                     <div className='mx-auto w-fit text-left'>
-                        <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/50 uppercase w-fit px-4'>faq</p>
-                        <p className='font-[Rubik] font-bold text-4xl/normal'>Frequently Asked Questions</p>
+                        <Caption txt={'faq'} txt2={'frequently asked questions'}/>
                         <div className=' space-y-8'>
                             <div className=' space-y-2'>
                                 <div className='flex justify-between items-center'>
