@@ -12,7 +12,9 @@ const Blog = () => {
         <div>
             <div>{banner.slice(6, 7).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <Caption mid={true} dark={true} txt={'our blog'} txt2={'our latest news'}/>
-            {items}
+            <div className=' space-y-4'>
+                {items}
+            </div>
         </div>
     )
 }

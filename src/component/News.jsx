@@ -77,7 +77,7 @@ return(
         </p>
       </div>
       <div className='font-["Rubik"] border-l border-[#d6d6d6] px-4'>
-        <p className="font-bold text-[#1c1f35] text-lg group-hover:text-[#ffbe34]">
+        <p className="font-bold text-[#1c1f35] text-lg group-hover:text-[#ffbe34] capitalize">
           {info}
         </p>
         <p className="text-[#666c89]">{txt}</p>
