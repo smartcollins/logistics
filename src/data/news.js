@@ -6,6 +6,7 @@ import img5 from '../images/news5.png'
 
 const news = [
     {
+        idx: 0,
         img: img,
         date: "08",
         info: "inland frieght a worthy solution for your business",
@@ -18,6 +19,7 @@ const news = [
         ],
     },
     {
+        idx: 2,
         img: img2,
         date: "12",
         info: "how technology can help redraw the supply chain map",
@@ -30,6 +32,7 @@ const news = [
         ],
     },
     {
+        idx: 3,
         img: img3,
         date: "25",
         info: "five things you should have ready for your broker",
@@ -42,6 +45,7 @@ const news = [
         ],
     },
     {
+        idx: 4,
         img: img4,
         date: "28",
         info: "four simple tips for becoming a healthier truck driver",
@@ -54,6 +58,7 @@ const news = [
         ],
     },
     {
+        idx: 5,
         img: img5,
         date: "08",
         info: "what is the role of a logistics operations manager",
