@@ -30,9 +30,9 @@ const News = ({ img, date, info, txt, list }) => {
                     {info}
                 </p>
                 <p className="text-[#666c89]">{txt}</p>
-                <ul className=" list-inside list-disc normal-case">
+                <ul className=" list-inside list-disc">
                     {list.map((itm, idx) => (
-                        <li key={idx}>{itm}</li>
+                        <li key={idx} className=" first-letter:capitalize">{itm}</li>
                     ))}
                 </ul>
             </div>

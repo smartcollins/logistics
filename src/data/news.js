@@ -12,10 +12,10 @@ const news = [
         info: "inland frieght a worthy solution for your business",
         txt: "we are dedicated in creating added value for our customers by implementing modern technology in our work",
         list: [
-            "Urgent transport solutions",
-            "Reliable & experienced staffs",
-            "Real time tracking",
-            "Custom duty",
+            "urgent transport solutions",
+            "reliable & experienced staffs",
+            "real time tracking",
+            "custom duty",
         ],
     },
     {
@@ -25,10 +25,10 @@ const news = [
         info: "how technology can help redraw the supply chain map",
         txt: "we are dedicated in creating added value for our customers by implementing modern technology in our work",
         list: [
-            "Urgent transport solutions",
-            "Reliable & experienced staffs",
-            "Real time tracking",
-            "Custom duty",
+            "urgent transport solutions",
+            "reliable & experienced staffs",
+            "real time tracking",
+            "custom duty",
         ],
     },
     {
@@ -38,10 +38,10 @@ const news = [
         info: "five things you should have ready for your broker",
         txt: "we are dedicated in creating added value for our customers by implementing modern technology in our work",
         list: [
-            "Urgent transport solutions",
-            "Reliable & experienced staffs",
-            "Real time tracking",
-            "Custom duty",
+            "urgent transport solutions",
+            "reliable & experienced staffs",
+            "real time tracking",
+            "custom duty",
         ],
     },
     {
@@ -51,10 +51,10 @@ const news = [
         info: "four simple tips for becoming a healthier truck driver",
         txt: "we are dedicated in creating added value for our customers by implementing modern technology in our work",
         list: [
-            "Urgent transport solutions",
-            "Reliable & experienced staffs",
-            "Real time tracking",
-            "Custom duty",
+            "urgent transport solutions",
+            "reliable & experienced staffs",
+            "real time tracking",
+            "custom duty",
         ],
     },
     {
@@ -64,10 +64,10 @@ const news = [
         info: "what is the role of a logistics operations manager",
         txt: "we are dedicated in creating added value for our customers by implementing modern technology in our work",
         list: [
-            "Urgent transport solutions",
-            "Reliable & experienced staffs",
-            "Real time tracking",
-            "Custom duty",
+            "urgent transport solutions",
+            "reliable & experienced staffs",
+            "real time tracking",
+            "custom duty",
         ],
     }
 ];
