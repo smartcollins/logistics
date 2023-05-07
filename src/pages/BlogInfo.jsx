@@ -11,8 +11,8 @@ const BlogInfo = ()=>{
     return(
         <div>
             <div>{news.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className=' my-8 flex gap-8 w-[80%] mx-auto'>
-                <div className=' first-letter:capitalize space-y-2 bg-red-500'>
+            <div className=' my-8 flex gap-8 w-[75%] mx-auto'>
+                <div className=' first-letter:capitalize space-y-2'>
                     <p style={{color: color.darkTxt}} className=' capitalize text-xl font-bold'>your logistics solutions</p>
                     <p className=' text-[#666c89]'>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo Fusce lectus ex pretium[...]</p>
                     <p style={{background: color.blueBg}} className=' italic text-white p-4 text-center'>“Digitization within transport and logistics means seamless service to our customers, visibility in the supply chain, and driving a more efficient business.”</p>
@@ -36,42 +36,42 @@ const BlogInfo = ()=>{
                         <p className='text-[#666c89]'>Category : Shipping</p>
                     </div>
                 </div>
-                <div className='bg-red-300'>
-                    <div className='capitalize'>
-                        <p>categories</p>
+                <div className=' space-y-8'>
+                    <div style={{color: color.darkTxt}} className='capitalize bg-[#eeeeee] p-4'>
+                        <p className='text-xl font-bold mb-2'>categories</p>
                         <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p>shipping</p>
-                            <p>(3)</p>
+                            <p className='text-[#666c89]'>shipping</p>
+                            <p className='font-bold'>(3)</p>
                         </div>
                         <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p>service</p>
-                            <p>(5)</p>
+                            <p className='text-[#666c89]'>service</p>
+                            <p className='font-bold'>(5)</p>
                         </div>
                         <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p>transport</p>
-                            <p>(2)</p>
+                            <p className='text-[#666c89]'>transport</p>
+                            <p className='font-bold'>(2)</p>
                         </div>
                         <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p>warehouse</p>
-                            <p>(5)</p>
+                            <p className='text-[#666c89]'>warehouse</p>
+                            <p className='font-bold'>(5)</p>
                         </div>
                         <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p>transport industries</p>
-                            <p>(5)</p>
+                            <p className='text-[#666c89]'>transport industries</p>
+                            <p className='font-bold'>(5)</p>
                         </div>
                     </div>
-                    <div className=' first-letter:capitalize'>
-                        <p>how can we help</p>
-                        <p>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapib libero vel porttitor. Nulla tempor elit nec feugiat tempus Phasellus atquam.</p>
-                        <button>contact</button>
+                    <div className=' first-letter:capitalize bg-[#eeeeee] p-4 space-y-3'>
+                        <p style={{color: color.darkTxt}} className='text-xl font-bold'>how can we help</p>
+                        <p className='text-[#666c89]'>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapib libero vel porttitor. Nulla tempor elit nec feugiat tempus Phasellus atquam.</p>
+                        <button style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='py-2 text-black w-1/3 font-semibold'>contact</button>
                     </div>
-                    <div className=' capitalize'>
+                    <div style={{background: color.blueBg, color: 'white'}} className=' capitalize space-y-4 p-4'>
                         <div>
-                            <Caption txt={'get in touch'}/>
+                            <div className='w-fit'><Caption txt={'get in touch'}/></div>
                             <p>need help</p>
                             <p>(00) 112 365 489</p>
                         </div>
-                        <div>
+                        <div className='border-t border-[#1d2342] pt-4'>
                             <p>email</p>
                             <p className=' normal-case'>contact@logistics.com</p>
                         </div>
