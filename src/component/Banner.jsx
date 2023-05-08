@@ -1,6 +1,7 @@
 import React from 'react';
 import color from '../data/color';
 import icon from '../icons/cal-Icon.svg';
+import icon2 from '../icons/cal-w-Icon.svg';
 import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react';
 
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
@@ -31,10 +32,10 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 </div>
                 {blog?
                 <div className=' absolute top-1/2 -translate-y-1/2'>
-                    <div className="flex gap-2 bg-red-300 w-fit">
-                        <img className=' w-10 bg-red-400' src={icon} alt="calender-logo" />
-                        <div className='flex flex-col capitalize text-lg bg-red-200'>
-                            <p>12</p>
+                    <div className="flex items-center gap-2 w-fit">
+                        <img className=' w-10 h-full' src={icon2} alt="calender-logo" />
+                        <div className='flex flex-col capitalize text-lg'>
+                            <p className='text-2xl font-bold'>12</p>
                             <p>march</p>
                         </div>
                     </div>
