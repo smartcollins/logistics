@@ -26,7 +26,7 @@ const BlogInfo = () => {
         amt: '5'
     }]
 
-    const items = itemsAry.map((item, idx) => <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
+    const items = itemsAry.map((item, idx) => <div key={idx} className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
         <p className='text-[#666c89]'>{item.txt}</p>
         <p className='font-bold'>({item.amt})</p>
     </div>)
