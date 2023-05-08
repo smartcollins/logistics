@@ -9,6 +9,27 @@ import { InstagramLogo, FacebookLogo, TwitterLogo, LinkedinLogo } from 'phosphor
 
 
 const BlogInfo = () => {
+    const itemsAry = [{
+        txt: 'shipping',
+        amt: '3'
+    }, {
+        txt: 'service',
+        amt: '5'
+    }, {
+        txt: 'transport',
+        amt: '2'
+    }, {
+        txt: 'warehouse',
+        amt: '5'
+    }, {
+        txt: 'transport industries',
+        amt: '5'
+    }]
+
+    const items = itemsAry.map((item, idx) => <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
+        <p className='text-[#666c89]'>{item.txt}</p>
+        <p className='font-bold'>({item.amt})</p>
+    </div>)
 
     return (
         <div>
@@ -41,26 +62,7 @@ const BlogInfo = () => {
                 <div className=' space-y-8'>
                     <div style={{ color: color.darkTxt }} className='capitalize bg-[#eeeeee] p-4'>
                         <p className='text-xl font-bold mb-2'>categories</p>
-                        <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p className='text-[#666c89]'>shipping</p>
-                            <p className='font-bold'>(3)</p>
-                        </div>
-                        <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p className='text-[#666c89]'>service</p>
-                            <p className='font-bold'>(5)</p>
-                        </div>
-                        <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p className='text-[#666c89]'>transport</p>
-                            <p className='font-bold'>(2)</p>
-                        </div>
-                        <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p className='text-[#666c89]'>warehouse</p>
-                            <p className='font-bold'>(5)</p>
-                        </div>
-                        <div className='flex items-center justify-between border-b border-[#d6d6d6] py-2'>
-                            <p className='text-[#666c89]'>transport industries</p>
-                            <p className='font-bold'>(5)</p>
-                        </div>
+                        {items}
                     </div>
                     <div className=' first-letter:capitalize bg-[#eeeeee] p-4 space-y-3'>
                         <p style={{ color: color.darkTxt }} className='text-xl font-bold'>how can we help</p>
