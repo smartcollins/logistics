@@ -11,15 +11,6 @@ const Footer = () => {
             <div className='w-3/4 mx-auto'>
                 
             <div className=' bg-white/5 flex items-center justify-between space-x-8 font-[Rubik] font-semibold text-lg -mx-40 px-40'>
-                {/* <div style={{ backgroundColor: color.blueBg }} className='w-full py-4 flex items-center gap-4'>
-                    <div className='h-full grid grid-cols-2 gap-1'>
-                        <span className=' h-3 w-3 bg-[#ffb82b] origin-bottom rotate-[-30deg]'></span>
-                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
-                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
-                        <span className=' h-3 w-3 bg-[#ffb82b]'></span>
-                    </div>
-                    <p>TransitFlow</p>
-                </div> */}
                 <div style={{ backgroundColor: color.blueBg }} className="w-full -ml-8 pl-8"><Logo/></div>
                 <p className='w-2/5'>Pages</p>
                 <p className='w-2/5'>Utility</p>
