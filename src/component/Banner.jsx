@@ -4,9 +4,12 @@ import icon from '../icons/cal-Icon.svg';
 import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo } from 'phosphor-react';
 
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
+    const blogGrdt = {background: `linear-gradient(91.25deg, rgba(3, 45, 95, 0.54) 9.39%, rgba(9, 18, 95, 0.49) 93.62%),
+    url(${img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }
     return (
         <div className='h-[80vh] bg-red-200 text-white capitalize'>
-            <div style={{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'>
+            {/* <div style={blog?{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%),url(${img})` }:{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'> */}
+            <div style={blog?blogGrdt:{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'>
                 <div className='w-[75%] mx-auto'>
                 <div className=' bg-[#091242]/5 font-medium flex items-center justify-between'>
                     <div className='flex items-center w-2/4 text-white space-x-8'>
