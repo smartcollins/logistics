@@ -5,9 +5,11 @@ import { InstagramLogo, FacebookLogo, TwitterLogo, LinkedinLogo} from 'phosphor-
 import Caption from '../component/Caption';
 import color from '../data/color';
 import cargo from '../images/blog-info.png';
+import Footer from '../component/Footer'
 
 
 const BlogInfo = ()=>{
+    
     return(
         <div>
             <div>{news.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
@@ -26,7 +28,7 @@ const BlogInfo = ()=>{
                         <p>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec attempus.Phasellus at quam hendrerit semper David Warner nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo Fusce lectus ex pretium[...]</p>
                         <p>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapib libero vel porttitor. Nulla tempor elit nec feugiat tempus Phasellus atquam.</p>
                     </div>
-                    <div className='flex items-center justify-between'>
+                    <div className='flex items-center justify-between  border-y border-[#d6d6d6] py-2'>
                         <div className='flex items-center justify-between w-1/5'>
                             <InstagramLogo size={20} color="#1c1f35" />
                             <FacebookLogo size={20} color="#1c1f35" weight="fill" />
@@ -78,6 +80,7 @@ const BlogInfo = ()=>{
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
