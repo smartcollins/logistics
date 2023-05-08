@@ -7,7 +7,9 @@ import Logo from './Logo';
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
     return (
-        <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white px-40'>
+        <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
+            <div className='w-3/4 mx-auto'>
+                
             <div className=' bg-white/5 flex items-center justify-between space-x-8 font-[Rubik] font-semibold text-lg -mx-40 px-40'>
                 {/* <div style={{ backgroundColor: color.blueBg }} className='w-full py-4 flex items-center gap-4'>
                     <div className='h-full grid grid-cols-2 gap-1'>
@@ -77,6 +79,7 @@ const Footer = () => {
                     <p>Changelog</p>
                     <p>Password</p>
                 </div>
+            </div>
             </div>
         </div>
     )
