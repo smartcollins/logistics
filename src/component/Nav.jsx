@@ -10,8 +10,11 @@ const Nav = () => {
     return (
         <div className='text-white capitalize'>
             <div style={{ backgroundColor: color.blueBg }} className='flex items-center justify-between py-4'>
-                <Logo />
-                <div className='flex items-center justify-between gap-4  w-full'>
+                <div className='mx-auto flex w-3/4'>
+                <div className='w-1/3'>
+                    <Logo />
+                </div>
+                <div className='flex items-center justify-between gap-4 w-full'>
                     <div className='flex items-center gap-4 w-full '>
                         <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
                             <Clock size={20} color="#f6b426" />
@@ -40,8 +43,8 @@ const Nav = () => {
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
-            {/* {banner.map((item, idx) => <Banner key={idx} {...item} />)} */}
             {banner.slice(0,1).map((item, idx) => <Banner key={idx} {...item} />)}
         </div>
     )
