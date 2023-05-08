@@ -7,8 +7,9 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
     return (
         <div className='h-[80vh] bg-red-200 text-white capitalize'>
             <div style={{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'>
+                <div className='w-[75%] mx-auto'>
                 <div className=' bg-[#091242]/5 font-medium flex items-center justify-between'>
-                    <div className='flex items-center w-2/4 text-center text-white'>
+                    <div className='flex items-center w-2/4 text-white space-x-8'>
                         <p className='border-r last:border-none border-r-white w-full'>home</p>
                         <p className='border-r last:border-none border-r-white w-full'>about</p>
                         <p className='border-r last:border-none border-r-white w-full'>pages</p>
@@ -26,7 +27,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                     </div>
                 </div>
                 {blog?
-                <div className=' absolute top-1/2 -translate-y-1/2 bg-red-500'>
+                <div className=' absolute top-1/2 -translate-y-1/2'>
                     <div className="flex gap-2 bg-red-300 w-fit">
                         <img className=' w-10 bg-red-400' src={icon} alt="calender-logo" />
                         <div className='flex flex-col capitalize text-lg bg-red-200'>
@@ -46,6 +47,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                         </div>
                     }
                 </div>}
+                </div>
             </div>
         </div>
     )
