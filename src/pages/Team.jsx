@@ -66,7 +66,7 @@ const Team = () => {
             <div className='grid grid-cols-3 w-3/4 gap-8 my-8 mx-auto'>
                 {items}
             </div>
-            <div className='flex justify-between h-[60vh]'>
+            <div className='flex justify-between h-[65vh] w-[90%] mx-auto bg-red-400'>
                 <img src={side} alt="side-ad" />
                 <div className='text-left w-2/4 space-y-8'>
                     <div className='my-4 capitalize'>

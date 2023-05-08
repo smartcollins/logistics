@@ -5,6 +5,7 @@ import Footer from './component/Footer';
 import Nav from './component/Nav';
 import ErrorPage from './pages/ErrorPage';
 import Blog from './pages/Blog';
+import BlogInfo from './pages/BlogInfo';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
@@ -27,6 +28,11 @@ function App() {
     {
       path: "/blog",
       element: <Blog />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/blog-info",
+      element: <BlogInfo />,
       errorElement: <ErrorPage />,
     },
     {

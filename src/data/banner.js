@@ -46,10 +46,11 @@ const banner = [{
 }, {
     img: blog,
     txt: 'blog',
-    info: 'our latets news'
+    info: 'our latest news'
 }, {
     img: blog2,
     txt: '12 march',
+    // blog: true,
     info: 'how technology can help redraw the supply chain map'
 }, {
     img: team,
