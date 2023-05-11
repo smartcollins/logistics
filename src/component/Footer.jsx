@@ -93,8 +93,10 @@ import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosph
 
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
+    const listClass = 'even:text-yellow-200 even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-blue-200 last:text-center md:last:col-span-full md:last:text-left'
     const listAry = ['about us','our team','our project','pricing','contact','style guide','changelog','licenses','protected','not found']
-    const list = listAry.slice(0,5).map((item,idx)=><p key={idx}>{item}</p>)
+    const list = listAry.slice(0,5).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
+    const list2 = listAry.slice(5,10).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
             <div className='px-4'>
@@ -127,7 +129,8 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-2/5 space-y-2'>
+                    {/* <div className='w-2/5 space-y-2'> */}
+                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 md:bg-blue-500 bg-red-400 grid grid-cols-2 my-4 lg:my-auto'>
                         {/* <p>about us</p>
                         <p>our team</p>
                         <p>our project</p>
@@ -135,12 +138,14 @@ const Footer = () => {
                         <p>contact</p> */}
                         {list}
                     </div>
-                    <div className='md:w-2/5 lg:space-y-2  md:grid-cols-1 md:bg-blue-500 bg-red-400 grid grid-cols-2'>
-                        <p>style guide</p>
+                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 md:bg-blue-500 bg-red-400 grid grid-cols-2 my-4 lg:my-auto'>
+                        {/* <p>style guide</p>
                         <p className='even:text-yellow-200 w-20 ml-auto md:m-0'>changelog</p>
                         <p>licenses</p>
                         <p className='even:text-yellow-200 w-20 ml-auto md:m-0'>protected</p>
                         <p className=' last:col-span-2 last:text-blue-200 last:text-center md:last:col-span-full md:last:text-left'>not found</p>
+                         */}
+                         {list2}
                     </div>
                     <div className='lg:w-2/4 space-y-4'>
                         <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
