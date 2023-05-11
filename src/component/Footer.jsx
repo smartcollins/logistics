@@ -127,11 +127,11 @@ const Footer = () => {
 
                 <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg'>
                     <div style={{ backgroundColor: color.blueBg }} className="w-full"><Logo /></div>
-                    <p className=''>Pages</p>
-                    <p className=''>Utility</p>
-                    <p className=''>Subscribe</p>
+                    <p className='bg-red-400 w-2/5'>Pages</p>
+                    <p className='bg-red-400 w-2/5'>Utility</p>
+                    <p className='bg-red-400 w-2/4'>Subscribe</p>
                 </div>
-                <div className='lg:flex items-start justify-between py-4'>
+                <div className='lg:flex items-start justify-between py-4 bg-red-400'>
                     <div style={{ backgroundColor: color.blueBg }} className=' w-full normal-case mb-4'>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                         {icon}
