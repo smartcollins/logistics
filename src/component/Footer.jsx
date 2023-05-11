@@ -129,22 +129,10 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className='w-2/5 space-y-2'> */}
                     <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
-                        {/* <p>about us</p>
-                        <p>our team</p>
-                        <p>our project</p>
-                        <p>pricing</p>
-                        <p>contact</p> */}
                         {list}
                     </div>
                     <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
-                        {/* <p>style guide</p>
-                        <p className='even:text-yellow-200 w-20 ml-auto md:m-0'>changelog</p>
-                        <p>licenses</p>
-                        <p className='even:text-yellow-200 w-20 ml-auto md:m-0'>protected</p>
-                        <p className=' last:col-span-2 last:text-blue-200 last:text-center md:last:col-span-full md:last:text-left'>not found</p>
-                         */}
                          {list2}
                     </div>
                     <div className='lg:w-2/4 space-y-4'>
