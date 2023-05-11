@@ -93,6 +93,7 @@ import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosph
 
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
+    const listAry = ['about us','our team','our project','pricing','contact','style guide','changelog','licenses','protected','not found']
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
             <div className='px-4'>
