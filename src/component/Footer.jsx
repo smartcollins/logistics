@@ -94,6 +94,7 @@ import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosph
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
     const listAry = ['about us','our team','our project','pricing','contact','style guide','changelog','licenses','protected','not found']
+    const list = listAry.slice(0,5).map((item,idx)=><p key={idx}>{item}</p>)
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
             <div className='px-4'>
@@ -127,11 +128,12 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='w-2/5 space-y-2'>
-                        <p>about us</p>
+                        {/* <p>about us</p>
                         <p>our team</p>
                         <p>our project</p>
                         <p>pricing</p>
-                        <p>contact</p>
+                        <p>contact</p> */}
+                        {list}
                     </div>
                     <div className='md:w-2/5 lg:space-y-2  md:grid-cols-1 md:bg-blue-500 bg-red-400 grid grid-cols-2'>
                         <p>style guide</p>
