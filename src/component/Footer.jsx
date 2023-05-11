@@ -123,7 +123,7 @@ const Footer = () => {
 
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
-            <div className='px-4'>
+            <div className='px-4 xl:w-3/4 mx-auto'>
 
                 {/* <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg grid grid-cols-4 content-between bg-blue-200'> */}
                 <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap'>
