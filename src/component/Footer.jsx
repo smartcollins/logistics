@@ -126,14 +126,14 @@ const Footer = () => {
             <div className='px-4'>
 
                 {/* <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg grid grid-cols-4 content-between bg-blue-200'> */}
-                <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg bg-blue-200 flex flex-wrap lg:flex-nowrap'>
+                <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap lg:flex-nowrap'>
                     {/* <div style={{ backgroundColor: color.blueBg }} className="w-full col-span-4"><Logo /></div> */}
                     <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none lg:flex-auto"><Logo /></div>
-                    <p className='lg:w-2/5 bg-red-300'>Pages</p>
-                    <p className='lg:w-2/5 bg-red-200'>Utility</p>
-                    <p className='lg:w-2/4 bg-red-300'>Subscribe</p>
+                    <p className='lg:w-2/5'>Pages</p>
+                    <p className='lg:w-2/5'>Utility</p>
+                    <p className='lg:w-2/4'>Subscribe</p>
                 </div>
-                <div className='lg:flex items-start justify-between py-4 bg-red-400'>
+                <div className='lg:flex items-start justify-between py-4'>
                     <div style={{ backgroundColor: color.blueBg }} className=' w-full normal-case mb-4'>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                         {icon}
