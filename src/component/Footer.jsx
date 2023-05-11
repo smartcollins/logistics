@@ -98,28 +98,28 @@ const Footer = () => {
         icon: Envelope,
         txt: 'email',
         txt2: 'contact@logistics.com'
-    },{
+    }, {
         icon: Phone,
         txt: 'call us',
         txt2: '(00) 112 365 489'
     }]
 
-    const icon = iconAry.map((item,idx)=><div key={idx} className='flex items-center gap-4 my-4'>
-    <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
-        {React.createElement(item.icon,{
-            size:20 ,color:"#f6b426"
-        })}
-    </div>
-    <div>
-        <p>{item.txt}</p>
-        <p>{item.txt2}</p>
-    </div>
-</div>)
+    const icon = iconAry.map((item, idx) => <div key={idx} className='flex items-center gap-4 my-4'>
+        <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
+            {React.createElement(item.icon, {
+                size: 20, color: "#f6b426"
+            })}
+        </div>
+        <div>
+            <p>{item.txt}</p>
+            <p>{item.txt2}</p>
+        </div>
+    </div>)
 
-    const listAry = ['about us','our team','our project','pricing','contact','style guide','changelog','licenses','protected','not found']
+    const listAry = ['about us', 'our team', 'our project', 'pricing', 'contact', 'style guide', 'changelog', 'licenses', 'protected', 'not found']
     const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
-    const list = listAry.slice(0,5).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
-    const list2 = listAry.slice(5,10).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
+    const list = listAry.slice(0, 5).map((item, idx) => <p key={idx} className={listClass}>{item}</p>)
+    const list2 = listAry.slice(5, 10).map((item, idx) => <p key={idx} className={listClass}>{item}</p>)
 
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
@@ -142,7 +142,7 @@ const Footer = () => {
                         {list}
                     </div>
                     <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
-                         {list2}
+                        {list2}
                     </div>
                     <div className='md:w-2/4 space-y-4'>
                         <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
