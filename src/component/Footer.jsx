@@ -134,24 +134,6 @@ const Footer = () => {
                 <div className='lg:flex items-start justify-between py-4'>
                     <div style={{ backgroundColor: color.blueBg }} className=' w-full normal-case mb-4'>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
-                        {/* <div className='flex items-center gap-4'>
-                            <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
-                                <Envelope size={20} color="#f6b426" />
-                            </div>
-                            <div>
-                                <p>Email</p>
-                                <p>contact@logistics.com</p>
-                            </div>
-                        </div>
-                        <div className='flex items-center gap-4'>
-                            <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
-                                <Phone size={20} color="#f6b426" />
-                            </div>
-                            <div>
-                                <p>Call us</p>
-                                <p>(00) 112 365 489</p>
-                            </div>
-                        </div> */}
                         {icon}
                     </div>
                     <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
