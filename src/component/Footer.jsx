@@ -154,7 +154,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:flex items-center justify-between border-t border-t-white py-4 space-y-2'>
+                <div className='lg:flex items-center justify-between border-t border-t-white py-4 space-y-2 lg:space-y-0'>
                     <p className=' w-full'>Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.</p>
                     <div style={{ color: color.grayTxt }} className='flex items-center justify-between lg:w-3/4'>
                         <p>Style Guide</p>
