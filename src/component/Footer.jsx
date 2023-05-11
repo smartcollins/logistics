@@ -94,7 +94,7 @@ import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosph
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
     const listAry = ['about us','our team','our project','pricing','contact','style guide','changelog','licenses','protected','not found']
-    const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left'
+    const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
     const list = listAry.slice(0,5).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
     const list2 = listAry.slice(5,10).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
     return (
@@ -130,7 +130,7 @@ const Footer = () => {
                         </div>
                     </div>
                     {/* <div className='w-2/5 space-y-2'> */}
-                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 md:bg-blue-500 grid grid-cols-2 my-4 lg:my-auto'>
+                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
                         {/* <p>about us</p>
                         <p>our team</p>
                         <p>our project</p>
@@ -138,7 +138,7 @@ const Footer = () => {
                         <p>contact</p> */}
                         {list}
                     </div>
-                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 md:bg-blue-500 grid grid-cols-2 my-4 lg:my-auto'>
+                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
                         {/* <p>style guide</p>
                         <p className='even:text-yellow-200 w-20 ml-auto md:m-0'>changelog</p>
                         <p>licenses</p>
