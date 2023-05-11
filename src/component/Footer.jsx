@@ -125,11 +125,13 @@ const Footer = () => {
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
             <div className='px-4'>
 
-                <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg'>
-                    <div style={{ backgroundColor: color.blueBg }} className="w-full"><Logo /></div>
-                    <p className='bg-red-400 w-2/5'>Pages</p>
-                    <p className='bg-red-400 w-2/5'>Utility</p>
-                    <p className='bg-red-400 w-2/4'>Subscribe</p>
+                {/* <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg grid grid-cols-4 content-between bg-blue-200'> */}
+                <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg bg-blue-200 flex flex-wrap lg:flex-nowrap'>
+                    {/* <div style={{ backgroundColor: color.blueBg }} className="w-full col-span-4"><Logo /></div> */}
+                    <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none lg:flex-auto"><Logo /></div>
+                    <p className='lg:w-2/5 bg-red-300'>Pages</p>
+                    <p className='lg:w-2/5 bg-red-200'>Utility</p>
+                    <p className='lg:w-2/4 bg-red-300'>Subscribe</p>
                 </div>
                 <div className='lg:flex items-start justify-between py-4 bg-red-400'>
                     <div style={{ backgroundColor: color.blueBg }} className=' w-full normal-case mb-4'>
