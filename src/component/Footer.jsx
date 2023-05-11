@@ -93,10 +93,23 @@ import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosph
 
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
+
+    const iconAry = [{
+        icon: Envelope,
+        txt: 'email',
+        txt2: 'contact@logistics.com'
+    },{
+        icon: Phone,
+        txt: 'call us',
+        txt2: '(00) 112 365 489'
+    }]
+
+
     const listAry = ['about us','our team','our project','pricing','contact','style guide','changelog','licenses','protected','not found']
     const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
     const list = listAry.slice(0,5).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
     const list2 = listAry.slice(5,10).map((item,idx)=><p key={idx} className={listClass}>{item}</p>)
+
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
             <div className='px-4'>
