@@ -116,6 +116,9 @@ const Footer = () => {
         </div>
     </div>)
 
+    const topAry = ['pages','utility','subscribe']
+    const top = topAry.map((item,idx)=><p key={idx} className='last:md:w-2/4 md:w-2/5 md:py-0 py-2'>{item}</p>)
+
     const listAry = ['about us', 'our team', 'our project', 'pricing', 'contact', 'style guide', 'changelog', 'licenses', 'protected', 'not found']
     const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
     const list = listAry.slice(0, 5).map((item, idx) => <p key={idx} className={listClass}>{item}</p>)
@@ -127,9 +130,10 @@ const Footer = () => {
             <div className='bg-white/5'>
                 <div className=' lg:flex md:space-x-4 px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto'>
                     <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto md:-ml-4 md:px-4"><Logo /></div>
-                    <p className='md:w-2/5 md:py-0 py-2'>Pages</p>
+                    {/* <p className='md:w-2/5 md:py-0 py-2'>Pages</p>
                     <p className='md:w-2/5 md:py-0 py-2'>Utility</p>
-                    <p className='md:w-2/4 md:py-0 py-2'>Subscribe</p>
+                    <p className='md:w-2/4 md:py-0 py-2'>Subscribe</p> */}
+                    {top}
                 </div>
             </div>
             <div className='px-4 lg:w-3/4 mx-auto'>
