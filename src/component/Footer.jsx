@@ -124,27 +124,27 @@ const Footer = () => {
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
             {/* <div className='px-4 xl:w-3/4 mx-auto'> */}
-                <div className='bg-blue-400 '>
-                    <div className=' lg:flex px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto'>
+                <div className='bg-white/5'>
+                    <div className=' lg:flex md:space-x-4 px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto'>
                         <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto md:-ml-4 md:px-4"><Logo /></div>
-                        <p className='md:w-2/5 bg-red-300'>Pages</p>
-                        <p className='md:w-2/5 bg-red-300'>Utility</p>
-                        <p className='md:w-2/4 bg-red-300'>Subscribe</p>
+                        <p className='md:w-2/5 md:py-0 py-2'>Pages</p>
+                        <p className='md:w-2/5 md:py-0 py-2'>Utility</p>
+                        <p className='md:w-2/4 md:py-0 py-2'>Subscribe</p>
                     </div>
                 </div>
                 <div className='px-4 lg:w-3/4 mx-auto'>
-                <div className='md:flex items-start justify-between py-4'>
+                <div className='md:flex items-start justify-between py-4 md:space-x-4'>
                     <div style={{ backgroundColor: color.blueBg }} className=' w-full normal-case mb-4'>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                         {icon}
                     </div>
-                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 bg-red-300'>
+                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2'>
                         {list}
                     </div>
                     <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2'>
                         {list2}
                     </div>
-                    <div className='md:w-2/4 space-y-4'>
+                    <div className='md:w-2/4 md:m-0 space-y-4 mt-4'>
                         <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
                         <div className='flex items-center justify-between'>
                             <button style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='py-2 text-black w-2/4 font-semibold'>send now</button>
