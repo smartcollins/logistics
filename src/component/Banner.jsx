@@ -22,9 +22,9 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
         style={blog ? blogGrdt : { backgroundImage: `url(${img})` }}
         className="bg-no-repeat bg-cover bg-center h-full relative"
       >
-        <div className="w-3/4 mx-auto">
+        <div className="lg:w-3/4 lg:m-auto mx-8">
           <div className=" bg-[#091242]/5 font-medium flex items-center justify-between">
-            <div className="flex items-center w-2/4 text-white space-x-8">
+            <div className="flex items-center text-white w-full text-center md:w-2/4 xl:space-x-8">
               <p className="border-r last:border-none border-r-white w-full">
                 home
               </p>
@@ -41,7 +41,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 contact
               </p>
             </div>
-            <div className="flex items-center justify-between w-2/5">
+            <div className=" hidden md:flex items-center justify-between w-2/5">
               <div className="flex items-center justify-between w-2/5">
                 <InstagramLogo size={20} color="#ffffff" />
                 <LinkedinLogo size={20} color="#ffffff" weight="fill" />
