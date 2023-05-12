@@ -22,8 +22,8 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
         style={blog ? blogGrdt : { backgroundImage: `url(${img})` }}
         className="bg-no-repeat bg-cover bg-center h-full relative"
       >
-        <div className="lg:w-3/4 lg:m-auto mx-8">
-          <div className=" bg-[#091242]/5 font-medium flex items-center justify-between">
+        <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4">
+          <div className=" bg-[#091242]/5 font-medium flex items-center justify-between -mx-4">
             <div className="flex items-center text-white w-full text-center md:w-2/4 xl:space-x-8">
               <p className="border-r last:border-none border-r-white w-full">
                 home
