@@ -123,25 +123,25 @@ const Footer = () => {
 
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
-            <div className='px-4 xl:w-3/4 mx-auto'>
-
-                {/* <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg grid grid-cols-4 content-between bg-blue-200'> */}
-                <div className=' bg-white/5 lg:flex items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap'>
-                    {/* <div style={{ backgroundColor: color.blueBg }} className="w-full col-span-4"><Logo /></div> */}
-                    <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto"><Logo /></div>
-                    <p className='md:w-2/5'>Pages</p>
-                    <p className='md:w-2/5'>Utility</p>
-                    <p className='md:w-2/4'>Subscribe</p>
+            {/* <div className='px-4 xl:w-3/4 mx-auto'> */}
+                <div className='bg-blue-400 '>
+                    <div className=' lg:flex px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto'>
+                        <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto md:-ml-4 md:px-4"><Logo /></div>
+                        <p className='md:w-2/5 bg-red-300'>Pages</p>
+                        <p className='md:w-2/5 bg-red-300'>Utility</p>
+                        <p className='md:w-2/4 bg-red-300'>Subscribe</p>
+                    </div>
                 </div>
+                <div className='px-4 lg:w-3/4 mx-auto'>
                 <div className='md:flex items-start justify-between py-4'>
                     <div style={{ backgroundColor: color.blueBg }} className=' w-full normal-case mb-4'>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
                         {icon}
                     </div>
-                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
+                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 bg-red-300'>
                         {list}
                     </div>
-                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2 my-4 lg:my-auto'>
+                    <div className='gap-4 md:gap-0 md:w-2/5 lg:space-y-2  md:grid-cols-1 grid grid-cols-2'>
                         {list2}
                     </div>
                     <div className='md:w-2/4 space-y-4'>
@@ -163,7 +163,7 @@ const Footer = () => {
                         <p>Password</p>
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
     )
 }
