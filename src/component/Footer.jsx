@@ -124,15 +124,15 @@ const Footer = () => {
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
             {/* <div className='px-4 xl:w-3/4 mx-auto'> */}
-                <div className='bg-white/5'>
-                    <div className=' lg:flex md:space-x-4 px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto'>
-                        <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto md:-ml-4 md:px-4"><Logo /></div>
-                        <p className='md:w-2/5 md:py-0 py-2'>Pages</p>
-                        <p className='md:w-2/5 md:py-0 py-2'>Utility</p>
-                        <p className='md:w-2/4 md:py-0 py-2'>Subscribe</p>
-                    </div>
+            <div className='bg-white/5'>
+                <div className=' lg:flex md:space-x-4 px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto'>
+                    <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto md:-ml-4 md:px-4"><Logo /></div>
+                    <p className='md:w-2/5 md:py-0 py-2'>Pages</p>
+                    <p className='md:w-2/5 md:py-0 py-2'>Utility</p>
+                    <p className='md:w-2/4 md:py-0 py-2'>Subscribe</p>
                 </div>
-                <div className='px-4 lg:w-3/4 mx-auto'>
+            </div>
+            <div className='px-4 lg:w-3/4 mx-auto'>
                 <div className='md:flex items-start justify-between py-4 md:space-x-4'>
                     <div style={{ backgroundColor: color.blueBg }} className=' w-full normal-case mb-4'>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy  collaborative thinking to further the overall value proposition.</p>
@@ -163,7 +163,7 @@ const Footer = () => {
                         <p>Password</p>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
     )
 }
