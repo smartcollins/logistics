@@ -57,14 +57,14 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
               </p>
             </div>
           ) : (
-            <div className=" absolute top-1/2 -translate-y-1/2 bg-red-500 w-full md:w-2/4">
+            <div className=" absolute top-1/2 -translate-y-1/2 w-full md:w-2/4">
               <p
                 style={{ borderLeft: `2px solid ${color.grdt}` }}
                 className="bg-[#041c37]/50 w-fit px-2 py-1"
               >
                 {txt}
               </p>
-              <p className="font-[Rubik] font-semibold text-4xl/normal w-3/4 bg-red-200">
+              <p className="font-[Rubik] font-semibold text-4xl/normal w-3/4">
                 {info}
               </p>
               {extra && (
