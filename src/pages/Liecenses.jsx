@@ -25,8 +25,8 @@ const Liecenses = () => {
         sm: true
     }]
     const item = itemAry.map((item, idx) => (
-        <div key={idx} className='flex items-start justify-between gap-4'>
-            <p style={{ color: color.darkTxt }} className='font-bold text-2xl capitalize bg-red-200 w-2/4'>{item.txt}</p>
+        <div key={idx} className='flex items-start justify-between gap-4 flex-wrap md:flex-nowrap'>
+            <p style={{ color: color.darkTxt }} className='font-bold text-2xl capitalize bg-red-200 md:w-2/4'>{item.txt}</p>
             <div className='w-full flex flex-col gap-4 bg-red-500'>
                 <p style={{ color: color.grayTxt }} className='empty:hidden'>
                     {item.txt2}
