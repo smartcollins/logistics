@@ -9,9 +9,9 @@ const ErrorPage = () => {
     return (
         <div>
             <div>{banner.slice(11, 12).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className=' text-center text-[#1c1f35] bg-red-400 my-4'>
+            <div className=' text-center text-[#1c1f35] my-4'>
                 <p className='md:text-[200px] text-9xl font-semibold'>4<span className='text-[#ffbb2b]'>0</span>4</p>
-                <p className='font-bold text-2xl md:-mt-10'>Oops! Page not found.</p>
+                <p className='font-bold text-2xl'>Oops! Page not found.</p>
                 <p className='text-[#666c89] text-base tracking-tighter'>Lets's get you to where you need to be.</p>
                 <button style={{
                     background: `linear-gradient(94.06deg,
