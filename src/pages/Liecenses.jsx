@@ -25,13 +25,13 @@ const Liecenses = () => {
         sm: true
     }]
     const item = itemAry.map((item, idx) => (
-        <div key={idx} className='flex items-start justify-between'>
-            <p style={{ color: color.darkTxt }} className='font-bold text-2xl capitalize'>{item.txt}</p>
-            <div className='w-4/5 flex flex-col gap-4'>
-                <p style={{ color: color.grayTxt }}>
+        <div key={idx} className='flex items-start justify-between gap-4'>
+            <p style={{ color: color.darkTxt }} className='font-bold text-2xl capitalize bg-red-200 w-2/4'>{item.txt}</p>
+            <div className='w-full flex flex-col gap-4 bg-red-500'>
+                <p style={{ color: color.grayTxt }} className='empty:hidden'>
                     {item.txt2}
                 </p>
-                {item.txt3 && <p style={{ color: color.darkTxt }} className=' font-bold capitalize w-fit flex items-center gap-2 text-xl'>{item.txt3}:<span className=' font-normal '>Liecenses</span></p>}
+                {item.txt3 && <p style={{ color: color.darkTxt }} className=' font-bold capitalize w-fit flex items-center gap-2 text-xl'>{item.txt3}:<span className=' font-normal'>Liecenses</span></p>}
                 {item.sm && <p>TransitFlow template uses free licensed <span className='  font-medium'>Google Fonts</span>. please check <span className='  font-medium'>Rubik</span> and <span className='  font-medium'>Krub</span>.</p>}
             </div>
         </div>
@@ -39,7 +39,7 @@ const Liecenses = () => {
     return (
         <div>
             <div>{banner.slice(13, 14).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className=' w-4/5 mx-auto px-4 space-y-4 my-8'>
+            <div className=' md:w-3/4 mx-auto px-4 space-y-4 my-8 bg-red-400'>
                 {item}
             </div>
             <Footer />
