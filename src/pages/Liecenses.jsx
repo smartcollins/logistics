@@ -26,8 +26,8 @@ const Liecenses = () => {
     }]
     const item = itemAry.map((item, idx) => (
         <div key={idx} className='flex items-start justify-between gap-4 flex-wrap md:flex-nowrap'>
-            <p style={{ color: color.darkTxt }} className='font-bold text-2xl capitalize bg-red-200 md:w-2/4'>{item.txt}</p>
-            <div className='w-full flex flex-col gap-4 bg-red-500'>
+            <p style={{ color: color.darkTxt }} className='font-bold text-2xl capitalize md:w-2/4'>{item.txt}</p>
+            <div className='w-full flex flex-col gap-4'>
                 <p style={{ color: color.grayTxt }} className='empty:hidden'>
                     {item.txt2}
                 </p>
@@ -39,7 +39,7 @@ const Liecenses = () => {
     return (
         <div>
             <div>{banner.slice(13, 14).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className=' md:w-3/4 mx-auto px-4 space-y-4 my-8 bg-red-400'>
+            <div className=' md:w-3/4 mx-auto px-4 space-y-4 my-8'>
                 {item}
             </div>
             <Footer />
