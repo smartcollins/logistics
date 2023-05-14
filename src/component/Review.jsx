@@ -20,7 +20,7 @@ const Review = () => {
     }]
     const items = itemsAry.map((item, idx) => (
         <div key={idx}>
-            <div style={item.dark ? { color: 'white', background: color.blueBg } : { color: '#666c89' }} className='p-8 space-y-2'>
+            <div style={item.dark ? { color: 'white', background: color.blueBg } : { color: '#666c89' }} className='md:p-8 p-4 space-y-2'>
                 <div style={item.dark ? { color: 'white' } : { color: '#091242' }} className='flex items-center justify-between'>
                     <div className='flex items-center gap-4'>
                         <img className='h-16' src={item.img} alt="avater" />
@@ -29,7 +29,7 @@ const Review = () => {
                             <p className=' text-sm'>{item.job}</p>
                         </div>
                     </div>
-                    <Quotes style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' p-2 rounded-full h-12 w-12' size={16} color="#091242" weight="bold" />
+                    <Quotes style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' p-2 rounded-full h-10 w-10 md:h-12 md:w-12' size={16} color="#091242" weight="bold" />
                 </div>
                 <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                 <div className='flex'>
@@ -46,8 +46,8 @@ const Review = () => {
     ))
     return (
         <div className=' text-left'>
-            <div className='flex items-end justify-between mb-8'>
-                <div className='md:w-fit w-full'>
+            <div className='flex items-end justify-center md:justify-between my-4 md:my-8'>
+                <div className='w-fit'>
                     <p style={{ borderLeft: `4px solid ${color.grdt}` }} className='bg-[#e8e8e8]/50 w-fit px-4'>testimonial</p>
                     <p className='font-[Rubik] font-semibold text-2xl/normal'>What Our Customer Say</p>
                 </div>
@@ -56,7 +56,7 @@ const Review = () => {
                     <ArrowRight style={{ background: color.blueBg }} className='h-8 w-8 p-2 rounded-full' size={16} color="#ffffff" weight="bold" />
                 </div>
             </div>
-            <div className='flex flex-wrap items-center justify-between md:flex-nowrap'>
+            <div className='flex flex-wrap items-center justify-between lg:flex-nowrap'>
                 {items}
             </div>
         </div>
