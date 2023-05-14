@@ -56,7 +56,7 @@ const Review = () => {
                     <ArrowRight style={{ background: color.blueBg }} className='h-8 w-8 p-2 rounded-full' size={16} color="#ffffff" weight="bold" />
                 </div>
             </div>
-            <div className='flex items-center justify-between'>
+            <div className='flex flex-wrap items-center justify-between md:flex-nowrap'>
                 {items}
             </div>
         </div>
