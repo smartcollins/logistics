@@ -40,10 +40,10 @@ const Pricing = () => {
     return (
         <div>
             <div>{banner.slice(10, 11).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{ color: color.darkTxt }} className=' capitalize w-4/5 mx-auto my-8 py-8'>
+            <div style={{ color: color.darkTxt }} className=' capitalize mx-auto my-8 py-8 bg-red-400 md:w-3/4'>
                 <div>
                     <Caption mid={true} dark={true} txt={'pricing'} txt2={'our best pricing'} />
-                    <div className='flex gap-4 text-center py-4'>
+                    <div className='flex flex-wrap gap-4 text-center py-4 lg:flex-nowrap'>
                         {items}
                     </div>
                 </div>
