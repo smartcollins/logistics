@@ -19,7 +19,7 @@ const Review = () => {
         star: [Star, Star, Star, Star, Star]
     }]
     const items = itemsAry.map((item, idx) => (
-        <div key={idx} className=''>
+        <div key={idx}>
             <div style={item.dark ? { color: 'white', background: color.blueBg } : { color: '#666c89' }} className='p-8 space-y-2'>
                 <div style={item.dark ? { color: 'white' } : { color: '#091242' }} className='flex items-center justify-between'>
                     <div className='flex items-center gap-4'>
@@ -47,7 +47,7 @@ const Review = () => {
     return (
         <div className=' text-left'>
             <div className='flex items-end justify-between mb-8'>
-                <div className='md:w-fit w-full bg-red-300'>
+                <div className='md:w-fit w-full'>
                     <p style={{ borderLeft: `4px solid ${color.grdt}` }} className='bg-[#e8e8e8]/50 w-fit px-4'>testimonial</p>
                     <p className='font-[Rubik] font-semibold text-2xl/normal'>What Our Customer Say</p>
                 </div>
