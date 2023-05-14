@@ -47,11 +47,11 @@ const Review = () => {
     return (
         <div className=' text-left'>
             <div className='flex items-end justify-between mb-8'>
-                <div className='w-fit'>
+                <div className='md:w-fit w-full bg-red-300'>
                     <p style={{ borderLeft: `4px solid ${color.grdt}` }} className='bg-[#e8e8e8]/50 w-fit px-4'>testimonial</p>
                     <p className='font-[Rubik] font-semibold text-2xl/normal'>What Our Customer Say</p>
                 </div>
-                <div className='flex items-center justify-between gap-2'>
+                <div className='hidden md:flex items-center justify-between gap-2'>
                     <ArrowLeft style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='h-8 w-8 p-2 rounded-full' size={16} color="#091242" weight="bold" />
                     <ArrowRight style={{ background: color.blueBg }} className='h-8 w-8 p-2 rounded-full' size={16} color="#ffffff" weight="bold" />
                 </div>
