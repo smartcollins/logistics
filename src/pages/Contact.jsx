@@ -38,8 +38,8 @@ const Contact = () => {
     return (
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{ background: color.blueBg }} className=' w-2/4 mx-auto my-8 py-8 px-16'>
-                <div className='mx-auto w-fit text-center'>
+            <div style={{ background: color.blueBg }} className=' md:w-2/4 md:px-16 mx-auto my-8 py-8'>
+                <div className='mx-auto w-fit text-center bg-red-400'>
                     <Caption mid={true} txt={'contact'} txt2={'get in touch with us'}/>
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                         <p className='font-[Rubik] font-bold text-2xl'>you nedd any help? get free consultation</p>
                         <div className='flex gap-4 items-center w-fit'>
                             <Phone className=' w-12 h-12 bg-[#111c55] border border-[#2d3a7b] rounded-full px-3' size={16} color="#ffffff" />
-                            <div classN>
+                            <div>
                                 <p>have any questions</p>
                                 <p>(00) 112 365 489</p>
                             </div>
