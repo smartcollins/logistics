@@ -29,7 +29,7 @@ const Contact = () => {
         'Can i specify a delivery date when ordering?'
     ]
 
-    const input = inputAry.map((item, idx) => <input key={idx} type={item.type} placeholder={item.place} className=' indent-4 text-2xl placeholder:text-white lg:placeholder:text-4xl placeholder:text-lg placeholder:text-white/80 placeholder:capitalize bg-transparent border border-white h-16 w-full' />)
+    const input = inputAry.map((item, idx) => <input key={idx} type={item.type} placeholder={item.place} className=' indent-4 text-2xl placeholder:text-white lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:capitalize bg-transparent border border-white h-16 w-full' />)
     const end = endAry.map((item, idx) => <div key={idx} className='flex justify-between items-center'>
         <p className=' font-semibold'>{item}</p>
         <CaretRight size={25} color="#000000" />
@@ -60,7 +60,7 @@ const Contact = () => {
                 <div className=' w-full text-center'>
                     <div className=' space-y-4 md:space-y-0 md:grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
                         {input}
-                        <textarea placeholder='Your Message' className=' indent-4 placeholder:my-auto text-2xl lg:placeholder:text-4xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
+                        <textarea placeholder='Your Message' className=' indent-4 placeholder:py-4 md:placeholder:py-12 text-2xl lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                     </div>
                     <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center mt-8 py-2 w-full md:text-xl md:py-4 md:w-2/5'>send message</button>
                 </div>
@@ -68,7 +68,7 @@ const Contact = () => {
             <div className='my-8'>
                 <img className='mx-auto' src={client} alt="client-logo" />
             </div>
-            <div className='flex gap-8 bg-[#f4f4f4] py-16'>
+            <div className='md:flex gap-8 bg-[#f4f4f4] md:py-16'>
                 <div className=' text-black w-3/4'>
                     <div className='mx-auto w-fit text-left'>
                         <Caption txt={'faq'} txt2={'frequently asked questions'}/>
