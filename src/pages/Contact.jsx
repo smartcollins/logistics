@@ -29,7 +29,7 @@ const Contact = () => {
         'Can i specify a delivery date when ordering?'
     ]
 
-    const input = inputAry.map((item, idx) => <input key={idx} type={item.type} placeholder={item.place} className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl placeholder:capitalize bg-transparent border border-white h-16 w-full' />)
+    const input = inputAry.map((item, idx) => <input key={idx} type={item.type} placeholder={item.place} className=' indent-4 text-2xl placeholder:text-white lg:placeholder:text-4xl placeholder:text-lg placeholder:text-white/80 placeholder:capitalize bg-transparent border border-white h-16 w-full' />)
     const end = endAry.map((item, idx) => <div key={idx} className='flex justify-between items-center'>
         <p className=' font-semibold'>{item}</p>
         <CaretRight size={25} color="#000000" />
@@ -38,31 +38,31 @@ const Contact = () => {
     return (
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{ background: color.blueBg }} className=' md:w-2/4 md:px-16 px-4 mx-auto my-8 py-8'>
+            <div style={{ background: color.blueBg }} className=' xl:w-2/4 lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
                 <div className='mx-auto w-fit text-center bg-red-400'>
                     <Caption mid={true} txt={'contact'} txt2={'get in touch with us'}/>
-                    <p className='  w-3/4 md:w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+                    <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
-                <div className='md:flex space-y-4 md:space-y-0 md:gap-4 mx-auto my-8 text-right'>
-                    <div className='md:w-2/4 flex gap-4 md:gap-0 bg-red-300 justify-between md:flex-col items-center'>
+                <div className='md:flex space-y-4 md:space-y-0 md:gap-4 mx-auto my-8 text-right md:text-center'>
+                    <div className='md:w-2/4 flex gap-4 bg-red-300 justify-between md:justify-normal md:flex-col items-center'>
                         <EnvelopeSimple className='w-fit h-fit p-4 bg-[rgb(39,50,112)] border border-[#273270] rounded-full' size={30} color="#ffffff" />
                         <p className='bg-red-500 w-full'>Contact@logistics.com</p>
                     </div>
-                    <div className='md:w-2/4 flex gap-4 md:gap-0 justify-between md:flex-col items-center'>
+                    <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
                         <Phone className=' w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
                         <p className='bg-red-500 w-full'> (00) 112 365 489</p>
                     </div>
-                    <div className='md:w-2/4 flex gap-4 md:gap-0 justify-between md:flex-col items-center'>
+                    <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
                         <Clock className='w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
                         <p className='bg-red-500 w-full'>Mon - Sat 9.00 - 18.00 Sunday Closed</p>
                     </div>
                 </div>
                 <div className=' w-full text-center'>
-                    <div className=' grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
+                    <div className=' space-y-4 md:space-y-0 md:grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
                         {input}
-                        <textarea placeholder='Your Message' className=' indent-4 text-2xl placeholder:text-white placeholder:text-2xl bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
+                        <textarea placeholder='Your Message' className=' indent-4 placeholder:my-auto text-2xl lg:placeholder:text-4xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                     </div>
-                    <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-4 font-medium text-xl capitalize text-center w-2/5 mt-8'>send message</button>
+                    <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center mt-8 py-2 w-full md:text-xl md:py-4 md:w-2/5'>send message</button>
                 </div>
             </div>
             <div className='my-8'>
