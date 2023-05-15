@@ -38,23 +38,23 @@ const Contact = () => {
     return (
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{ background: color.blueBg }} className=' md:w-2/4 md:px-16 mx-auto my-8 py-8'>
+            <div style={{ background: color.blueBg }} className=' md:w-2/4 md:px-16 px-4 mx-auto my-8 py-8'>
                 <div className='mx-auto w-fit text-center bg-red-400'>
                     <Caption mid={true} txt={'contact'} txt2={'get in touch with us'}/>
-                    <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+                    <p className='  w-3/4 md:w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
-                <div className='flex gap-4 mx-auto my-8 text-center'>
-                    <div className='w-2/4 flex flex-col items-center'>
-                        <EnvelopeSimple className='w-16 h-16 bg-[rgb(39,50,112)] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
-                        <p>Contact@logistics.com</p>
+                <div className='md:flex space-y-4 md:space-y-0 md:gap-4 mx-auto my-8 text-right'>
+                    <div className='md:w-2/4 flex gap-4 md:gap-0 bg-red-300 justify-between md:flex-col items-center'>
+                        <EnvelopeSimple className='w-fit h-fit p-4 bg-[rgb(39,50,112)] border border-[#273270] rounded-full' size={30} color="#ffffff" />
+                        <p className='bg-red-500 w-full'>Contact@logistics.com</p>
                     </div>
-                    <div className='w-2/4 flex flex-col items-center'>
-                        <Phone className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
-                        <p> (00) 112 365 489</p>
+                    <div className='md:w-2/4 flex gap-4 md:gap-0 justify-between md:flex-col items-center'>
+                        <Phone className=' w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
+                        <p className='bg-red-500 w-full'> (00) 112 365 489</p>
                     </div>
-                    <div className='w-2/4 flex flex-col items-center'>
-                        <Clock className='w-16 h-16 bg-[#273270] border border-[#273270] rounded-full px-4' size={30} color="#ffffff" />
-                        <p>Mon - Sat 9.00 - 18.00 Sunday Closed</p>
+                    <div className='md:w-2/4 flex gap-4 md:gap-0 justify-between md:flex-col items-center'>
+                        <Clock className='w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
+                        <p className='bg-red-500 w-full'>Mon - Sat 9.00 - 18.00 Sunday Closed</p>
                     </div>
                 </div>
                 <div className=' w-full text-center'>
