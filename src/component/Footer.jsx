@@ -116,8 +116,8 @@ const Footer = () => {
         </div>
     </div>)
 
-    const topAry = ['pages','utility','subscribe']
-    const top = topAry.map((item,idx)=><p key={idx} className='last:md:w-2/4 md:w-2/5 md:py-0 py-2'>{item}</p>)
+    const topAry = ['pages', 'utility', 'subscribe']
+    const top = topAry.map((item, idx) => <p key={idx} className='last:md:w-2/4 md:w-2/5 md:py-0 py-2'>{item}</p>)
 
     const listAry = ['about us', 'our team', 'our project', 'pricing', 'contact', 'style guide', 'changelog', 'licenses', 'protected', 'not found']
     const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
@@ -150,11 +150,13 @@ const Footer = () => {
                     </div>
                     <div className='md:w-2/4 md:m-0 space-y-4 mt-4'>
                         <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
-                        <div className='flex items-center justify-between'>
-                            <button style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='py-2 text-black w-2/4 font-semibold'>send now</button>
-                            <LinkedinLogo size={20} color="#ffffff" weight="fill" />
-                            <TwitterLogo size={20} color="#ffffff" weight="fill" />
-                            <FacebookLogo size={20} color="#ffffff" weight="fill" />
+                        <div className='flex items-center justify-between space-x-4'>
+                            <button style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='py-2 text-black font-semibold w-2/4 md:w-full'>send now</button>
+                            <div className='flex items-center justify-between lg:justify-around w-2/4 md:hidden'>
+                                <LinkedinLogo size={20} color="#ffffff" weight="fill" />
+                                <TwitterLogo size={20} color="#ffffff" weight="fill" />
+                                <FacebookLogo size={20} color="#ffffff" weight="fill" />
+                            </div>
                         </div>
                     </div>
                 </div>
