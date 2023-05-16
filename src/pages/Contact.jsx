@@ -94,8 +94,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='w-full h-[70vh] relative md:h-[50vh] lg:h-full bg-red-500'>
-                    <img className='h-full w-full object-cover md:ml-auto xl:w-[65%]' src={client2} alt="delivery" />
-                    <div style={{ background: color.blueBg }} className='absolute z-50 top-1/2 -translate-y-1/2 md:left-4 p-8 space-y-4 md:w-2/4 lg:w-2/3 xl:w-2/4'>
+                    <img className='h-full w-full object-cover md:ml-auto xl:w-4/6' src={client2} alt="delivery" />
+                    <div className='absolute z-50 bg-[#091242]/95 top-1/2 -translate-y-1/2 md:left-4 p-8 space-y-4 md:bg-[#091242] md:w-2/4 lg:w-2/3 xl:w-2/4'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>let's talk</p>
                         <p className='font-[Rubik] font-bold text-2xl'>you need any help? get free consultation</p>
                         <div className='flex gap-4 items-center w-fit'>
