@@ -12,22 +12,22 @@ const Contact = () => {
     const iconAry = [{
         icon: EnvelopeSimple,
         txt: 'contact@logistics.com'
-    },{
+    }, {
         icon: Phone,
         txt: '(00) 112 365 489'
-    },{
+    }, {
         icon: Clock,
         txt: 'mon - sat 9.00 - 18.00 sunday closed'
     }]
 
-    const icons = iconAry.map((item,idx)=><div key={idx} className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
+    const icons = iconAry.map((item, idx) => <div key={idx} className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
         {
             React.createElement(item.icon, {
                 size: 30, color: '#ffffff', className: 'w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full'
             })
         }
-    <p className='w-full'>{item.txt}</p>
-</div>)
+        <p className='w-full'>{item.txt}</p>
+    </div>)
 
     const inputAry = [{
         type: 'text',
@@ -60,7 +60,7 @@ const Contact = () => {
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{ background: color.blueBg }} className=' xl:w-2/4 lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
                 <div className='mx-auto w-fit text-center'>
-                    <Caption mid={true} txt={'contact'} txt2={'get in touch with us'}/>
+                    <Caption mid={true} txt={'contact'} txt2={'get in touch with us'} />
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
                 <div className='md:flex space-y-4 md:space-y-0 md:gap-4 mx-auto my-8 text-right md:text-center'>
@@ -80,7 +80,7 @@ const Contact = () => {
             <div className='gap-8 bg-[#f4f4f4] py-4 my-8 md:py-8 md:my-0 space-y-4 lg:flex lg:py-16 lg:space-y-0'>
                 <div className=' text-black px-4 md:mx-auto md:w-11/12 lg:w-3/4'>
                     <div className='mx-auto w-fit text-left'>
-                        <Caption txt={'faq'} txt2={'frequently asked questions'}/>
+                        <Caption txt={'faq'} txt2={'frequently asked questions'} />
                         <div className=' space-y-8'>
                             <div className=' space-y-2'>
                                 <div className='flex justify-between items-center'>
@@ -93,7 +93,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full h-[70vh] relative md:h-[50vh] lg:h-full bg-red-500'>
+                <div className='w-full h-[70vh] relative md:h-[50vh] lg:h-full'>
                     <img className='h-full w-full object-cover md:ml-auto xl:w-4/6' src={client2} alt="delivery" />
                     <div className='absolute z-50 bg-[#091242]/95 top-1/2 -translate-y-1/2 md:left-4 p-8 space-y-4 md:bg-[#091242] md:w-2/4 lg:w-2/3 xl:w-2/4'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>let's talk</p>
