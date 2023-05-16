@@ -150,11 +150,13 @@ const Footer = () => {
                     </div>
                     <div className='md:w-2/4 md:m-0 space-y-4 mt-4'>
                         <input className=' font-[League_Spartan] w-full py-2 bg-transparent border border-[#4e5683] indent-4 ' type="text" placeholder='Email here*' />
-                        <div className='flex items-center justify-between'>
+                        <div className='flex items-center justify-between space-x-4'>
                             <button style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='py-2 text-black w-2/4 font-semibold'>send now</button>
-                            <LinkedinLogo size={20} color="#ffffff" weight="fill" />
-                            <TwitterLogo size={20} color="#ffffff" weight="fill" />
-                            <FacebookLogo size={20} color="#ffffff" weight="fill" />
+                            <div className='flex items-center justify-between lg:justify-around w-2/4'>
+                                <LinkedinLogo size={20} color="#ffffff" weight="fill" />
+                                <TwitterLogo size={20} color="#ffffff" weight="fill" />
+                                <FacebookLogo size={20} color="#ffffff" weight="fill" />
+                            </div>
                         </div>
                     </div>
                 </div>
