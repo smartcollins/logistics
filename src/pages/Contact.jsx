@@ -77,7 +77,7 @@ const Contact = () => {
             <div className='my-8'>
                 <img className='mx-auto' src={client} alt="client-logo" />
             </div>
-            <div className='gap-8 bg-[#f4f4f4] md:py-8 md:space-y-4 lg:flex lg:py-16 lg:space-y-0'>
+            <div className='gap-8 bg-[#f4f4f4] py-4 my-8 md:py-8 md:my-0 space-y-4 lg:flex lg:py-16 lg:space-y-0'>
                 <div className=' text-black px-4 md:mx-auto md:w-11/12 lg:w-3/4'>
                     <div className='mx-auto w-fit text-left'>
                         <Caption txt={'faq'} txt2={'frequently asked questions'}/>
@@ -95,9 +95,9 @@ const Contact = () => {
                 </div>
                 <div className='w-full h-[70vh] relative md:h-[50vh] lg:h-full bg-red-500'>
                     <img className='h-full w-full object-cover md:ml-auto xl:w-[65%]' src={client2} alt="delivery" />
-                    <div style={{ background: color.blueBg }} className='absolute z-50 top-1/2 -translate-y-1/2 left-4 p-8 space-y-4 w-2/4'>
+                    <div style={{ background: color.blueBg }} className='absolute z-50 top-1/2 -translate-y-1/2 md:left-4 p-8 space-y-4 md:w-2/4 lg:w-2/3 xl:w-2/4'>
                         <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 uppercase w-fit px-4'>let's talk</p>
-                        <p className='font-[Rubik] font-bold text-2xl'>you nedd any help? get free consultation</p>
+                        <p className='font-[Rubik] font-bold text-2xl'>you need any help? get free consultation</p>
                         <div className='flex gap-4 items-center w-fit'>
                             <Phone className=' w-12 h-12 bg-[#111c55] border border-[#2d3a7b] rounded-full px-3' size={16} color="#ffffff" />
                             <div>
