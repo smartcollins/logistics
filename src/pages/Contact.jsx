@@ -74,8 +74,8 @@ const Contact = () => {
                     <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center mt-8 py-2 w-full md:text-xl md:py-4 md:w-2/5'>send message</button>
                 </div>
             </div>
-            <div className='my-8'>
-                <img className='mx-auto' src={client} alt="client-logo" />
+            <div className='my-8 bg-red-400 h-full w-full'>
+                <img className='mx-auto h-[15vh] md:h-full' src={client} alt="client-logo" />
             </div>
             <div className='gap-8 bg-[#f4f4f4] py-4 my-8 md:py-8 md:my-0 space-y-4 lg:flex lg:py-16 lg:space-y-0'>
                 <div className=' text-black px-4 md:mx-auto md:w-11/12 lg:w-3/4'>
