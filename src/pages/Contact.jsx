@@ -9,6 +9,18 @@ import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock, CaretDown, CaretRight } from 'phosphor-react'
 
 const Contact = () => {
+    const iconAry = [{
+        icon: EnvelopeSimple,
+        txt: 'contact@logistics.com'
+    },{
+        icon: Phone,
+        txt: '(00) 112 365 489'
+    },{
+        icon: Clock,
+        txt: 'mon - sat 9.00 - 18.00 sunday closed'
+    }]
+
+
     const inputAry = [{
         type: 'text',
         place: 'your name*'
@@ -45,11 +57,11 @@ const Contact = () => {
                 </div>
                 <div className='md:flex space-y-4 md:space-y-0 md:gap-4 mx-auto my-8 text-right md:text-center'>
                     <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
-                        <EnvelopeSimple className='w-fit h-fit p-4 bg-[rgb(39,50,112)] border border-[#273270] rounded-full' size={30} color="#ffffff" />
+                        <EnvelopeSimple className='w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
                         <p className='w-full'>Contact@logistics.com</p>
                     </div>
                     <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
-                        <Phone className=' w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
+                        <Phone className='w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
                         <p className='w-full'> (00) 112 365 489</p>
                     </div>
                     <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
