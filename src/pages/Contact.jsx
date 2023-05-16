@@ -39,22 +39,22 @@ const Contact = () => {
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{ background: color.blueBg }} className=' xl:w-2/4 lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
-                <div className='mx-auto w-fit text-center bg-red-400'>
+                <div className='mx-auto w-fit text-center'>
                     <Caption mid={true} txt={'contact'} txt2={'get in touch with us'}/>
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
                 <div className='md:flex space-y-4 md:space-y-0 md:gap-4 mx-auto my-8 text-right md:text-center'>
-                    <div className='md:w-2/4 flex gap-4 bg-red-300 justify-between md:justify-normal md:flex-col items-center'>
+                    <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
                         <EnvelopeSimple className='w-fit h-fit p-4 bg-[rgb(39,50,112)] border border-[#273270] rounded-full' size={30} color="#ffffff" />
-                        <p className='bg-red-500 w-full'>Contact@logistics.com</p>
+                        <p className='w-full'>Contact@logistics.com</p>
                     </div>
                     <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
                         <Phone className=' w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
-                        <p className='bg-red-500 w-full'> (00) 112 365 489</p>
+                        <p className='w-full'> (00) 112 365 489</p>
                     </div>
                     <div className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
                         <Clock className='w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full' size={30} color="#ffffff" />
-                        <p className='bg-red-500 w-full'>Mon - Sat 9.00 - 18.00 Sunday Closed</p>
+                        <p className='w-full'>Mon - Sat 9.00 - 18.00 Sunday Closed</p>
                     </div>
                 </div>
                 <div className=' w-full text-center'>
