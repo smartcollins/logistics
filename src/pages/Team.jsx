@@ -65,7 +65,7 @@ const Team = () => {
         txt: 'estimate shipping'
     }]
 
-    const abt = abtAry.map((item,idx)=><div key={idx} className='md:space-y-1 xl:space-y-2 bg-red-400'>
+    const abt = abtAry.map((item,idx)=><div key={idx} className='md:space-y-1 xl:space-y-2'>
     <img src={item.icon} alt="icon" />
     <p className=' capitalize font-medium text-lg'>{item.txt}</p>
     <p className='text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
@@ -79,7 +79,7 @@ const Team = () => {
             <div className='space-y-4 w-11/12 gap-8 my-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4'>
                 {items}
             </div>
-            <div className='flex flex-wrap justify-between w-11/12 mx-auto xl:flex-nowrap xl:h-[65vh] xl:gap-8 bg-red-400'>
+            <div className='flex flex-wrap justify-between w-11/12 mx-auto xl:flex-nowrap xl:h-[65vh] xl:gap-8'>
                 <img className='w-full object-cover md:h-[50vh] xl:h-full xl:w-4/6 ' src={side} alt="side-ad" />
                 <div className='text-left xl:w-2/4 space-y-8'>
                     <div className='my-4 capitalize'>
@@ -88,7 +88,7 @@ const Team = () => {
                         <Caption txt='about' txt2='why chose us'/>
                         <p className=' normal-case text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.</p>
                     </div>
-                    <div className='md:flex items-center justify-between border-t border-[#d6d6d6] xl:py-8 gap-4 space-y-4 md:space-y-0 xl:space-y-0 bg-red-500'>
+                    <div className='md:flex items-center justify-between border-t border-[#d6d6d6] xl:py-8 gap-4 space-y-4 md:space-y-0 xl:space-y-0'>
                      {abt}
                     </div>
                 </div>
