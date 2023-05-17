@@ -43,6 +43,7 @@ const Team = () => {
         name: 'lisara tylor',
         title: 'finance head'
     }]
+
     const items = itemsAry.map((item, idx) => (
         <div key={idx} className='w-full relative'>
             <img className='h-[60vh] w-full object-cover xl:h-[40vh] ' src={item.img} alt={`team${item.idx}`} />
@@ -57,24 +58,25 @@ const Team = () => {
             </div>
         </div>
     ))
+
     const abtAry = [{
         icon: user,
         txt: 'our vision',
-    },{
+    }, {
         icon: timer,
         txt: 'estimate shipping'
     }]
 
-    const abt = abtAry.map((item,idx)=><div key={idx} className='md:space-y-1 xl:space-y-2'>
-    <img src={item.icon} alt="icon" />
-    <p className=' capitalize font-medium text-lg'>{item.txt}</p>
-    <p className='text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
-</div>)
+    const abt = abtAry.map((item, idx) => <div key={idx} className='md:space-y-1 xl:space-y-2'>
+        <img src={item.icon} alt="icon" />
+        <p className=' capitalize font-medium text-lg'>{item.txt}</p>
+        <p className='text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
+    </div>)
     return (
         <div>
             <div>{banner.slice(8, 9).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='my-8'>
-                <Caption mid={true} dark={true} txt={'team'} txt2={'meet expert team'}/>
+                <Caption mid={true} dark={true} txt={'team'} txt2={'meet expert team'} />
             </div>
             <div className='space-y-4 w-11/12 gap-8 my-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4'>
                 {items}
@@ -85,11 +87,11 @@ const Team = () => {
                     <div className='my-4 capitalize'>
                         {/* <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 w-fit px-4'>about</p>
                         <p className='font-[Rubik] font-bold text-4xl/normal w-fit'>why chose us</p> */}
-                        <Caption txt='about' txt2='why chose us'/>
+                        <Caption txt='about' txt2='why chose us' />
                         <p className=' normal-case text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.</p>
                     </div>
-                    <div className='md:flex items-center justify-between border-t border-[#d6d6d6] xl:py-8 gap-4 space-y-4 md:space-y-0 xl:space-y-0'>
-                     {abt}
+                    <div className='items-center justify-between border-t border-[#d6d6d6] gap-4 pt-4 space-y-4 md:flex md:space-y-0 xl:py-8'>
+                        {abt}
                     </div>
                 </div>
             </div>
