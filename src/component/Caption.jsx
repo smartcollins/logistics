@@ -2,7 +2,8 @@ import React from 'react';
 
 const Caption = ({ dark, mid, txt, txt2 }) => {
 
-    const fiz = 'px-4 font-semibold border-l-4 border-l-[#ffb629]'
+    // const fiz = 'px-4 font-semibold border-l-4 border-l-[#ffb629]'
+    const fiz = 'px-4 font-semibold border-l-4 border-l-[#ffb629] w-fit'
     const fiz2 = 'font-[Rubik] font-bold text-2xl/normal md:text-4xl/normal'
 
     return (
