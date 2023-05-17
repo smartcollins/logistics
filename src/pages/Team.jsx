@@ -63,10 +63,10 @@ const Team = () => {
             <div className='my-8'>
                 <Caption mid={true} dark={true} txt={'team'} txt2={'meet expert team'}/>
             </div>
-            <div className='grid grid-cols-3 w-3/4 gap-8 my-8 mx-auto'>
+            <div className='lg:grid bg-red-500 px-4 space-y-4 grid-cols-3 lg:w-3/4 gap-8 my-8 lg:mx-auto'>
                 {items}
             </div>
-            <div className='flex justify-between h-[65vh] w-[90%] mx-auto bg-red-400'>
+            {/* <div className='flex justify-between h-[65vh] w-[90%] mx-auto bg-red-400'>
                 <img src={side} alt="side-ad" />
                 <div className='text-left w-2/4 space-y-8'>
                     <div className='my-4 capitalize'>
@@ -87,7 +87,7 @@ const Team = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='my-8'>
                 <img className=' mx-auto w-[65%]' src={sponsor} alt="delivery" />
             </div>
