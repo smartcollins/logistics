@@ -59,11 +59,11 @@ const Team = () => {
     ))
     return (
         <div>
-            {/* <div>{banner.slice(8, 9).map((item, idx) => <Banner key={idx} {...item} />)}</div> */}
+            <div>{banner.slice(8, 9).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='my-8'>
                 <Caption mid={true} dark={true} txt={'team'} txt2={'meet expert team'}/>
             </div>
-            <div className='md:grid bg-red-500 space-y-4 md:px-0 w-11/12 md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4 gap-8 my-8 mx-auto'>
+            <div className='space-y-4 w-11/12 gap-8 my-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4'>
                 {items}
             </div>
             {/* <div className='flex justify-between h-[65vh] w-[90%] mx-auto bg-red-400'>
