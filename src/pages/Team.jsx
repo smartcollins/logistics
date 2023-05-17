@@ -57,6 +57,13 @@ const Team = () => {
             </div>
         </div>
     ))
+    const abtAry = [{
+        icon: user,
+        txt: 'our vision',
+    },{
+        icon: timer,
+        txt: 'estimate shipping'
+    }]
     return (
         <div>
             <div>{banner.slice(8, 9).map((item, idx) => <Banner key={idx} {...item} />)}</div>
@@ -76,13 +83,13 @@ const Team = () => {
                         <p className=' normal-case text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.</p>
                     </div>
                     <div className='md:flex items-center justify-between border-t border-[#d6d6d6] xl:py-8 gap-4 space-y-4 md:space-y-0 xl:space-y-0 bg-red-500'>
-                        <div className=' md:space-y-1 xl:space-y-2 bg-red-400'>
+                        <div className='md:space-y-1 xl:space-y-2 bg-red-400'>
                             <img src={user} alt="icon" />
                             <p className=' capitalize font-medium text-lg'>our vision</p>
                             <p className=' text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
                         </div>
                         <div className='md:space-y-1 xl:space-y-2 bg-red-400'>
-                            <img className='' src={timer} alt="icon" />
+                            <img src={timer} alt="icon" />
                             <p className=' capitalize font-medium text-lg'>estimate shipping</p>
                             <p className='text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
                         </div>
