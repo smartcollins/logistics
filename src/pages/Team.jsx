@@ -45,7 +45,7 @@ const Team = () => {
     }]
     const items = itemsAry.map((item, idx) => (
         <div key={idx} className='w-full relative'>
-            <img className='h-[60vh] w-full object-cover ' src={item.img} alt={`team${item.idx}`} />
+            <img className='h-[60vh] w-full object-cover xl:h-[40vh] ' src={item.img} alt={`team${item.idx}`} />
             <div style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='flex items-center w-fit gap-4 p-2 absolute bottom-16 right-0'>
                 <TwitterLogo size={20} color={color.darkTxt} weight="fill" />
                 <FacebookLogo size={20} color={color.darkTxt} weight="fill" />
@@ -59,11 +59,11 @@ const Team = () => {
     ))
     return (
         <div>
-            <div>{banner.slice(8, 9).map((item, idx) => <Banner key={idx} {...item} />)}</div>
+            {/* <div>{banner.slice(8, 9).map((item, idx) => <Banner key={idx} {...item} />)}</div> */}
             <div className='my-8'>
                 <Caption mid={true} dark={true} txt={'team'} txt2={'meet expert team'}/>
             </div>
-            <div className='lg:grid bg-red-500 px-4 space-y-4 grid-cols-3 lg:w-3/4 gap-8 my-8 lg:mx-auto'>
+            <div className='md:grid bg-red-500 space-y-4 md:px-0 w-11/12 md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4 gap-8 my-8 mx-auto'>
                 {items}
             </div>
             {/* <div className='flex justify-between h-[65vh] w-[90%] mx-auto bg-red-400'>
