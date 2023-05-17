@@ -66,28 +66,29 @@ const Team = () => {
             <div className='space-y-4 w-11/12 gap-8 my-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4'>
                 {items}
             </div>
-            {/* <div className='flex justify-between h-[65vh] w-[90%] mx-auto bg-red-400'>
+            <div className='flex flex-wrap justify-between w-11/12 mx-auto bg-red-400 xl:flex-nowrap xl:h-[65vh]'>
                 <img src={side} alt="side-ad" />
-                <div className='text-left w-2/4 space-y-8'>
+                <div className='text-left xl:w-2/4 space-y-8'>
                     <div className='my-4 capitalize'>
-                        <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 w-fit px-4'>about</p>
-                        <p className='font-[Rubik] font-bold text-4xl/normal w-fit'>why chose us</p>
+                        {/* <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=' bg-[#e8e8e8]/10 w-fit px-4'>about</p>
+                        <p className='font-[Rubik] font-bold text-4xl/normal w-fit'>why chose us</p> */}
+                        <Caption txt='about' txt2='why chose us'/>
                         <p className=' normal-case text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.</p>
                     </div>
-                    <div className='flex items-center justify-between border-t border-[#d6d6d6] py-8 gap-4'>
-                        <div className=' space-y-2'>
+                    <div className='md:flex bg-red-100 items-center justify-between border-t border-[#d6d6d6] py-8 gap-4 space-y-4 xl:space-y-0'>
+                        <div className=' xl:space-y-2 bg-red-500'>
                             <img src={user} alt="icon" />
                             <p className=' capitalize font-medium text-lg'>our vision</p>
-                            <p className='w-3/4 text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
+                            <p className='md:w-3/4 text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
                         </div>
-                        <div className=' space-y-2'>
-                            <img src={timer} alt="icon" />
+                        <div className=' space-y-2 text-right bg-red-300'>
+                            <img className='md:ml-auto' src={timer} alt="icon" />
                             <p className=' capitalize font-medium text-lg'>estimate shipping</p>
-                            <p className='w-3/4 text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
+                            <p className='md:w-3/4 md:ml-auto bg-red-500 text-[#666c89]'>Leverage agile frameworks to provide a robust synopsis for strategy foster.</p>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
             <div className='my-8'>
                 <img className=' mx-auto w-[65%]' src={sponsor} alt="delivery" />
             </div>
