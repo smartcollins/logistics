@@ -34,7 +34,7 @@ const BlogInfo = () => {
     return (
         <div>
             <div>{news.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className=' m-4 lg:my-12 lg:flex gap-8 lg:w-3/4 lg:mx-auto bg-red-500'>
+            <div className=' m-4 space-y-8 gap-8 lg:w-3/4 lg:space-y-0 lg:my-12 lg:flex lg:mx-auto'>
                 <div className=' first-letter:capitalize space-y-2'>
                     <p style={{ color: color.darkTxt }} className=' capitalize text-xl font-bold'>your logistics solutions</p>
                     <p className=' text-[#666c89]'>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo Fusce lectus ex pretium[...]</p>
