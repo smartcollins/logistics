@@ -3,9 +3,38 @@ import banner from '../data/banner';
 import Banner from '../component/Banner';
 import color from '../data/color';
 import Footer from '../component/Footer';
+import img from '../images/news.png'
+import img2 from '../images/news2.png'
+import img3 from '../images/news3.png'
+import img4 from '../images/news4.png'
+import img5 from '../images/news5.png'
+import img6 from '../images/news.png'
+import { ArrowSquareOut } from 'phosphor-react';
 
 
 const Project = ()=>{
+    const gridAry = [{
+        img: img
+    },{
+        img: img2
+    },{
+        img: img3
+    },{
+        img: img4
+    },{
+        img: img5
+    },{
+        img: img6
+    }]
+
+    const grid = gridAry.map((item,idx)=><div key={idx} className=" relative w-fit group bg-red-400">
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[85%] w-[85%] hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
+    {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center transition-transform delay-150 duration-700 ease-in "> */}
+        <ArrowSquareOut size={50} color="#fdaf3b" />
+    </div>
+    <img className="" src={item.img} alt="news" />
+</div>)
+
     const endAry = [{
         txt: '24',
         txt2: 'our location'
@@ -25,9 +54,13 @@ const Project = ()=>{
     <span style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' w-3 h-3'></span>
     <p>{item.txt2}</p>
 </div>)
+
     return(
         <div>
             <div>{banner.slice(4, 5).map((item, idx) => <Banner key={idx} {...item} />)}</div>
+            <div className='bg-red-500 grid grid-cols-3 gap-4 w-3/4 my-8 mx-auto'>
+                {grid}
+            </div>
             <div style={{color: color.darkTxt}} className='flex justify-between'>
                 {end}
             </div>
