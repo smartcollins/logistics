@@ -1,14 +1,14 @@
 import React from 'react';
-import banner from '../data/banner';
-import Banner from '../component/Banner';
-import color from '../data/color';
-import Footer from '../component/Footer';
 import img from '../images/1.png'
 import img2 from '../images/2.png'
 import img3 from '../images/3.png'
 import img4 from '../images/4.png'
 import img5 from '../images/5.png'
 import img6 from '../images/6.png'
+import banner from '../data/banner';
+import color from '../data/color';
+import Banner from '../component/Banner';
+import Footer from '../component/Footer';
 import { ArrowSquareOut } from 'phosphor-react';
 
 
