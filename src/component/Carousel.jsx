@@ -3,20 +3,31 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Carousel = ({items})=>{
+const Carousel = ({items,std,sts,dot})=>{
     const settings = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: {std},
+        slidesToScroll: {sts},
         autoplaySpeed: 2500,
         speed: 500,
-        dots: true,
+        dots: {dot},
         infinite: true,
         swipeToSlide: true,
-        autoplay: true
+        autoplay: true,
+        responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplaySpeed: 2500,
+              },
+            },
+          ],
         
       };
     return(
-        <div className='bg-red-200'>
+        <div className='bg-red-200 h-full w-full'>
             <Slider {...settings}>
                 {items}
             </Slider>
