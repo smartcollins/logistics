@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Carousel = ({items,std,sts,dot})=>{
+const Carousel = ({items,show,scroll,dot})=>{
     const settings = {
-        slidesToShow: {std},
-        slidesToScroll: {sts},
+        slidesToShow: {show},
+        slidesToScroll: {scroll},
         autoplaySpeed: 2500,
         speed: 500,
         dots: {dot},
