@@ -8,6 +8,7 @@ import img6 from '../images/6.png'
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
+import Carousel from '../component/Carousel';
 import Footer from '../component/Footer';
 import { ArrowSquareOut } from 'phosphor-react';
 
@@ -26,6 +27,8 @@ const Project = ()=>{
     },{
         img: img6
     }]
+    
+    const item = gridAry.map((itm,idx)=><img key={idx} src={itm.img} alt="avater" />)
 
     const grid = gridAry.map((item,idx)=><div key={idx} className=" relative w-fit group bg-red-400">
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[85%] w-[85%] hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
@@ -58,12 +61,15 @@ const Project = ()=>{
     return(
         <div>
             <div>{banner.slice(4, 5).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className='bg-red-500 grid grid-cols-3 gap-4 w-3/4 my-8 mx-auto'>
+            <div className='hidden lg:grid grid-cols-3 gap-4 w-3/4 my-8 mx-auto'>
                 {grid}
             </div>
-            <div style={{color: color.darkTxt}} className='flex justify-between'>
-                {end}
+            <div className=' w-11/12 my-8 mb-10 mx-auto lg:hidden'>
+                <Carousel items={item}/>
             </div>
+            {/* <div style={{color: color.darkTxt}} className='flex justify-between'>
+                {end}
+            </div> */}
             <Footer/>
         </div>
     )
