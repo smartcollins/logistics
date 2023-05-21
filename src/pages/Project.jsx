@@ -52,10 +52,10 @@ const Project = ()=>{
         txt2: 'owned vehicles'
     }]
 
-    const end = endAry.map((item,idx)=><div key={idx} className='flex items-center justify-center gap-2 capitalize w-full first:border-x-none last:border-x-none border py-8'>
-    <p className='font-bold text-4xl'>{item.txt}</p>
+    const end = endAry.map((item,idx)=><div key={idx}  style={{color: color.darkTxt}} className='!flex !items-center !justify-center gap-2 capitalize w-full first:border-x-none last:border-x-none border py-8 md:py-4'>
+    <p className='font-bold text-lg lg:text-4xl'>{item.txt}</p>
     <span style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' w-3 h-3'></span>
-    <p>{item.txt2}</p>
+    <p className='truncate text-ellipsis w-2/4 lg:w-full'>{item.txt2}</p>
 </div>)
 
     return(
@@ -64,12 +64,15 @@ const Project = ()=>{
             <div className='hidden lg:grid grid-cols-3 gap-4 w-3/4 my-8 mx-auto'>
                 {grid}
             </div>
-            <div className=' w-11/12 my-8 mb-10 mx-auto lg:hidden'>
-                <Carousel items={item}/>
+            <div className=' w-11/12 my-8 mb-10 mx-auto md:w-3/4 lg:hidden'>
+                <Carousel items={item} dot={true} show={3} scroll={1}/>
             </div>
-            {/* <div style={{color: color.darkTxt}} className='flex justify-between'>
+            <div style={{color: color.darkTxt}} className='hidden justify-between my-8 lg:flex'>
                 {end}
-            </div> */}
+            </div>
+            <div className='w-3/4 mx-auto mb-4 lg:hidden'>
+                <Carousel className="bg-red-400" items={end} dot={false} show={2} scroll={1}/>
+            </div>
             <Footer/>
         </div>
     )
