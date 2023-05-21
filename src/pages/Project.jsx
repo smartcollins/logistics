@@ -51,7 +51,7 @@ const Project = () => {
         txt2: 'owned vehicles'
     }]
 
-    const end = endAry.map((item, idx) => <div key={idx} style={{ color: color.darkTxt }} className='!flex !items-center !justify-center gap-2 capitalize w-full first:border-x-none last:border-x-none border py-8 md:py-4'>
+    const end = endAry.map((item, idx) => <div key={idx} style={{ color: color.darkTxt }} className='!flex !items-center !justify-center gap-2 capitalize w-full first:border-x-none last:border-x-none border py-4 md:py-8'>
         <p className='font-bold text-lg lg:text-4xl'>{item.txt}</p>
         <span style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' w-3 h-3'></span>
         <p className='truncate text-ellipsis w-2/4 lg:w-full'>{item.txt2}</p>
@@ -70,8 +70,9 @@ const Project = () => {
                 {end}
             </div>
             <div className='w-3/4 mx-auto mb-4 lg:hidden'>
-                <Carousel className="bg-red-400" items={end} dot={false} show={2} scroll={1} />
+                <Carousel items={end} dot={false} show={2} scroll={1} />
             </div>
+            
             <Footer />
         </div>
     )

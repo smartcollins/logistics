@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = ({ items, show, scroll, dot }) => {
   const settings = {
+    arrows: false,
     slidesToShow: show,
     slidesToScroll: scroll,
     autoplaySpeed: 2500,
@@ -17,6 +18,7 @@ const Carousel = ({ items, show, scroll, dot }) => {
       {
         breakpoint: 640,
         settings: {
+          arrows: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
