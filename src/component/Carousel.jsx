@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = ({items,show,scroll,dot})=>{
     const settings = {
-        slidesToShow: {show},
-        slidesToScroll: {scroll},
+        slidesToShow: show,
+        slidesToScroll: scroll,
         autoplaySpeed: 2500,
         speed: 500,
-        dots: {dot},
+        dots: dot,
         infinite: true,
         swipeToSlide: true,
         autoplay: true,
@@ -27,11 +27,9 @@ const Carousel = ({items,show,scroll,dot})=>{
         
       };
     return(
-        <div className='bg-red-200 h-full w-full'>
-            <Slider {...settings}>
-                {items}
-            </Slider>
-        </div>
+      <Slider {...settings}>
+          {items}
+      </Slider>
     )
 }
 
