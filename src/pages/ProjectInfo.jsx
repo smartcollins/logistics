@@ -2,33 +2,15 @@ import React from 'react';
 import Banner from '../component/Banner';
 import banner from '../images/br-project2.png'
 import img from '../images/1.png'
-import img2 from '../images/2.png'
-import img3 from '../images/3.png'
-import img4 from '../images/4.png'
-import img5 from '../images/5.png'
-import img6 from '../images/6.png'
 
 import color from '../data/color';
 import { ArrowRight, ArrowSquareOut } from 'phosphor-react';
 import Footer from '../component/Footer';
+import project from '../data/project';
 
 
 const ProjectInfo = ()=>{
-    const gridAry = [{
-        img: img
-    }, {
-        img: img2
-    }, {
-        img: img3
-    }, {
-        img: img4
-    }, {
-        img: img5
-    }, {
-        img: img6
-    }]
-
-    const grid = gridAry.slice(0,3).map((item, idx) => <div key={idx} className=" relative w-fit group">
+    const grid = project.slice(0,3).map((item, idx) => <div key={idx} className=" relative w-fit group">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[85%] w-[85%] hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
             <ArrowSquareOut size={50} color="#fdaf3b" />
         </div>
