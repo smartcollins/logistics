@@ -10,6 +10,7 @@ import img6 from '../images/6.png'
 
 import color from '../data/color';
 import { ArrowRight, ArrowSquareOut } from 'phosphor-react';
+import Footer from '../component/Footer';
 
 
 const ProjectInfo = ()=>{
@@ -103,6 +104,7 @@ const list2 = list2Ary.map((item,idx)=><div key={idx} className='flex items-cent
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
