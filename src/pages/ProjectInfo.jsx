@@ -2,11 +2,38 @@ import React from 'react';
 import Banner from '../component/Banner';
 import banner from '../images/br-project2.png'
 import img from '../images/1.png'
+import img2 from '../images/2.png'
+import img3 from '../images/3.png'
+import img4 from '../images/4.png'
+import img5 from '../images/5.png'
+import img6 from '../images/6.png'
+
 import color from '../data/color';
-import { ArrowRight } from 'phosphor-react';
+import { ArrowRight, ArrowSquareOut } from 'phosphor-react';
 
 
 const ProjectInfo = ()=>{
+    const gridAry = [{
+        img: img
+    }, {
+        img: img2
+    }, {
+        img: img3
+    }, {
+        img: img4
+    }, {
+        img: img5
+    }, {
+        img: img6
+    }]
+
+    const grid = gridAry.slice(0,3).map((item, idx) => <div key={idx} className=" relative w-fit group">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[85%] w-[85%] hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
+            <ArrowSquareOut size={50} color="#fdaf3b" />
+        </div>
+        <img src={item.img} alt="news" />
+    </div>)
+
     const listAry = [{
         txt: 'customer',
         txt2: 'david warner'
@@ -57,11 +84,23 @@ const list2 = list2Ary.map((item,idx)=><div key={idx} className='flex items-cent
                     </div>
                 </div>
             </div>
-            <div className='my-8 space-y-4'>
-                <p className=' text-2xl font-bold capitalize'>wharehouse transportation</p>
-                <p className=' text-sm text-[#666c89]'>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit Integer adipiscing erat eget risus sollicitudin pellentesque non erat. Maecenas nibh dolor malesuada sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere.</p>
-                <div className=' space-y-4'>
-                    {list2}
+            <div className='w-3/4 mx-auto'>
+                <div className='my-8 space-y-4'>
+                    <p className=' text-2xl font-bold capitalize'>wharehouse transportation</p>
+                    <p className=' text-sm text-[#666c89]'>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit Integer adipiscing erat eget risus sollicitudin pellentesque non erat. Maecenas nibh dolor malesuada sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere.</p>
+                    <div className=' space-y-4'>
+                        {list2}
+                    </div>
+                </div>
+                <div className='my-8 space-y-4'>
+                    <p className=' text-2xl font-bold capitalize'>our project transportation</p>
+                    <p className=' text-sm text-[#666c89]'>Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit Integer adipiscing erat eget risus sollicitudin pellentesque non erat. Maecenas nibh dolor malesuada sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere.</p>
+                </div>
+                <div className='my-8 space-y-4'>
+                    <p className=' text-2xl font-bold capitalize'>related project</p>
+                    <div className='hidden lg:grid grid-cols-3 gap-4 my-8'>
+                        {grid}
+                    </div>
                 </div>
             </div>
         </div>
