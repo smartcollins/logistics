@@ -71,7 +71,7 @@ const ProjectInfo = () => {
             <div style={{ background: color.grayBg }} className="h-full py-4 md:py-8 lg:py-12">
                 <div className="gap-8 mx-auto capitalize w-11/12 space-y-4 md:flex md:items-center md:space-y-0 lg:w-3/4">
                     <div className="lg:w-3/4">
-                        <img className="w-full object-cover" src={img} alt="project detail"/>
+                        <img className="w-full object-cover" src={img} alt="project detail" />
                     </div>
                     <div className="w-full">
                         <p className=" font-bold text-xl text-center md:text-left">project details</p>
@@ -88,9 +88,9 @@ const ProjectInfo = () => {
                 <div className="my-8 space-y-4">
                     <p className=" text-2xl font-bold capitalize">our project transportation</p>
                     <p className=" text-sm text-[#666c89]">Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit Integer adipiscing erat eget risus sollicitudin pellentesque non erat. Maecenas nibh dolor malesuada sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere.</p>
-                    <div style={{backgroundImage: `url(${img})`}} className="h-[50vh] w-full bg-cover bg-no-repeat bg-bottom relative">
+                    <div style={{ backgroundImage: `url(${img})` }} className="h-[50vh] w-full bg-cover bg-no-repeat bg-bottom relative">
                         <div className="absolute top-1/2 left-1/2 border-2 border-white/40 bg-white/5 rounded-full">
-                            <PlayCircle className="m-2" size={30} color="#ffffff" weight="fill"/>
+                            <PlayCircle className="m-2" size={30} color="#ffffff" weight="fill" />
                         </div>
                     </div>
                 </div>
