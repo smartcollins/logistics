@@ -5,6 +5,7 @@ import Footer from './component/Footer';
 import Nav from './component/Nav';
 import ErrorPage from './pages/ErrorPage';
 import Project from './pages/Project';
+import ProjectInfo from './pages/ProjectInfo';
 import Blog from './pages/Blog';
 import BlogInfo from './pages/BlogInfo';
 import Team from './pages/Team';
@@ -29,6 +30,11 @@ function App() {
     {
       path: "/project",
       element: <Project />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/project-info",
+      element: <ProjectInfo />,
       errorElement: <ErrorPage />,
     },
     {

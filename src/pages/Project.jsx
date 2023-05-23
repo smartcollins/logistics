@@ -1,36 +1,18 @@
 import React from 'react';
-import img from '../images/1.png'
-import img2 from '../images/2.png'
-import img3 from '../images/3.png'
-import img4 from '../images/4.png'
-import img5 from '../images/5.png'
-import img6 from '../images/6.png'
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
 import Carousel from '../component/Carousel';
 import Footer from '../component/Footer';
 import { ArrowSquareOut } from 'phosphor-react';
+import project from '../data/project';
 
 
 const Project = () => {
-    const gridAry = [{
-        img: img
-    }, {
-        img: img2
-    }, {
-        img: img3
-    }, {
-        img: img4
-    }, {
-        img: img5
-    }, {
-        img: img6
-    }]
+    
+    const item = project.map((itm, idx) => <img key={idx} src={itm.img} alt="avater" />)
 
-    const item = gridAry.map((itm, idx) => <img key={idx} src={itm.img} alt="avater" />)
-
-    const grid = gridAry.map((item, idx) => <div key={idx} className=" relative w-fit group bg-red-400">
+    const grid = project.map((item, idx) => <div key={idx} className=" relative w-fit group">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[85%] w-[85%] hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
             <ArrowSquareOut size={50} color="#fdaf3b" />
         </div>
@@ -54,7 +36,7 @@ const Project = () => {
     const end = endAry.map((item, idx) => <div key={idx} style={{ color: color.darkTxt }} className='!flex !items-center !justify-center gap-2 capitalize w-full first:border-x-none last:border-x-none border py-4 md:py-8'>
         <p className='font-bold text-lg lg:text-4xl'>{item.txt}</p>
         <span style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' w-3 h-3'></span>
-        <p className='truncate text-ellipsis w-2/4 lg:w-full'>{item.txt2}</p>
+        <p className='truncate text-ellipsis w-2/4 lg:w-auto'>{item.txt2}</p>
     </div>)
 
     return (
