@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight } from 'phosphor-react';
+import React, { useEffect, useState } from 'react';
+import { CaretCircleLeft,CaretCircleRight } from 'phosphor-react';
 import images from './images';
 
 
@@ -11,17 +11,25 @@ const Slider = ()=>{
     }
     
     const backward = ()=>{
-        slide === images.length - 1 ? setSlide(0) : setSlide(slide - 1)
+        slide === 0 ? setSlide(images.length - 1) : setSlide(slide - 1)
     }
 
+    console.log(images.length)
 
+    const items = images.map((item,idx)=>(
+        <div key={idx} className={slide === idx ? 'w-full ease-in-out transition-all animate-pulse' : 'hidden'}>
+            <img src={item.img} className='w-full h-full object-cover' alt={`image-${idx}`} />
+        </div>
+    ))
 
 
     return(
-        <div>
-            <div className='bg-red-500 h-[50vh] w-3/4 mx-auto'></div>
-            <ArrowLeft className='absolute top-1/2 left-0' size={20} weight='fill'/>
-            <ArrowRight className='absolute top-1/2 right-0' size={20} weight='fill'/>
+        <div className=' relative'>
+            <div className='bg-red-500 h-[50vh] w-11/12 md:w-3/4 mx-auto flex relative'>
+                {items}
+            </div>
+            <CaretCircleLeft onClick={backward} className='absolute top-1/2 left-0' size={30}/>
+            <CaretCircleRight onClick={forward} className='absolute top-1/2 right-0' size={30} weight='light'/>
         </div>
     )
 }
