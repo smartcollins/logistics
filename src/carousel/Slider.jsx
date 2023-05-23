@@ -14,6 +14,13 @@ const Slider = ()=>{
         slide === 0 ? setSlide(images.length - 1) : setSlide(slide - 1)
     }
 
+    useEffect(() => {
+        setTimeout(() => {
+        forward()
+        }, 2000);
+      });
+
+
     console.log(images.length)
 
     const items = images.map((item,idx)=>(
