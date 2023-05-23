@@ -66,13 +66,13 @@ const ProjectInfo = () => {
     return (
         <div>
             <Banner img={banner} txt={"warehouse transportation"} info={"air cargo transportataion"} />
-            <div style={{ background: color.grayBg }} className="h-full py-12">
-                <div className="flex items-center gap-8 w-3/4 mx-auto capitalize">
-                    <div className="bg-red-300 w-3/4">
+            <div style={{ background: color.grayBg }} className="h-full py-4 lg:py-12">
+                <div className="lg:flex items-center gap-8 mx-auto capitalize w-11/12 space-y-4 lg:w-3/4">
+                    <div className="bg-red-300 lg:w-3/4">
                         <img className="w-full object-cover" src={img} alt="project detail"/>
                     </div>
                     <div className="w-full">
-                        <p className=" font-bold text-xl">project details</p>
+                        <p className=" font-bold text-xl text-center lg:text-left">project details</p>
                         <div className="mt-4 space-y-4">{list}</div>
                     </div>
                 </div>
