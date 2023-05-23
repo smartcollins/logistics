@@ -56,7 +56,7 @@ const ProjectInfo = () => {
 
     const grid = project.slice(0, 3).map((item, idx) => (
         <div key={idx} className=" relative w-fit group">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[85%] w-[85%] hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-5/6 w-5/6 hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
                 <ArrowSquareOut size={50} color="#fdaf3b" />
             </div>
             <img src={item.img} alt="news" />
@@ -66,8 +66,8 @@ const ProjectInfo = () => {
     return (
         <div>
             <Banner img={banner} txt={"warehouse transportation"} info={"air cargo transportataion"} />
-            <div style={{ background: color.blueBg }} className="h-full py-12">
-                <div className="flex items-center gap-8 w-3/4 mx-auto bg-red-500 capitalize">
+            <div style={{ background: color.grayBg }} className="h-full py-12">
+                <div className="flex items-center gap-8 w-3/4 mx-auto capitalize">
                     <div className="bg-red-300 w-3/4">
                         <img className="w-full object-cover" src={img} alt="project detail"/>
                     </div>
@@ -86,14 +86,14 @@ const ProjectInfo = () => {
                 <div className="my-8 space-y-4">
                     <p className=" text-2xl font-bold capitalize">our project transportation</p>
                     <p className=" text-sm text-[#666c89]">Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit Integer adipiscing erat eget risus sollicitudin pellentesque non erat. Maecenas nibh dolor malesuada sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere.</p>
-                </div>
-                <div className="my-8 space-y-4">
-                    <p className=" text-2xl font-bold capitalize">related project</p>
-                    <div style={{backgroundImage: `url(${img})`}} className="bg-red-300 h-[50vh] w-full bg-cover bg-no-repeat bg-bottom relative">
+                    <div style={{backgroundImage: `url(${img})`}} className="h-[50vh] w-full bg-cover bg-no-repeat bg-bottom relative">
                         <div className="absolute top-1/2 left-1/2 border-2 border-white/40 bg-white/5 rounded-full">
                             <PlayCircle className="m-2" size={30} color="#ffffff" weight="fill"/>
                         </div>
                     </div>
+                </div>
+                <div className="my-8 space-y-4">
+                    <p className=" text-2xl font-bold capitalize">related project</p>
                     <div className="hidden lg:grid grid-cols-3 gap-4 my-8">{grid}</div>
                 </div>
             </div>
