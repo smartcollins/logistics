@@ -4,6 +4,7 @@ import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 import Footer from './component/Footer';
 import Nav from './component/Nav';
 import ErrorPage from './pages/ErrorPage';
+import Service from './pages/Service';
 import Project from './pages/Project';
 import ProjectInfo from './pages/ProjectInfo';
 import Blog from './pages/Blog';
@@ -25,6 +26,11 @@ function App() {
     {
       path: "/nav",
       element: <Nav />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/service",
+      element: <Service />,
       errorElement: <ErrorPage />,
     },
     {
