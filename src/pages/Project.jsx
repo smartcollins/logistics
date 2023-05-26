@@ -6,6 +6,7 @@ import Carousel from '../component/Carousel';
 import Footer from '../component/Footer';
 import { ArrowSquareOut } from 'phosphor-react';
 import project from '../data/project';
+import Review from '../component/Review';
 
 
 const Project = () => {
@@ -54,7 +55,7 @@ const Project = () => {
             <div className='w-3/4 mx-auto mb-4 lg:hidden'>
                 <Carousel items={end} dot={false} show={2} scroll={1} />
             </div>
-            
+            <Review/>
             <Footer />
         </div>
     )
