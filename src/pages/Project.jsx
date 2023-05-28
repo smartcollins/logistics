@@ -1,6 +1,5 @@
 import React from 'react';
 import banner from '../data/banner';
-import color from '../data/color';
 import Banner from '../component/Banner';
 import Carousel from '../component/Carousel';
 import Footer from '../component/Footer';
@@ -20,27 +19,7 @@ const Project = () => {
         </div>
         <img src={item.img} alt="news" />
     </div>)
-
-    const endAry = [{
-        txt: '24',
-        txt2: 'our location'
-    }, {
-        txt: '1294',
-        txt2: 'delivered package'
-    }, {
-        txt: '3594',
-        txt2: 'satisfied clients'
-    }, {
-        txt: '247+',
-        txt2: 'owned vehicles'
-    }]
-
-    const end = endAry.map((item, idx) => <div key={idx} style={{ color: color.darkTxt }} className='!flex !items-center !justify-center gap-2 capitalize w-full first:border-x-none last:border-x-none border py-4 md:py-8'>
-        <p className='font-bold text-lg lg:text-4xl'>{item.txt}</p>
-        <span style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' w-3 h-3'></span>
-        <p className='truncate text-ellipsis w-2/4 lg:w-auto'>{item.txt2}</p>
-    </div>)
-
+    
     return (
         <div>
             <div>{banner.slice(4, 5).map((item, idx) => <Banner key={idx} {...item} />)}</div>
@@ -50,14 +29,10 @@ const Project = () => {
             <div className=' w-11/12 my-8 mb-10 mx-auto md:w-3/4 lg:hidden'>
                 <Carousel items={item} dot={true} show={3} scroll={1} />
             </div>
-            {/* <div style={{ color: color.darkTxt }} className='hidden justify-between my-8 lg:flex'>
-                {end}
+            <div className='mx-auto w-11/12 md:w-3/4'>
+                <Review/>
             </div>
-            <div className='w-3/4 mx-auto mb-4 lg:hidden'>
-                <Carousel items={end} dot={false} show={2} scroll={1} />
-            </div> */}
             <Stat/>
-            <Review/>
             <Footer />
         </div>
     )

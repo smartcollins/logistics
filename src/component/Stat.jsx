@@ -15,7 +15,7 @@ const Stat = () => {
             <div style={{ color: color.darkTxt }} className='hidden justify-between my-8 lg:flex'>
                 {items}
             </div>
-            <div className='w-3/4 mx-auto mb-4 lg:hidden'>
+            <div className='w-3/4 mx-auto my-4 lg:hidden'>
                 <Carousel items={items} dot={false} show={2} scroll={1} />
             </div>
         </div>
