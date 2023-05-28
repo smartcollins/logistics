@@ -10,6 +10,7 @@ import Caption from '../component/Caption'
 import Footer from '../component/Footer';
 import service from '../data/service';
 import Review from '../component/Review';
+import Stat from '../component/Stat';
 
 
 const Service = ()=>{
@@ -62,6 +63,7 @@ const Service = ()=>{
                 <div className='w-3/4 mx-auto my-8'>
                     <Review/>
                 </div>
+                <Stat/>
             <Footer/>
         </div>
     )
