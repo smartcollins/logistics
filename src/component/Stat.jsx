@@ -12,7 +12,7 @@ const Stat = () => {
     </div>)
     return (
         <div>
-            <div style={{ color: color.darkTxt }} className='hidden justify-between my-8 lg:flex bg-red-200'>
+            <div style={{ color: color.darkTxt }} className='hidden justify-between my-8 lg:flex'>
                 {items}
             </div>
             <div className='w-3/4 mx-auto mb-4 lg:hidden'>

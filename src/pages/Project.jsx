@@ -7,6 +7,7 @@ import Footer from '../component/Footer';
 import { ArrowSquareOut } from 'phosphor-react';
 import project from '../data/project';
 import Review from '../component/Review';
+import Stat from '../component/Stat';
 
 
 const Project = () => {
@@ -49,12 +50,13 @@ const Project = () => {
             <div className=' w-11/12 my-8 mb-10 mx-auto md:w-3/4 lg:hidden'>
                 <Carousel items={item} dot={true} show={3} scroll={1} />
             </div>
-            <div style={{ color: color.darkTxt }} className='hidden justify-between my-8 lg:flex'>
+            {/* <div style={{ color: color.darkTxt }} className='hidden justify-between my-8 lg:flex'>
                 {end}
             </div>
             <div className='w-3/4 mx-auto mb-4 lg:hidden'>
                 <Carousel items={end} dot={false} show={2} scroll={1} />
-            </div>
+            </div> */}
+            <Stat/>
             <Review/>
             <Footer />
         </div>
