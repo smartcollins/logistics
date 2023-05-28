@@ -2,13 +2,13 @@ import React from 'react';
 import stat from '../data/stat';
 
 
-const Stat = ()=>{
+const Stat = () => {
     const items = stat.map((item, idx) => <div key={idx} style={{ color: color.darkTxt }} className='!flex !items-center !justify-center gap-2 capitalize w-full first:border-x-none last:border-x-none border py-4 md:py-8'>
         <p className='font-bold text-lg lg:text-4xl'>{item.txt}</p>
         <span style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' w-3 h-3'></span>
         <p className='truncate text-ellipsis w-2/4 lg:w-auto'>{item.txt2}</p>
     </div>)
-    return(
+    return (
         <div>
             <div style={{ color: color.darkTxt }} className='hidden justify-between my-8 lg:flex'>
                 {items}
