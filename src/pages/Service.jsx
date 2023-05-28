@@ -59,7 +59,9 @@ const Service = ()=>{
                     </div>
                     </div>
                 </div>
-                <Review/>
+                <div className='w-3/4 mx-auto my-8'>
+                    <Review/>
+                </div>
             <Footer/>
         </div>
     )
