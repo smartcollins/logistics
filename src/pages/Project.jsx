@@ -10,7 +10,7 @@ import Stat from '../component/Stat';
 
 
 const Project = () => {
-    
+
     const item = project.map((itm, idx) => <img key={idx} src={itm.img} alt="avater" />)
 
     const grid = project.map((item, idx) => <div key={idx} className=" relative w-fit group">
@@ -19,7 +19,7 @@ const Project = () => {
         </div>
         <img src={item.img} alt="news" />
     </div>)
-    
+
     return (
         <div>
             <div>{banner.slice(4, 5).map((item, idx) => <Banner key={idx} {...item} />)}</div>
@@ -30,9 +30,9 @@ const Project = () => {
                 <Carousel items={item} dot={true} show={3} scroll={1} />
             </div>
             <div className='mx-auto w-11/12 md:w-3/4'>
-                <Review/>
+                <Review />
             </div>
-            <Stat/>
+            <Stat />
             <Footer />
         </div>
     )
