@@ -60,7 +60,7 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <div className='mx-auto md:w-11/12 my-8 lg:w-3/4'>
+            <div className='mx-auto my-8 md:w-11/12 lg:w-3/4'>
                 <Review />
             </div>
             <div className='xl:w-4/5 mx-auto'>
