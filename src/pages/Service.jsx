@@ -11,7 +11,6 @@ import Caption from '../component/Caption'
 import Footer from '../component/Footer';
 import Review from '../component/Review';
 import Stat from '../component/Stat';
-// import Carousel from '../component/Carousel';
 
 
 const Service = () => {
@@ -48,9 +47,6 @@ const Service = () => {
                 <div className=' space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3'>
                     {items}
                 </div>
-                {/* <div className='w-full'>
-                    <Carousel items={items} dot={false} scroll={1} show={2} />
-                </div> */}
                 <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
             </div>
             <div style={{ background: color.grayBg }}>
