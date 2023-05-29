@@ -35,7 +35,7 @@ const Service = () => {
     const itm = itmAry.map((item, idx) => <div key={idx} className='flex gap-4 lg:items-start'>
         <img src={item.icon} alt="icons" />
         <div className='lg:mt-4'>
-            <p className='text-xl capitalize'>{item.txt}</p>
+            <p className='capitalize text-xl lg:font-medium'>{item.txt}</p>
             <p>Leverage agile frameworks to provide arobust synopis for strategy foster collaborative thinking</p>
         </div>
     </div>)
@@ -45,7 +45,7 @@ const Service = () => {
             <div>{banner.slice(3, 4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' text-center my-8 w-11/12 mx-auto space-y-8 xl:w-3/4'>
                 <Caption mid={true} dark={true} txt={'what we do'} txt2={'logistics services'} />
-                <div className=' space-y-4 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className=' space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3'>
                     {items}
                 </div>
                 {/* <div className='w-full'>
