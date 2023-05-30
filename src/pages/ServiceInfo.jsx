@@ -1,9 +1,12 @@
 import React from 'react';
 import banner from '../data/banner';
 import ship from '../icons/ship-icon.svg'
+import img from '../images/ser-info.png'
+import img2 from '../images/ser-info2.png'
+import img3 from '../images/ser-info3.png'
 import Banner from '../component/Banner';
-import { ArrowRight } from 'phosphor-react';
 import Footer from '../component/Footer';
+import { ArrowRight } from 'phosphor-react';
 
 
 const ServiceInfo = ()=>{
@@ -12,7 +15,7 @@ const ServiceInfo = ()=>{
             <div>{banner.slice(3,4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div>
                 <div>
-                    <img src="" alt="" />
+                    <img src={img} alt="sea transport" />
                     <div>
                         <img src={ship} alt="ship-icon" />
                         <p>sea transport service</p>
@@ -41,10 +44,10 @@ const ServiceInfo = ()=>{
                             <p>Saving Time to Deal with commodo iaculis</p>
                         </div>
                     </div>
-                    <img src="" alt="" />
+                    <img src={img2} alt="trucks" />
                 </div>
                 <div>
-                    <img src="" alt="" />
+                    <img src={img3} alt="delivery" />
                     <div>
                         <p>how it works</p>
                         <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, doloremque laudantium.</p>
