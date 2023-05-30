@@ -17,7 +17,7 @@ const Service = () => {
     const items = service.map((item, idx) => <div key={idx} className='group md:text-left'>
         <img className='mx-auto md:m-0' src={item.icon} alt='icon-logo' />
         <p className=' text-[#1c1f35] group-hover:text-[#ffb82b] text-2xl capitalize'>{item.txt}</p>
-        <p style={{ color: color.grayTxt }} className='lg:w-3/4'>following the quality of our service thus having gained trust of our many clients</p>
+        <p style={{ color: color.grayTxt }} className='xl:w-3/4'>following the quality of our service thus having gained trust of our many clients</p>
     </div>)
 
     const itmAry = [{
@@ -44,7 +44,7 @@ const Service = () => {
             <div>{banner.slice(3, 4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' text-center my-8 w-11/12 mx-auto space-y-8 xl:w-3/4'>
                 <Caption mid={true} dark={true} txt={'what we do'} txt2={'logistics services'} />
-                <div className=' space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3'>
+                <div className=' space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 lg:w-11/12 mx-auto'>
                     {items}
                 </div>
                 <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
