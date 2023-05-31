@@ -1,5 +1,6 @@
 import React from 'react';
 import banner from '../data/banner';
+import color from '../data/color';
 import ship from '../icons/ship-icon.svg'
 import img from '../images/ser-info.png'
 import img2 from '../images/ser-info2.png'
@@ -7,14 +8,21 @@ import img3 from '../images/ser-info3.png'
 import Banner from '../component/Banner';
 import Footer from '../component/Footer';
 import { ArrowRight, PlayCircle } from 'phosphor-react';
-import color from '../data/color';
 
 
 const ServiceInfo = ()=>{
+    const itemAry = ['Clearance and compliance service',
+        'Saving Time to Deal with commodo iaculis',
+        'Automate your business elis tristique',
+        'Saving Time to Deal with commodo iaculis']
+    const items = itemAry.map((item,idx)=><div key={idx} className='flex gap-4'>
+            <ArrowRight size={20} color='#000000'/>
+            <p>{item}</p>
+        </div>)
     return(
         <div>
             <div>{banner.slice(3,4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{color: color.grayTxt}} className='mx-auto my-8 space-y-8 w-3/4'>
+            <div style={{color: color.grayTxt}} className='mx-auto my-8 w-3/4 space-y-16'>
                 <div className=' space-y-4'>
                     <img src={img} alt="sea transport" />
                     <div className='flex items-center gap-4'>
@@ -30,27 +38,11 @@ const ServiceInfo = ()=>{
                             <p className=' text-lg font-bold capitalize text-black'>benefit of service</p>
                             <p>Sed ut perspiciatis, unde omnis iste natu volupta temaccu santium doloremque laudantium, totam rem quae ab illo inventore veritatis.</p>
                         </div>
-                        <div className='flex gap-4'>
-                            <ArrowRight size={20} color='#000000'/>
-                            <p>Clearance and compliance service</p>
-                        </div>
-                        <div className='flex gap-4'>
-                            <ArrowRight size={20} color='#000000'/>
-                            <p>Saving Time to Deal with commodo iaculis</p>
-                        </div>
-                        <div className='flex gap-4'>
-                            <ArrowRight size={20} color='#000000'/>
-                            <p>Automate your business elis tristique</p>
-                        </div>
-                        <div className='flex gap-4'>
-                            <ArrowRight size={20} color='#000000'/>
-                            <p>Saving Time to Deal with commodo iaculis</p>
-                        </div>
+                        {items}
                     </div>
                     <img className='w-[60%]' src={img2} alt="trucks" />
                 </div>
                 <div className='flex items-center gap-4'>
-                    {/* <img src={img3} alt="delivery" /> */}
                     <div style={{ backgroundImage: `url(${img3})` }} className="h-[45vh] w-full bg-cover bg-no-repeat bg-bottom relative">
                         <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 border-2 border-white/40 bg-white/5 rounded-full">
                             <PlayCircle className="m-2" size={30} color="#ffffff" weight="fill" />
