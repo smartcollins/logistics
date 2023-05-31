@@ -10,19 +10,23 @@ import Footer from '../component/Footer';
 import { ArrowRight, PlayCircle } from 'phosphor-react';
 
 
-const ServiceInfo = ()=>{
-    const itemAry = ['Clearance and compliance service',
-        'Saving Time to Deal with commodo iaculis',
-        'Automate your business elis tristique',
-        'Saving Time to Deal with commodo iaculis']
-    const items = itemAry.map((item,idx)=><div key={idx} className='flex gap-4'>
-            <ArrowRight size={20} color='#000000'/>
-            <p>{item}</p>
-        </div>)
-    return(
+const ServiceInfo = () => {
+    const itemAry = [
+      "Clearance and compliance service",
+      "Saving Time to Deal with commodo iaculis",
+      "Automate your business elis tristique",
+      "Saving Time to Deal with commodo iaculis",
+    ];
+    const items = itemAry.map((item, idx) => (
+      <div key={idx} className="flex gap-4">
+        <ArrowRight size={20} color="#000000" />
+        <p>{item}</p>
+      </div>
+    ));
+    return (
         <div>
-            <div>{banner.slice(3,4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{color: color.grayTxt}} className='mx-auto my-8 w-3/4 space-y-16'>
+            <div>{banner.slice(3, 4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
+            <div style={{ color: color.grayTxt }} className='mx-auto my-8 w-3/4 space-y-16'>
                 <div className=' space-y-4'>
                     <img src={img} alt="sea transport" />
                     <div className='flex items-center gap-4'>
@@ -55,7 +59,7 @@ const ServiceInfo = ()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
