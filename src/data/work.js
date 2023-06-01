@@ -1,30 +1,37 @@
-import ship from '../icons/ship-icon.svg'
-import build from '../icons/build-icon.svg'
-import flight from '../icons/flight-icon.svg'
-import screen from '../icons/screen-icon.svg'
-import truck from '../icons/truck-icon.svg'
-import user from '../icons/cust-icon.svg'
+import ship from "../icons/ship-icon.svg";
+import build from "../icons/build-icon.svg";
+import flight from "../icons/flight-icon.svg";
+import screen from "../icons/screen-icon.svg";
+import truck from "../icons/truck-icon.svg";
+import user from "../icons/cust-icon.svg";
 // flight svg property --- width="74" height="46" viewBox="0 0 74 58"
 // reference --- svg width="56" height="58" viewBox="0 0 56 58"
 
-const work = [{
+const work = [
+  {
     icon: ship,
-    txt: 'sea transport services'
-},{
+    txt: "sea transport services",
+  },
+  {
     icon: build,
-    txt: 'warehousing services'
-},{
+    txt: "warehousing services",
+  },
+  {
     icon: flight,
-    txt: 'air fright services'
-},{
+    txt: "air fright services",
+  },
+  {
     icon: screen,
-    txt: 'project & exhibition'
-},{
+    txt: "project & exhibition",
+  },
+  {
     icon: truck,
-    txt: 'local shipping services'
-},{
+    txt: "local shipping services",
+  },
+  {
     icon: user,
-    txt: 'customer clearance'
-}]
+    txt: "customer clearance",
+  },
+];
 
 export default work;
