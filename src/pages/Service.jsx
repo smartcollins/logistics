@@ -40,7 +40,6 @@ const Service = () => {
             <div className=' text-center my-8 w-11/12 mx-auto space-y-8 xl:w-3/4'>
                 <Caption mid={true} dark={true} txt={'what we do'} txt2={'logistics services'} />
                 <Work/>
-                <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
             </div>
             <div style={{ background: color.grayBg }}>
                 <div className=' w-11/12 mx-auto py-4 xl:py-8 xl:w-5/6'>
