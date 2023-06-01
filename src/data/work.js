@@ -7,7 +7,7 @@ import user from '../icons/cust-icon.svg'
 // flight svg property --- width="74" height="46" viewBox="0 0 74 58"
 // reference --- svg width="56" height="58" viewBox="0 0 56 58"
 
-const service = [{
+const work = [{
     icon: ship,
     txt: 'sea transport services'
 },{
@@ -27,4 +27,4 @@ const service = [{
     txt: 'customer clearance'
 }]
 
-export default service;
+export default work;
