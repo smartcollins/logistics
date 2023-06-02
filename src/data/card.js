@@ -8,32 +8,32 @@ import team6 from "../images/team6.png";
 const card = [
   {
     img: team,
-    name: "jessica arow",
+    names: "jessica arow",
     title: "warehouse head",
   },
   {
     img: team2,
-    name: "kathleen smith",
+    names: "kathleen smith",
     title: "transport manager",
   },
   {
     img: team3,
-    name: "rebecca tylor",
+    names: "rebecca tylor",
     title: "cargo head",
   },
   {
     img: team4,
-    name: "ria jackson",
+    names: "ria jackson",
     title: "operational head",
   },
   {
     img: team5,
-    name: "kane williams",
+    names: "kane williams",
     title: "country head",
   },
   {
     img: team6,
-    name: "lisara tylor",
+    names: "lisara tylor",
     title: "finance head",
   },
 ];
