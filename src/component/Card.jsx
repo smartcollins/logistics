@@ -7,7 +7,7 @@ const Card = ({idx,img,names,title})=>{
     
     return(
             <div className='w-full relative'>
-                <img className='h-[60vh] w-full object-cover xl:h-[40vh] ' src={img} alt={`team${idx}`} />
+                <img className='h-[60vh] w-full object-cover xl:h-[50vh] ' src={img} alt={`team${idx}`} />
                 <div style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='flex items-center w-fit gap-4 p-2 absolute bottom-16 right-0'>
                     <TwitterLogo size={20} color={color.darkTxt} weight="fill" />
                     <FacebookLogo size={20} color={color.darkTxt} weight="fill" />
