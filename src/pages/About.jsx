@@ -6,6 +6,7 @@ import Banner from '../component/Banner';
 import Work from '../component/Work';
 import Card from '../component/Card';
 import Review from '../component/Review'
+import Price from '../component/Price';
 
 
 
@@ -26,6 +27,7 @@ const About = ()=>{
                     <Review/>
                 </div>
             </div>
+            <Price/>
         </div>
     )
 }
