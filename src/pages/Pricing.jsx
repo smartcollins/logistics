@@ -2,9 +2,9 @@ import React from 'react';
 import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
-import Caption from '../component/Caption';
-import Footer from '../component/Footer'
+import Price from '../component/Price';
 import Review from '../component/Review';
+import Footer from '../component/Footer'
 
 
 const Pricing = () => {
@@ -40,7 +40,15 @@ const Pricing = () => {
     return (
         <div>
             <div>{banner.slice(10, 11).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{ color: color.darkTxt }} className=' capitalize mx-auto my-8 md:py-8 md:w-3/4'>
+            <div className='md:my-8 md:space-y-4'>
+                <Price/>
+                <div className='bg-[#f4f4f4]'>
+                    <div className='mx-auto py-4 md:py-8 md:w-3/4'>
+                        <Review />
+                    </div>
+                </div>
+            </div>
+            {/* <div>
                 <div>
                     <Caption mid={true} dark={true} txt={'pricing'} txt2={'our best pricing'} />
                     <div className='flex flex-wrap gap-4 text-center py-4 lg:flex-nowrap'>
@@ -50,7 +58,7 @@ const Pricing = () => {
                 <div className='bg-[#f4f4f4] mt-8'>
                     <Review />
                 </div>
-            </div>
+            </div> */}
             <Footer />
         </div>
     )
