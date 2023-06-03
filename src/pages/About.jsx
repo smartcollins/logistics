@@ -8,6 +8,7 @@ import Work from '../component/Work';
 import Card from '../component/Card';
 import Review from '../component/Review'
 import Price from '../component/Price';
+import Asked from '../component/Asked';
 
 
 
@@ -29,6 +30,7 @@ const About = ()=>{
                 </div>
             </div>
             <Price/>
+            <Asked/>
             <div className="my-8 xl:my-8">
                 <img className=" mx-auto h-16 w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery"/>
             </div>
