@@ -2,6 +2,7 @@ import React from 'react';
 import banner from '../data/banner';
 import color from '../data/color';
 import card from '../data/card';
+import sponsor from "../images/client_logo.png";
 import Banner from '../component/Banner';
 import Work from '../component/Work';
 import Card from '../component/Card';
@@ -28,6 +29,9 @@ const About = ()=>{
                 </div>
             </div>
             <Price/>
+            <div className="my-8 xl:my-8">
+                <img className=" mx-auto h-16 w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery"/>
+            </div>
         </div>
     )
 }
