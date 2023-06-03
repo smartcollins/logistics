@@ -1,5 +1,5 @@
 const price = [{
-    title: 'standard',
+    title: 'basic',
     cost: 39,
     txt: ['single truck', 'full insurance', '500 km', 'Real-time-shopping'],
 }, {
@@ -8,7 +8,7 @@ const price = [{
     dark: true,
     txt: ['single truck', 'full insurance', '500 km', 'Real-time-shopping'],
 }, {
-    title: 'standard',
+    title: 'premium',
     cost: 89,
     txt: ['double truck', 'full insurance', 'unlimited', 'Real-time-shopping'],
 }]
