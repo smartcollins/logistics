@@ -15,12 +15,14 @@ import Asked from '../component/Asked';
 
 
 const About = ()=>{
+    const btnAry = ['our goal','our approach','our target']
+    const btn = btnAry.map((item,idx)=><button key={idx} className=' first:bg-[#FFB82B] first:text-white bg-[#f4f4f4] text-[#1c1f35] capitalize py-2 rounded w-2/4 font-medium'>{item}</button>)
     return(
         <div>
             <div>{banner.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div>
-                <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto xl:flex-nowrap xl:w-3/4 xl:gap-8 bg-red-500">
-                    <div className='bg-red-200 md:h-[50vh] xl:h-full xl:w-2/4'>
+                <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto xl:flex-nowrap xl:w-3/4 xl:gap-8">
+                    <div className='md:h-[50vh] xl:h-full xl:w-2/4'>
                         <img className="w-full h-full object-cover " src={side} alt="side-ad"/>
                         {/* <img className="w-full object-cover md:h-[50vh] xl:h-full xl:w-2/5 " src={side} alt="side-ad"/> */}
                     </div>
@@ -30,14 +32,9 @@ const About = ()=>{
                             <p className=" normal-case text-[#666c89]"> Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.
                             </p>
                         </div>
-                        <div className='flex items-center justify-between bg-red-200'>
-                            <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Our Approach</button>
-                            <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn Target</button>
-                            <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn goal</button>
+                        <div className='flex items-center gap-4'>
+                            {btn}
                         </div>
-                        {/* <div className="items-center justify-between border-t border-[#d6d6d6] gap-4 pt-4 space-y-4 md:flex md:space-y-0 xl:py-8">
-                            {abt}
-                        </div> */}
                         <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem quia voluptassit.</p>
                         <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn More</button>
                     </div>
