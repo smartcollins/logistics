@@ -4,8 +4,8 @@ import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
-import Footer from '../component/Footer'
 import Asked from '../component/Asked';
+import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock } from 'phosphor-react'
 
 const Contact = () => {
@@ -48,7 +48,7 @@ const Contact = () => {
     return (
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div style={{ background: color.blueBg }} className=' xl:w-2/4 lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
+            <div style={{ background: color.blueBg }} className='lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
                 <div className='mx-auto w-fit text-center'>
                     <Caption mid={true} txt={'contact'} txt2={'get in touch with us'} />
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
@@ -64,10 +64,10 @@ const Contact = () => {
                     <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center mt-8 py-2 w-full md:text-xl md:py-4 md:w-2/5'>send message</button>
                 </div>
             </div>
-            <div className='my-8 bg-red-400 h-full'>
-                <img className='mx-auto h-[15vh] md:h-full xl:w-full' src={client} alt="client-logo" />
+            <div className='my-8 bg-red-400 h-full mx-auto xl:h-[15vh] xl:w-3/4'>
+                <img className='mx-auto xl:w-full h-full object-cover' src={client} alt="client-logo" />
             </div>
-            <Asked/>
+            <Asked />
             <Footer />
         </div>
     )
