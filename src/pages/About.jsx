@@ -3,7 +3,9 @@ import banner from '../data/banner';
 import color from '../data/color';
 import card from '../data/card';
 import sponsor from "../images/client_logo.png";
+import side from "../images/about-side.png";
 import Banner from '../component/Banner';
+import Caption from '../component/Caption';
 import Work from '../component/Work';
 import Card from '../component/Card';
 import Review from '../component/Review'
@@ -16,6 +18,26 @@ const About = ()=>{
     return(
         <div>
             <div>{banner.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
+            <div>
+                <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto xl:flex-nowrap xl:gap-8">
+                    <img className="w-full object-cover md:h-[50vh] xl:h-full xl:w-4/6 " src={side} alt="side-ad"/>
+                    <div className="text-left xl:w-2/4 space-y-8">
+                        <div className="my-4 capitalize">
+                            <Caption txt="about us" txt2="our company overview" />
+                            <p className=" normal-case text-[#666c89]"> Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.
+                            </p>
+                        </div>
+                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Our Approach</button>
+                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn Target</button>
+                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn goal</button>
+                        {/* <div className="items-center justify-between border-t border-[#d6d6d6] gap-4 pt-4 space-y-4 md:flex md:space-y-0 xl:py-8">
+                            {abt}
+                        </div> */}
+                        <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem quia voluptassit.</p>
+                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn More</button>
+                    </div>
+                </div>
+            </div>
             <div style={{background: color.grayBg}} className=''>
                 <div className='text-center py-8 mx-auto w-3/4'>
                     <Work/>
