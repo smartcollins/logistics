@@ -19,17 +19,22 @@ const About = ()=>{
         <div>
             <div>{banner.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div>
-                <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto xl:flex-nowrap xl:gap-8">
-                    <img className="w-full object-cover md:h-[50vh] xl:h-full xl:w-4/6 " src={side} alt="side-ad"/>
-                    <div className="text-left xl:w-2/4 space-y-8">
+                <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto xl:flex-nowrap xl:w-3/4 xl:gap-8 bg-red-500">
+                    <div className='bg-red-200 md:h-[50vh] xl:h-full xl:w-2/4'>
+                        <img className="w-full h-full object-cover " src={side} alt="side-ad"/>
+                        {/* <img className="w-full object-cover md:h-[50vh] xl:h-full xl:w-2/5 " src={side} alt="side-ad"/> */}
+                    </div>
+                    <div className="text-left space-y-4 xl:w-2/4">
                         <div className="my-4 capitalize">
                             <Caption txt="about us" txt2="our company overview" />
                             <p className=" normal-case text-[#666c89]"> Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.
                             </p>
                         </div>
-                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Our Approach</button>
-                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn Target</button>
-                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn goal</button>
+                        <div className='flex items-center justify-between bg-red-200'>
+                            <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Our Approach</button>
+                            <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn Target</button>
+                            <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>Learn goal</button>
+                        </div>
                         {/* <div className="items-center justify-between border-t border-[#d6d6d6] gap-4 pt-4 space-y-4 md:flex md:space-y-0 xl:py-8">
                             {abt}
                         </div> */}
