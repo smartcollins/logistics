@@ -7,6 +7,7 @@ import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock, CaretDown, CaretRight } from 'phosphor-react'
+import Asked from '../component/Asked';
 
 const Contact = () => {
     const iconAry = [{
@@ -77,7 +78,7 @@ const Contact = () => {
             <div className='my-8 bg-red-400 h-full w-full'>
                 <img className='mx-auto h-[15vh] md:h-full' src={client} alt="client-logo" />
             </div>
-            <div className='gap-8 bg-[#f4f4f4] py-4 my-8 md:py-8 md:my-0 space-y-4 lg:flex lg:py-16 lg:space-y-0'>
+            {/* <div className='gap-8 bg-[#f4f4f4] py-4 my-8 md:py-8 md:my-0 space-y-4 lg:flex lg:py-16 lg:space-y-0'>
                 <div className=' text-black px-4 md:mx-auto md:w-11/12 lg:w-3/4'>
                     <div className='mx-auto w-fit text-left'>
                         <Caption txt={'faq'} txt2={'frequently asked questions'} />
@@ -108,7 +109,8 @@ const Contact = () => {
                         <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className=' py-2 font-bold capitalize text-center w-2/5'>contact us</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Asked/>
             <Footer />
         </div>
     )
