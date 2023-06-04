@@ -26,13 +26,10 @@ const Asked = () => {
             <div className=" space-y-8">
               <div className=" space-y-2">
                 <div className="flex justify-between items-center">
-                  <p className=" font-semibold">
-                    How can I pay for your logistics services?
-                  </p>
+                  <p className=" font-semibold">How can I pay for your logistics services?</p>
                   <CaretDown size={25} color="#ffbb2b" />
                 </div>
-                <p> Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.
-                </p>
+                <p> Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
               </div>
               {end}
             </div>
@@ -45,14 +42,10 @@ const Asked = () => {
             alt="delivery"
           />
           <div className="absolute z-50 bg-[#091242]/95 top-1/2 -translate-y-1/2 md:left-4 p-8 space-y-4 md:bg-[#091242] md:w-2/4 lg:w-2/3 xl:w-2/4">
-            <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=" bg-[#e8e8e8]/10 uppercase w-fit px-4">
-              let's talk
-            </p>
-            <p className="font-[Rubik] font-bold text-2xl">
-              you need any help? get free consultation
-            </p>
+            <p style={{ borderLeft: `4px solid ${color.grdt}` }} className=" bg-[#e8e8e8]/10 uppercase w-fit px-4">let's talk</p>
+            <p className="font-[Rubik] font-bold text-2xl">you need any help? get free consultation</p>
             <div className="flex gap-4 items-center w-fit">
-              <Phone className=" w-12 h-12 bg-[#111c55] border border-[#2d3a7b] rounded-full px-3" size={16} color="#ffffff"/>
+              <Phone className=" w-12 h-12 bg-[#111c55] border border-[#2d3a7b] rounded-full px-3" size={16} color="#ffffff" />
               <div>
                 <p>have any questions</p>
                 <p>(00) 112 365 489</p>
@@ -63,7 +56,8 @@ const Asked = () => {
                 color: color.darkTxt,
                 background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`,
               }}
-              className=" py-2 font-bold capitalize text-center w-2/5">contact us
+              className=" py-2 font-bold capitalize text-center w-2/5">
+                contact us
             </button>
           </div>
         </div>
