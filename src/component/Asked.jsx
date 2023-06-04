@@ -18,9 +18,9 @@ const Asked = () => {
     </div>
   ));
   return (
-    <div>
-      <div className="gap-8 bg-[#f4f4f4] py-4 my-8 md:py-8 md:my-0 space-y-4 lg:flex lg:py-16 lg:space-y-0">
-        <div className=" text-black px-4 md:mx-auto md:w-11/12 lg:w-3/4">
+    <div className="bg-[#f4f4f4]">
+      <div className="gap-8 py-4 my-8 md:py-8 md:my-0 space-y-4 lg:flex lg:py-16 lg:space-y-0 2xl:h-[30vh] 2xl:w-3/4 2xl:mx-auto">
+        <div className=" text-black px-4 md:mx-auto md:w-11/12 lg:w-3/4 xl:ml-40 2xl:m-0">
           <div className="mx-auto w-fit text-left">
             <Caption txt={"faq"} txt2={"frequently asked questions"} />
             <div className=" space-y-8">
@@ -38,9 +38,9 @@ const Asked = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[70vh] relative md:h-[50vh] lg:h-full text-white">
+        <div className="w-full h-[70vh] relative md:h-[50vh] lg:h-full text-white 2xl:h-full">
           <img
-            className="h-full w-full object-cover md:ml-auto xl:w-4/6"
+            className="h-full w-full object-cover md:ml-auto xl:w-4/6 2xl:ml-0 2xl:w-full"
             src={client2}
             alt="delivery"
           />
@@ -63,9 +63,7 @@ const Asked = () => {
                 color: color.darkTxt,
                 background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`,
               }}
-              className=" py-2 font-bold capitalize text-center w-2/5"
-            >
-              contact us
+              className=" py-2 font-bold capitalize text-center w-2/5">contact us
             </button>
           </div>
         </div>
