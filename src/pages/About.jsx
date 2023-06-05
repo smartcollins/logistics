@@ -49,14 +49,14 @@ const About = () => {
                 {card.slice(0, 3).map((item, idx) => <div key={idx} className='md:last:hidden xl:last:block'><Card {...item} /></div>)}
             </div>
             <div style={{ background: color.grayBg }}>
-                <div className='text-center py-8 mx-auto w-3/4'>
+                <div className='text-center py-8 mx-auto lg:w-3/4'>
                     <Review />
                 </div>
             </div>
             <Price />
             <Asked />
             <div>
-                <img className=" mx-auto h-16 w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery" />
+                <img className=" mx-auto h-16 md:w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery" />
             </div>
             {/* <div className='my-8 h-full mx-auto xl:h-[15vh] xl:w-3/4'>
                 <img className='mx-auto xl:w-full h-full object-cover' src={sponsor} alt="client-logo" />
