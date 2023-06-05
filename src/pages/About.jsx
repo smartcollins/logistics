@@ -30,8 +30,7 @@ const About = () => {
                     <div className="text-left space-y-4 xl:w-2/4">
                         <div className="my-4 capitalize">
                             <Caption txt="about us" txt2="our company overview" />
-                            <p className="normal-case text-[#666c89]">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.
-                            </p>
+                            <p className="normal-case text-[#666c89]">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.</p>
                         </div>
                         <div className='flex items-center gap-4'>
                             {btn}
