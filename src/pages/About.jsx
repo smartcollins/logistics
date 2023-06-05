@@ -58,9 +58,6 @@ const About = () => {
             <div>
                 <img className=" mx-auto h-16 md:w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery" />
             </div>
-            {/* <div className='my-8 h-full mx-auto xl:h-[15vh] xl:w-3/4'>
-                <img className='mx-auto xl:w-full h-full object-cover' src={sponsor} alt="client-logo" />
-            </div> */}
             <Footer />
         </div>
     )
