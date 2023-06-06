@@ -8,12 +8,14 @@ import Card from '../component/Card';
 import news from '../data/news';
 import News from '../component/News';
 import Review from '../component/Review';
+import Stat from '../component/Stat';
 
 
 const Home = ()=>{
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
+            <Stat/>
             <div className=' space-y-4 mx-4 lg:my-8 lg:w-3/4 lg:mx-auto xl:w-3/5'>
                 {news.map((item,idx)=><News key={idx} {...item}/>)}
             </div>
