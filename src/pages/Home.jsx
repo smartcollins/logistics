@@ -7,6 +7,7 @@ import card from '../data/card';
 import Card from '../component/Card';
 import news from '../data/news';
 import News from '../component/News';
+import Review from '../component/Review';
 
 
 const Home = ()=>{
@@ -15,6 +16,9 @@ const Home = ()=>{
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' space-y-4 mx-4 lg:my-8 lg:w-3/4 lg:mx-auto xl:w-3/5'>
                 {news.map((item,idx)=><News key={idx} {...item}/>)}
+            </div>
+            <div className='text-center py-8 mx-auto lg:w-3/4'>
+                <Review />
             </div>
             <div className=' md:space-y-8'>
                 <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
