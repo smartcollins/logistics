@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
+import Home from './pages/Home';
 import Footer from './component/Footer';
 import Nav from './component/Nav';
 import ErrorPage from './pages/ErrorPage';
@@ -22,7 +23,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Footer />,
+      element: <Home />,
       errorElement: <ErrorPage />,
     },
     {
