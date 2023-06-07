@@ -7,6 +7,7 @@ import Caption from '../component/Caption';
 import Asked from '../component/Asked';
 import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock } from 'phosphor-react'
+import Input from '../component/Input';
 
 const Contact = () => {
     const iconAry = [{
@@ -58,7 +59,8 @@ const Contact = () => {
                 </div>
                 <div className=' w-full text-center'>
                     <div className=' space-y-4 md:space-y-0 md:grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
-                        {input}
+                        {/* {input} */}
+                        <Input/>
                         <textarea placeholder='Your Message' className=' indent-4 placeholder:py-4 md:placeholder:py-12 text-2xl lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                     </div>
                     <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center mt-8 py-2 w-full md:text-xl md:py-4 md:w-2/5'>send message</button>
