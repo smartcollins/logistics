@@ -1,3 +1,5 @@
+import { EnvelopeSimple, Phone, Clock } from "phosphor-react";
+
 const icon = [
   {
     icon: EnvelopeSimple,
