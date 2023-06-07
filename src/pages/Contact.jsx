@@ -4,10 +4,10 @@ import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
+import Input from '../component/Input';
 import Asked from '../component/Asked';
 import Footer from '../component/Footer'
 import { EnvelopeSimple, Phone, Clock } from 'phosphor-react'
-import Input from '../component/Input';
 
 const Contact = () => {
     const iconAry = [{
