@@ -28,23 +28,7 @@ const Contact = () => {
             })
         }
         <p className='w-full'>{item.txt}</p>
-    </div>)
-
-    const inputAry = [{
-        type: 'text',
-        place: 'your name*'
-    }, {
-        type: 'email',
-        place: 'email*'
-    }, {
-        type: 'number',
-        place: 'phone number*'
-    }, {
-        type: 'text',
-        place: 'city*'
-    }];
-
-    const input = inputAry.map((item, idx) => <input key={idx} type={item.type} placeholder={item.place} className=' indent-4 text-2xl placeholder:text-white lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:capitalize bg-transparent border border-white h-16 w-full' />)
+    </div>)    
 
     return (
         <div className=' capitalize text-white'>
@@ -59,7 +43,6 @@ const Contact = () => {
                 </div>
                 <div className=' w-full text-center'>
                     <div className=' space-y-4 md:space-y-0 md:grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
-                        {/* {input} */}
                         <Input/>
                         <textarea placeholder='Your Message' className=' indent-4 placeholder:py-4 md:placeholder:py-12 text-2xl lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                     </div>
