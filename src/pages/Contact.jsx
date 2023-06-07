@@ -4,32 +4,12 @@ import banner from '../data/banner';
 import color from '../data/color';
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
+import Icon from '../component/Icon';
 import Input from '../component/Input';
 import Asked from '../component/Asked';
 import Footer from '../component/Footer'
-import { EnvelopeSimple, Phone, Clock } from 'phosphor-react'
 
 const Contact = () => {
-    const iconAry = [{
-        icon: EnvelopeSimple,
-        txt: 'contact@logistics.com'
-    }, {
-        icon: Phone,
-        txt: '(00) 112 365 489'
-    }, {
-        icon: Clock,
-        txt: 'mon - sat 9.00 - 18.00 sunday closed'
-    }]
-
-    const icons = iconAry.map((item, idx) => <div key={idx} className='md:w-2/4 flex gap-4 justify-between md:justify-normal md:flex-col items-center'>
-        {
-            React.createElement(item.icon, {
-                size: 30, color: '#ffffff', className: 'w-fit h-fit p-4 bg-[#273270] border border-[#273270] rounded-full'
-            })
-        }
-        <p className='w-full'>{item.txt}</p>
-    </div>)    
-
     return (
         <div className=' capitalize text-white'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
@@ -39,7 +19,7 @@ const Contact = () => {
                     <p className='w-3/4 mx-auto'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                 </div>
                 <div className='md:flex space-y-4 md:space-y-0 md:gap-4 mx-auto my-8 text-right md:text-center'>
-                    {icons}
+                    <Icon/>
                 </div>
                 <div className=' w-full text-center'>
                     <div className=' space-y-4 md:space-y-0 md:grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
