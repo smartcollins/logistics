@@ -11,6 +11,7 @@ import Review from '../component/Review';
 import Stat from '../component/Stat';
 import color from '../data/color';
 import Input from '../component/Input';
+import Icon from '../component/Icon';
 
 
 const Home = ()=>{
@@ -20,6 +21,9 @@ const Home = ()=>{
             <Stat/>
             <div style={{backgroundColor: color.blueBg}}>
                 <div>
+                    <div className='bg-red-300 space-y-3'>
+                        <Icon alt={true}/>
+                    </div>
                     <div className=' space-y-4 md:space-y-0 md:grid grid-rows-4 grid-cols-2 gap-4 font-["League_Spartan"] capitalize text-4xl'>
                         <Input/>
                         <textarea placeholder='Your Message' className=' indent-4 placeholder:py-4 text-2xl lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
