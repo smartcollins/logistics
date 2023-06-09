@@ -21,25 +21,29 @@ const Home = ()=>{
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div>
-                <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
-                <div>
-                    {work.slice(0,2).map((item,idx)=><Work key={idx} {...item}/>)}
+            <div className='flex bg-red-400 w-3/4 mx-auto'>
+                <div className='bg-red-200 w-2/5'><Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/></div>
+                <div className='bg-red-300'>
+                    <div className='bg-red-500 flex '>
+                        {work.slice(0,2).map((item,idx)=><Work key={idx} {...item}/>)}
+                    </div>
+                    <div className='flex'>
+                        <div>
+                            {work.slice(2,3).map((item,idx)=><Work key={idx} {...item}/>)}
+                        </div>
+                        <div>
+                            {work.slice(4,5).map((item,idx)=><Work key={idx} {...item}/>)}
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    {work.slice(2,3).map((item,idx)=><Work key={idx} {...item}/>)}
-                </div>
-                <div>
-                    {work.slice(4,5).map((item,idx)=><Work key={idx} {...item}/>)}
-                </div>
-                <div>
+                {/* <div>
                     <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
                         <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
                             {work.slice(0,2).map((item,idx)=><Work key={idx} {...item} />)}
                         </div>
                         <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
                     </div>
-                </div>
+                </div> */}
             </div>
             <Stat/>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
