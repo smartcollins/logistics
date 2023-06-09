@@ -26,6 +26,20 @@ const Home = ()=>{
                 <div>
                     {work.slice(0,2).map((item,idx)=><Work key={idx} {...item}/>)}
                 </div>
+                <div>
+                    {work.slice(2,3).map((item,idx)=><Work key={idx} {...item}/>)}
+                </div>
+                <div>
+                    {work.slice(4,5).map((item,idx)=><Work key={idx} {...item}/>)}
+                </div>
+                <div>
+                    <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
+                        <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
+                            {work.slice(0,2).map((item,idx)=><Work key={idx} {...item} />)}
+                        </div>
+                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
+                    </div>
+                </div>
             </div>
             <Stat/>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
