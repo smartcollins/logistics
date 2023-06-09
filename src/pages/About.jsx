@@ -2,6 +2,7 @@ import React from 'react';
 import banner from '../data/banner';
 import color from '../data/color';
 import card from '../data/card';
+import work from '../data/work';
 import sponsor from "../images/client_logo.png";
 import side from "../images/about-side.png";
 import Banner from '../component/Banner';
@@ -41,8 +42,11 @@ const About = () => {
                 </div>
             </div>
             <div style={{ background: color.grayBg }}>
-                <div className='text-center py-8 mx-auto w-3/4'>
-                    <Work />
+                <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
+                    <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
+                        {work.map((item,idx)=><Work key={idx} {...item} />)}
+                    </div>
+                    <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
                 </div>
             </div>
             <div className=' md:space-y-8'>
