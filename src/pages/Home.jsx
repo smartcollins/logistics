@@ -13,12 +13,20 @@ import color from '../data/color';
 import Input from '../component/Input';
 import Icon from '../component/Icon';
 import sponsor from "../images/client_logo.png";
+import work from '../data/work';
+import Work from '../component/Work';
 
 
 const Home = ()=>{
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
+            <div>
+                <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
+                <div>
+                    {work.slice(0,2).map((item,idx)=><Work key={idx} {...item}/>)}
+                </div>
+            </div>
             <Stat/>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
