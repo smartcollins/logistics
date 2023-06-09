@@ -20,9 +20,17 @@ const Home = ()=>{
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <Stat/>
-            <div style={{backgroundColor: color.blueBg}}>
-                <div>
-                <div className='flex justify-between w-3/4 py-12 mx-auto'>
+            <div className='text-center py-8 mx-auto lg:w-3/4'>
+                <Review />
+            </div>
+            <div className=' md:space-y-8'>
+                <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
+                <div className="space-y-4 w-11/12 gap-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4">
+                    {card.slice(0, 3).map((item, idx) => <div key={idx} className='md:last:hidden xl:last:block'><Card {...item} /></div>)}
+                </div>
+            </div>
+            <div style={{backgroundColor: color.blueBg}} className=' py-12 space-y-8'>
+                <div className='flex justify-between w-3/4 mx-auto'>
                     <div className='text-white w-1/3 space-y-4'>
                         <div>
                             <div className='-my-4'><Caption txt={"contact"} txt2={"get in touch with us"}/></div>
@@ -40,22 +48,12 @@ const Home = ()=>{
                         <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center mt-8 py-2 w-full md:text-xl md:py-3 md:w-1/3'>submit message</button>
                     </div>
                 </div>
-                    <div>
-                        <img className=" mx-auto h-16 md:w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery" />
-                    </div>
+                <div>
+                    <img className=" mx-auto h-16 md:w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery" />
                 </div>
             </div>
             <div className=' space-y-4 mx-4 lg:my-8 lg:w-3/4 lg:mx-auto xl:w-3/5'>
                 {news.map((item,idx)=><News key={idx} {...item}/>)}
-            </div>
-            <div className='text-center py-8 mx-auto lg:w-3/4'>
-                <Review />
-            </div>
-            <div className=' md:space-y-8'>
-                <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
-                <div className="space-y-4 w-11/12 gap-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4">
-                    {card.slice(0, 3).map((item, idx) => <div key={idx} className='md:last:hidden xl:last:block'><Card {...item} /></div>)}
-                </div>
             </div>
             <Footer/>
         </div>
