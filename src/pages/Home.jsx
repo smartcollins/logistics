@@ -5,7 +5,6 @@ import Caption from '../component/Caption';
 import Footer from '../component/Footer';
 import card from '../data/card';
 import Card from '../component/Card';
-import news from '../data/news';
 import News from '../component/News';
 import Review from '../component/Review';
 import Stat from '../component/Stat';
@@ -79,7 +78,7 @@ const Home = ()=>{
                 </div>
             </div>
             <div className=' space-y-4 mx-4 lg:my-8 lg:w-3/4 lg:mx-auto xl:w-3/5'>
-                {news.map((item,idx)=><News key={idx} {...item}/>)}
+                <News/>
                 <div className=' bg-blue-300 w-1/5 mx-auto'><button style={{background: color.blueBg}} className='font-medium text-white py-2 w-full md:text-lg'>More Blog</button></div>
             </div>
             <Footer/>
