@@ -42,6 +42,7 @@ const About = () => {
                 </div>
             </div>
             <div style={{ background: color.grayBg }}>
+                <Caption dark={true} mid={true} txt={'what we do'} txt2={'our logistics services'}/>
                 <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
                     <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
                         {work.map((item,idx)=><Work key={idx} {...item} />)}
