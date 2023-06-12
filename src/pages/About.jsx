@@ -1,7 +1,6 @@
 import React from 'react';
 import banner from '../data/banner';
 import color from '../data/color';
-import card from '../data/card';
 import sponsor from "../images/client_logo.png";
 import side from "../images/about-side.png";
 import Banner from '../component/Banner';
@@ -49,10 +48,7 @@ const About = () => {
             <div className=' md:space-y-8'>
                 <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
                 <div className="space-y-4 w-11/12 gap-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4 ">
-                    {/* {card.slice(0, 3).map((item, idx) => <div key={idx} className='md:last:hidden xl:last:block'><Card {...item} /></div>)} */}
-                    {/* <div className='md:last:hidden last-of-type:hidden xl:last:block bg-red-300'><Card start={0} end={3} /></div> */}
                     <Card start={0} end={3} pat={'md:last:hidden xl:last:block'} />
-
                 </div>
             </div>
             <div style={{ background: color.grayBg }}>
