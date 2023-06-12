@@ -41,7 +41,8 @@ const Team = () => {
         <Caption mid={true} dark={true} txt={"team"} txt2={"meet expert team"}/>
       </div>
       <div className="space-y-4 w-11/12 gap-8 my-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4">
-        {card.map((item, idx) => <Card key={idx} {...item} />)}
+        {/* {card.map((item, idx) => <Card key={idx} {...item} />)} */}
+        <Card/>
       </div>
       <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto xl:flex-nowrap xl:gap-8">
         <img className="w-full object-cover md:h-[50vh] xl:h-full xl:w-4/6 " src={side} alt="side-ad"/>
