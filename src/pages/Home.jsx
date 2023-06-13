@@ -3,7 +3,6 @@ import banner from '../data/banner';
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import Footer from '../component/Footer';
-import card from '../data/card';
 import Card from '../component/Card';
 import News from '../component/News';
 import Review from '../component/Review';
@@ -21,23 +20,14 @@ const Home = ()=>{
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='flex bg-red-400 w-3/4 mx-auto'>
-                <div className='bg-red-200 w-2/5'><Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/></div>
-                <div className='bg-red-300'>
-                    <div className='bg-red-500 flex '>
-                        {/* {work.slice(0,2).map((item,idx)=><Work key={idx} {...item}/>)} */}
-                        <Work start={0} end={2}/>
-                    </div>
-                    <div className='flex'>
-                        <div>
-                            {work.slice(2,3).map((item,idx)=><Work key={idx} {...item}/>)}
-                            {/* <Work start={2} end={3} mono={true}/> */}
-                        </div>
-                        <div>
-                            {work.slice(4,5).map((item,idx)=><Work key={idx} {...item}/>)}
-                            {/* <Work start={4} end={5} mono={true}/> */}
-                        </div>
-                    </div>
+                <div className='bg-red-200'><Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/></div>
+                <div className='bg-blue-400 grid grid-cols-2 gap-4'>
+                    <Work start={0} end={1} home={true}/>
+                    <Work start={1} end={2} home={true}/>
+                    <Work start={2} end={3} home={true}/>
+                    <Work start={4} end={5} home={true}/>
                 </div>
+                
                 {/* <div>
                     <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
                         <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
@@ -54,8 +44,7 @@ const Home = ()=>{
             <div className=' md:space-y-8'>
                 <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
                 <div className="space-y-4 w-11/12 gap-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4">
-                    {/* {card.slice(0, 3).map((item, idx) => <div key={idx} className='md:last:hidden xl:last:block'><Card {...item} /></div>)} */}
-                    <Card start={0} end={3} style={'md:last:hidden xl:last:block'}/>
+                    <Card start={0} end={3} pat={'md:last:hidden xl:last:block'}/>
                 </div>
             </div>
             <div style={{backgroundColor: color.blueBg}} className=' py-12 space-y-8'>
