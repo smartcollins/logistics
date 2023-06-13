@@ -11,21 +11,24 @@ import color from '../data/color';
 import Input from '../component/Input';
 import Icon from '../component/Icon';
 import sponsor from "../images/client_logo.png";
-import work from '../data/work';
+// import work from '../data/work';
 import Work from '../component/Work';
 
 
 const Home = ()=>{
+    const works = [{start: 0,end:1},{start: 1,end:2},{start: 2,end:3},{start: 4,end:5}]
+    const items = works.map((item,idx)=><Work key={idx} home={true} {...item}/>)
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='flex bg-red-400 w-3/4 mx-auto'>
                 <div className='bg-red-200'><Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/></div>
                 <div className='bg-blue-400 grid grid-cols-2 gap-4'>
-                    <Work start={0} end={1} home={true}/>
+                    {/* <Work start={0} end={1} home={true}/>
                     <Work start={1} end={2} home={true}/>
                     <Work start={2} end={3} home={true}/>
-                    <Work start={4} end={5} home={true}/>
+                    <Work start={4} end={5} home={true}/> */}
+                    {items}
                 </div>
                 
                 {/* <div>
