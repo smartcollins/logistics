@@ -20,9 +20,7 @@ const Work = ({ start, end,home}) => {
           </div>
         ))}
       </div>
-      {home?undefined:<button style={{ background: color.blueBg }} className="text-white py-2 px-8 rounded">
-        More Works
-      </button>}
+      {home?undefined:<button style={{ background: color.blueBg }} className="text-white py-2 px-8 rounded">More Works</button>}
     </div>
   );
 };
