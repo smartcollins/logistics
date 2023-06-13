@@ -20,9 +20,9 @@ const Home = ()=>{
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className='flex bg-red-400 w-3/4 mx-auto'>
-                <div className='bg-red-200'><Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/></div>
-                <div className='bg-blue-400 grid grid-cols-2 gap-4'>
+            <div className='flex w-3/4 mx-auto'>
+                <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
+                <div className='grid grid-cols-2 gap-4'>
                     {items}
                 </div>
             </div>
