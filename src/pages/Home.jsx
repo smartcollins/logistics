@@ -20,7 +20,7 @@ const Home = ()=>{
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className='flex w-3/4 mx-auto'>
+            <div className='flex gap-4 w-3/4 mx-auto my-8'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
                 <div className='grid grid-cols-2 gap-4'>
                     {items}
