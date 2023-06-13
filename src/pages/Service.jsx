@@ -1,7 +1,6 @@
 import React from 'react';
 import color from '../data/color'
 import banner from '../data/banner';
-import work from '../data/work';
 import cube from '../icons/cube-icon.svg'
 import shield from '../icons/shield-icon.svg'
 import leaf from '../icons/env-icon.svg'
@@ -40,12 +39,8 @@ const Service = () => {
             <div>{banner.slice(2, 3).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' text-center my-8 w-11/12 mx-auto space-y-8 xl:w-3/4'>
                 <Caption mid={true} dark={true} txt={'what we do'} txt2={'logistics services'} />
-                {/* {work.map((item,idx)=><Work key={idx} {...item} />)} */}
-                <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
-                    <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
-                        {work.map((item,idx)=><Work key={idx} {...item} />)}
-                    </div>
-                    <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
+                <div className='py-8 space-y-8'>
+                    <Work/>
                 </div>
             </div>
             <div style={{ background: color.grayBg }}>

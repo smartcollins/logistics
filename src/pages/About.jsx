@@ -1,8 +1,6 @@
 import React from 'react';
 import banner from '../data/banner';
 import color from '../data/color';
-import card from '../data/card';
-import work from '../data/work';
 import sponsor from "../images/client_logo.png";
 import side from "../images/about-side.png";
 import Banner from '../component/Banner';
@@ -41,18 +39,16 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ background: color.grayBg }}>
-                <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
-                    <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
-                        {work.map((item,idx)=><Work key={idx} {...item} />)}
-                    </div>
-                    <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
+            <div style={{ background: color.grayBg }} className=' py-8'>
+                <Caption dark={true} mid={true} txt={'what we do'} txt2={'our logistics services'}/>
+                <div className='text-center mx-auto w-3/4'>
+                    <Work/>
                 </div>
             </div>
             <div className=' md:space-y-8'>
                 <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
-                <div className="space-y-4 w-11/12 gap-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4">
-                    {card.slice(0, 3).map((item, idx) => <div key={idx} className='md:last:hidden xl:last:block'><Card {...item} /></div>)}
+                <div className="space-y-4 w-11/12 gap-8 mx-auto md:grid md:space-y-0 md:grid-cols-2 xl:grid-cols-3 xl:w-3/4 ">
+                    <Card start={0} end={3} pat={'md:last:hidden xl:last:block'} />
                 </div>
             </div>
             <div style={{ background: color.grayBg }}>
