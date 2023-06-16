@@ -9,26 +9,26 @@ import { ArrowRight, ArrowSquareOut, PlayCircle } from "phosphor-react";
 
 const ProjectInfo = () => {
     const listAry = [
-        {
-            txt: "customer",
-            txt2: "david warner",
-        },
-        {
-            txt: "category",
-            txt2: "warehouse transportation",
-        },
-        {
-            txt: "date",
-            txt2: "12 december, 2022",
-        },
-        {
-            txt: "status",
-            txt2: "completed",
-        },
-        {
-            txt: "tags",
-            txt2: "life style travel, best delivery",
-        },
+      {
+        txt: "customer",
+        txt2: "david warner",
+      },
+      {
+        txt: "category",
+        txt2: "warehouse transportation",
+      },
+      {
+        txt: "date",
+        txt2: "12 december, 2022",
+      },
+      {
+        txt: "status",
+        txt2: "completed",
+      },
+      {
+        txt: "tags",
+        txt2: "life style travel, best delivery",
+      },
     ];
 
     const list = listAry.map((item, idx) => (

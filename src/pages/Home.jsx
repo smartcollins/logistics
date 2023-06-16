@@ -4,15 +4,17 @@ import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import Footer from '../component/Footer';
 import Card from '../component/Card';
+import Work from '../component/Work';
 import News from '../component/News';
 import Review from '../component/Review';
 import Stat from '../component/Stat';
 import color from '../data/color';
+import side from '../images/hm-side.png'
+import hm from '../images/hm-abt.jpg'
+import cube from '../icons/cube-icon.svg'
 import Input from '../component/Input';
 import Icon from '../component/Icon';
 import sponsor from "../images/client_logo.png";
-// import work from '../data/work';
-import Work from '../component/Work';
 
 
 const Home = ()=>{
@@ -21,25 +23,39 @@ const Home = ()=>{
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className='flex bg-red-400 w-3/4 mx-auto'>
-                <div className='bg-red-200'><Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/></div>
-                <div className='bg-blue-400 grid grid-cols-2 gap-4'>
-                    {/* <Work start={0} end={1} home={true}/>
-                    <Work start={1} end={2} home={true}/>
-                    <Work start={2} end={3} home={true}/>
-                    <Work start={4} end={5} home={true}/> */}
+            <div className='flex gap-4 w-3/4 mx-auto my-8'>
+                <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
+                <div className='grid grid-cols-2 gap-4'>
                     {items}
                 </div>
-                
-                {/* <div>
-                    <div className='text-center py-8 mx-auto w-3/4 space-y-8'>
-                        <div className=" space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto">
-                            {work.slice(0,2).map((item,idx)=><Work key={idx} {...item} />)}
-                        </div>
-                        <button style={{ background: color.blueBg }} className='text-white py-2 px-8 rounded'>More Works</button>
-                    </div>
-                </div> */}
             </div>
+            <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
+                <div className=' -mt-40 flex bg-white w-3/4 mx-auto p-4 font-medium'>
+                    <div className='w-2/4 space-y-4'>
+                        <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
+                        <div style={{color: color.grayTxt}} className=' space-y-4 text-base font-normal'>
+                            <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
+                            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                        </div>
+                        <div className=' space-y-4'>
+                        <div className='flex items-center gap-4'>
+                            <div style={{backgroundImage: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' rounded-full w-16 h-16 p-4'>
+                                <img src={cube} alt="icon" />
+                            </div>
+                            <p className=' capitalize text-lg'>delivery on time</p>
+                        </div>
+                        <div className='flex items-center gap-4'>
+                            <div style={{backgroundImage: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' rounded-full w-16 h-16 p-4'>
+                                <img src={cube} alt="icon" />
+                            </div>
+                            <p className=' capitalize text-lg'>delivery on time</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={side} alt="hm-side" />
+                    </div>
+                </div>
             <Stat/>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />

@@ -7,9 +7,9 @@ const Work = ({ start, end,home}) => {
     <div className="space-y-8">
       <div className= {home?"w-full":"space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto"}>
         {work.slice(start, end).map((item, idx) => (
-          <div key={idx} className={home?"group md:text-left flex gap-4 items-start bg-red-300":"group md:text-left bg-red-300"}>
-            <div className={home?"w-2/5 bg-red-400":undefined}>
-              <img className={home?"mx-auto object-contain bg-red-500":"mx-auto md:m-0"} src={item.icon} alt="icon-logo" />
+          <div key={idx} className={home?"group md:text-left flex gap-4 items-start":"group md:text-left"}>
+            <div className={home?"w-2/5":undefined}>
+              <img className={home?"mx-auto object-contain":"mx-auto md:m-0"} src={item.icon} alt="icon-logo" />
             </div>
             <div className={home?" border-l px-4":undefined}>
               <p className=" text-[#1c1f35] group-hover:text-[#ffb82b] text-2xl capitalize">
@@ -20,9 +20,7 @@ const Work = ({ start, end,home}) => {
           </div>
         ))}
       </div>
-      {home?undefined:<button style={{ background: color.blueBg }} className="text-white py-2 px-8 rounded">
-        More Works
-      </button>}
+      {home?undefined:<button style={{ background: color.blueBg }} className="text-white py-2 px-8 rounded">More Works</button>}
     </div>
   );
 };
