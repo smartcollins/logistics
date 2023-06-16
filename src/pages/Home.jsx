@@ -15,6 +15,7 @@ import cube from '../icons/cube-icon.svg'
 import Input from '../component/Input';
 import Icon from '../component/Icon';
 import sponsor from "../images/client_logo.png";
+import Fact from '../component/Fact';
 
 
 const Home = ()=>{
@@ -38,18 +39,8 @@ const Home = ()=>{
                             <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                         </div>
                         <div className=' space-y-4'>
-                        <div className='flex items-center gap-4'>
-                            <div style={{backgroundImage: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' rounded-full w-16 h-16 p-4'>
-                                <img src={cube} alt="icon" />
-                            </div>
-                            <p className=' capitalize text-lg'>delivery on time</p>
-                        </div>
-                        <div className='flex items-center gap-4'>
-                            <div style={{backgroundImage: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' rounded-full w-16 h-16 p-4'>
-                                <img src={cube} alt="icon" />
-                            </div>
-                            <p className=' capitalize text-lg'>delivery on time</p>
-                        </div>
+                            <Fact icon={cube} txt={'delivery on Time'}/>
+                            <Fact icon={cube} txt={'delivery on Time'}/>
                         </div>
                     </div>
                     <div>
