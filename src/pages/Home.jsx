@@ -17,6 +17,7 @@ import Input from '../component/Input';
 import Icon from '../component/Icon';
 import sponsor from "../images/client_logo.png";
 import Fact from '../component/Fact';
+import Trans from '../component/Trans';
 
 
 const Home = ()=>{
@@ -49,6 +50,10 @@ const Home = ()=>{
                     </div>
                 </div>
             <Stat/>
+            <div>
+                <p>transporting across the world</p>
+                <Trans/>
+            </div>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
             </div>
