@@ -51,7 +51,7 @@ const Home = ()=>{
                     </div>
                 </div>
             <Stat/>
-            <div className='text-center space-y-8 bg-gradient-to-b from-blue-500 from-50% to-red-500 to-50% px-4'>
+            <div className='text-center space-y-8 bg-gradient-to-b from-blue-500 from-50% to-red-500 to-50% px-4 py-8 pb-24'>
                 <p style={{color: color.darkTxt}} className='text-2xl capitalize font-semibold'>transporting across the world</p>
                 <div className='bg-red-400 flex gap-4'>
                     {trans.map((item,idx)=><Trans key={idx} {...item}/>)}
