@@ -56,7 +56,6 @@ const Home = ()=>{
                 <div className='bg-red-400 flex gap-4'>
                     {trans.map((item,idx)=><Trans key={idx} {...item}/>)}
                 </div>
-                {/* <div className=' bg-blue-300 w-1/5 mx-auto'><button style={{background: color.blueBg}} className='font-medium text-white py-2 w-full md:text-lg'>More Work</button></div> */}
                 <button style={{background: color.blueBg}} className='font-medium text-white w-fit py-2 px-6 md:text-lg'>More Work</button>
             </div>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
