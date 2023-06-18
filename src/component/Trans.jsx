@@ -4,18 +4,11 @@ import tran from '../images/tran.png'
 
 const Trans = ()=>{
     return(
-        <div>
-            <div className=' bg-blue-500 relative object-contain'>
-                <img className='h-full object-cover' src={tran} alt="ideas" />
-                {/* <div className=' text-red-300'> */}
-                    <p className='absolute'>specialized transport</p>
-                    <p>ocean transports</p>
-                {/* </div> */}
+        <div style={{backgroundImage: `url(${tran})`}} className='relative h-[60vh] px-4 bg-no-repeat'>
+            <div className='absolute bottom-4 capitalize'>
+                <p className='text-2xl font-semibold text-white'>specialized transport</p>
+                <p className='text-[#ffb629] text-lg font-medium'>ocean transports</p>
             </div>
-            {/* <div style={{backgroundImage: `url(${tran})`}}>
-                <p>specialized transport</p>
-                <p>ocean transports</p>
-            </div> */}
         </div>
     )
 }
