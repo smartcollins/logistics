@@ -18,6 +18,7 @@ import Icon from '../component/Icon';
 import sponsor from "../images/client_logo.png";
 import Fact from '../component/Fact';
 import Trans from '../component/Trans';
+import trans from '../data/trans';
 
 
 const Home = ()=>{
@@ -50,9 +51,13 @@ const Home = ()=>{
                     </div>
                 </div>
             <Stat/>
-            <div>
-                <p>transporting across the world</p>
-                <Trans/>
+            <div className='text-center space-y-8 bg-gradient-to-b from-blue-500 from-50% to-red-500 to-50% px-4'>
+                <p style={{color: color.darkTxt}} className='text-2xl capitalize font-semibold'>transporting across the world</p>
+                <div className='bg-red-400 flex gap-4'>
+                    {trans.map((item,idx)=><Trans key={idx} {...item}/>)}
+                </div>
+                {/* <div className=' bg-blue-300 w-1/5 mx-auto'><button style={{background: color.blueBg}} className='font-medium text-white py-2 w-full md:text-lg'>More Work</button></div> */}
+                <button style={{background: color.blueBg}} className='font-medium text-white w-fit py-2 px-6 md:text-lg'>More Work</button>
             </div>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
