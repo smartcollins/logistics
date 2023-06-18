@@ -17,7 +17,7 @@ const trans = [
   },
   {
     img: tran3,
-    txt: "ontract logistics",
+    txt: "contract logistics",
     txt2: "road transportation",
   },
   {
