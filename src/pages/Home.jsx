@@ -29,6 +29,14 @@ import drum from '../icons/drum-icon.svg'
 const Home = ()=>{
     const works = [{start: 0,end:1},{start: 1,end:2},{start: 2,end:3},{start: 4,end:5}]
     const items = works.map((item,idx)=><Work key={idx} home={true} {...item}/>)
+    const facts = [
+        {icon: cube,txt: 'safe package'},
+        {icon: ship,txt: 'ship everywhere'},
+        {icon: globe,txt: 'global tracking'},
+        {icon: call,txt: '24/7 support'},
+        {icon: clock,txt: 'in time delivery'},
+        {icon: drum,txt: 'transparent pricing'}
+    ]
     return(
         <div>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
