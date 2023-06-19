@@ -19,6 +19,11 @@ import sponsor from "../images/client_logo.png";
 import Fact from '../component/Fact';
 import Trans from '../component/Trans';
 import trans from '../data/trans';
+import ship from '../icons/ship-icon.svg'
+import globe from '../icons/globe-icon.svg'
+import call from '../icons/call-icon.svg'
+import clock from '../icons/clock-icon.svg'
+import drum from '../icons/drum-icon.svg'
 
 
 const Home = ()=>{
@@ -60,6 +65,16 @@ const Home = ()=>{
             </div>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
+            </div>
+            <div>
+                <div></div>
+                <div>
+                    <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
+                    <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+                    <div>
+                        {fac}
+                    </div>
+                </div>
             </div>
             <div className=' md:space-y-8'>
                 <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
