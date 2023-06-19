@@ -12,10 +12,13 @@ import color from '../data/color';
 import side from '../images/hm-side.png'
 import hm from '../images/hm-abt.jpg'
 import cube from '../icons/cube-icon.svg'
+import cash from '../icons/cash-icon.svg'
 import Input from '../component/Input';
 import Icon from '../component/Icon';
 import sponsor from "../images/client_logo.png";
 import Fact from '../component/Fact';
+import Trans from '../component/Trans';
+import trans from '../data/trans';
 
 
 const Home = ()=>{
@@ -31,16 +34,16 @@ const Home = ()=>{
                 </div>
             </div>
             <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
-                <div className=' -mt-40 flex bg-white w-3/4 mx-auto p-4 font-medium'>
-                    <div className='w-2/4 space-y-4'>
+                <div className=' -mt-40 flex bg-white w-3/4 mx-auto p-8 font-medium'>
+                    <div className='w-2/4 space-y-2'>
                         <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
-                        <div style={{color: color.grayTxt}} className=' space-y-4 text-base font-normal'>
+                        <div style={{color: color.grayTxt}} className=' space-y-2 text-base font-normal'>
                             <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
                             <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                         </div>
                         <div className=' space-y-4'>
                             <Fact icon={cube} txt={'delivery on Time'}/>
-                            <Fact icon={cube} txt={'delivery on Time'}/>
+                            <Fact icon={cash} txt={'optimized travel cost'}/>
                         </div>
                     </div>
                     <div>
@@ -48,6 +51,13 @@ const Home = ()=>{
                     </div>
                 </div>
             <Stat/>
+            <div className='text-center space-y-8 bg-gradient-to-b from-blue-500 from-50% to-red-500 to-50% px-4 py-8 pb-24'>
+                <p style={{color: color.darkTxt}} className='text-2xl capitalize font-semibold'>transporting across the world</p>
+                <div className='bg-red-400 flex gap-4'>
+                    {trans.map((item,idx)=><Trans key={idx} {...item}/>)}
+                </div>
+                <button style={{background: color.blueBg}} className='font-medium text-white w-fit py-2 px-6 md:text-lg'>More Work</button>
+            </div>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
             </div>
