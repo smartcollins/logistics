@@ -79,7 +79,7 @@ const Home = ()=>{
                 <div>
                     <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
                     <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
-                    <div>
+                    <div className='grid grid-cols-2 gap-4'>
                         {facts.map((item,idx)=><Fact key={idx} {...item}/>)}
                     </div>
                 </div>
