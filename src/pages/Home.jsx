@@ -24,6 +24,8 @@ import globe from '../icons/globe-icon.svg'
 import call from '../icons/call-icon.svg'
 import clock from '../icons/clock-icon.svg'
 import drum from '../icons/drum-icon.svg'
+import all from '../icons/all-icon.svg'
+import side2 from '../images/hm-side2.png'
 
 
 const Home = ()=>{
@@ -74,9 +76,17 @@ const Home = ()=>{
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
             </div>
-            <div>
-                <div></div>
-                <div>
+            <div className='flex gap-8 text-[#1c1f35] py-20 bg-gradient-to-r from-[#091242] from-[50%] to-[#f4f4f4] to-[50%]'>
+                <div className='bg-[#091242]'>
+                    <div className='bg-red-400 p-4 relative h-[90%] overflow-hidden'>
+                        <img className=' object-cover' src={side2} alt="bg-img" />
+                        <div className=' absolute left-1/2 -translate-x-1/2 bottom-4 flex items-center capitalize text-lg font-medium gap-4'>
+                            <img src={all} alt="icons" />
+                            <p>moving your product across borders</p>
+                        </div>
+                    </div>
+                </div>
+                <div className=''>
                     <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
                     <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                     <div className='grid grid-cols-2 gap-4'>
