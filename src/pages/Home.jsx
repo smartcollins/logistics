@@ -1,5 +1,20 @@
 import React from 'react';
 import banner from '../data/banner';
+import color from '../data/color';
+import trans from '../data/trans';
+import cube from '../icons/cube-icon.svg'
+import cash from '../icons/cash-icon.svg'
+import ship from '../icons/ship-icon.svg'
+import globe from '../icons/globe-icon.svg'
+import call from '../icons/call-icon.svg'
+import clock from '../icons/clock-icon.svg'
+import drum from '../icons/drum-icon.svg'
+import all from '../icons/all-icon.svg'
+import side from '../images/hm-side.png'
+import hm from '../images/hm-abt.jpg'
+import side2 from '../images/hm-side2.png'
+import end from '../images/hm-end.png'
+import sponsor from "../images/client_logo.png";
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import Footer from '../component/Footer';
@@ -8,25 +23,11 @@ import Work from '../component/Work';
 import News from '../component/News';
 import Review from '../component/Review';
 import Stat from '../component/Stat';
-import color from '../data/color';
-import side from '../images/hm-side.png'
-import hm from '../images/hm-abt.jpg'
-import cube from '../icons/cube-icon.svg'
-import cash from '../icons/cash-icon.svg'
 import Input from '../component/Input';
 import Icon from '../component/Icon';
-import sponsor from "../images/client_logo.png";
 import Fact from '../component/Fact';
 import Trans from '../component/Trans';
-import trans from '../data/trans';
-import ship from '../icons/ship-icon.svg'
-import globe from '../icons/globe-icon.svg'
-import call from '../icons/call-icon.svg'
-import clock from '../icons/clock-icon.svg'
-import drum from '../icons/drum-icon.svg'
-import all from '../icons/all-icon.svg'
-import side2 from '../images/hm-side2.png'
-import end from '../images/hm-end.png'
+
 
 
 const Home = ()=>{
