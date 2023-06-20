@@ -26,6 +26,7 @@ import clock from '../icons/clock-icon.svg'
 import drum from '../icons/drum-icon.svg'
 import all from '../icons/all-icon.svg'
 import side2 from '../images/hm-side2.png'
+import end from '../images/hm-end.png'
 
 
 const Home = ()=>{
@@ -40,7 +41,7 @@ const Home = ()=>{
         {icon: drum,txt: 'transparent pricing'}
     ]
     return(
-        <div>
+        <div className='space-y-20'>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='flex gap-4 w-3/4 mx-auto my-8'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
@@ -48,7 +49,8 @@ const Home = ()=>{
                     {items}
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
+            <div>
+                <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
                 <div className=' -mt-40 flex bg-white w-3/4 mx-auto p-8 font-medium'>
                     <div className='w-2/4 space-y-2'>
                         <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
@@ -65,7 +67,8 @@ const Home = ()=>{
                         <img src={side} alt="hm-side" />
                     </div>
                 </div>
-            <Stat/>
+                <Stat/>
+            </div>
             <div className='text-center space-y-8 bg-gradient-to-b from-white from-60% to-[#ffb629] to-40% px-4 py-8 pb-24'>
                 <p style={{color: color.darkTxt}} className='text-2xl capitalize font-semibold'>transporting across the world</p>
                 <div className='flex gap-4'>
@@ -129,7 +132,10 @@ const Home = ()=>{
                 <News/>
                 <div className=' bg-blue-300 w-1/5 mx-auto'><button style={{background: color.blueBg}} className='font-medium text-white py-2 w-full md:text-lg'>More Blog</button></div>
             </div>
-            <Footer/>
+            <div>
+                <img src={end} alt="home-end" />
+                <Footer/>
+            </div>
         </div>
     )
 }
