@@ -76,19 +76,21 @@ const Home = ()=>{
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
             </div>
-            <div className='flex gap-8 text-[#1c1f35] py-20 bg-gradient-to-r from-[#091242] from-[50%] to-[#f4f4f4] to-[50%]'>
-                <div className='bg-[#091242]'>
-                    <div className='bg-red-400 p-4 relative h-[90%] overflow-hidden'>
+            <div className='flex gap-12 text-[#1c1f35] py-20 bg-gradient-to-r from-[#091242] from-[50%] to-[#f4f4f4] to-[50%]'>
+                {/* <div className='bg-[#091242]'> */}
+                    <div className='bg-red-400 relative h-[90%] overflow-hidden ml-24'>
                         <img className=' object-cover' src={side2} alt="bg-img" />
-                        <div className=' absolute left-1/2 -translate-x-1/2 bottom-4 flex items-center capitalize text-lg font-medium gap-4'>
+                        <div style={{background: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' absolute left-1/2 -translate-x-1/2 bottom-0 flex items-center capitalize text-lg font-medium gap-4 py-2 px-4'>
                             <img src={all} alt="icons" />
                             <p>moving your product across borders</p>
                         </div>
                     </div>
-                </div>
-                <div className=''>
-                    <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
-                    <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+                {/* </div> */}
+                <div className=' space-y-8'>
+                    <div className='-space-y-4'>
+                        <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
+                        <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+                    </div>
                     <div className='grid grid-cols-2 gap-4'>
                         {facts.map((item,idx)=><Fact key={idx} {...item}/>)}
                     </div>
