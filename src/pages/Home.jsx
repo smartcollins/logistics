@@ -1,5 +1,20 @@
 import React from 'react';
 import banner from '../data/banner';
+import color from '../data/color';
+import trans from '../data/trans';
+import cube from '../icons/cube-icon.svg'
+import cash from '../icons/cash-icon.svg'
+import ship from '../icons/ship-icon.svg'
+import globe from '../icons/globe-icon.svg'
+import call from '../icons/call-icon.svg'
+import clock from '../icons/clock-icon.svg'
+import drum from '../icons/drum-icon.svg'
+import all from '../icons/all-icon.svg'
+import side from '../images/hm-side.png'
+import hm from '../images/hm-abt.jpg'
+import side2 from '../images/hm-side2.png'
+import end from '../images/hm-end.png'
+import sponsor from "../images/client_logo.png";
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import Footer from '../component/Footer';
@@ -8,24 +23,26 @@ import Work from '../component/Work';
 import News from '../component/News';
 import Review from '../component/Review';
 import Stat from '../component/Stat';
-import color from '../data/color';
-import side from '../images/hm-side.png'
-import hm from '../images/hm-abt.jpg'
-import cube from '../icons/cube-icon.svg'
-import cash from '../icons/cash-icon.svg'
 import Input from '../component/Input';
 import Icon from '../component/Icon';
-import sponsor from "../images/client_logo.png";
 import Fact from '../component/Fact';
 import Trans from '../component/Trans';
-import trans from '../data/trans';
+
 
 
 const Home = ()=>{
     const works = [{start: 0,end:1},{start: 1,end:2},{start: 2,end:3},{start: 4,end:5}]
     const items = works.map((item,idx)=><Work key={idx} home={true} {...item}/>)
+    const facts = [
+        {icon: cube,txt: 'safe package'},
+        {icon: ship,txt: 'ship everywhere'},
+        {icon: globe,txt: 'global tracking'},
+        {icon: call,txt: '24/7 support'},
+        {icon: clock,txt: 'in time delivery'},
+        {icon: drum,txt: 'transparent pricing'}
+    ]
     return(
-        <div>
+        <div className='space-y-20'>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='flex gap-4 w-3/4 mx-auto my-8'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
@@ -33,7 +50,8 @@ const Home = ()=>{
                     {items}
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
+            <div>
+                <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
                 <div className=' -mt-40 flex bg-white w-3/4 mx-auto p-8 font-medium'>
                     <div className='w-2/4 space-y-2'>
                         <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
@@ -50,16 +68,37 @@ const Home = ()=>{
                         <img src={side} alt="hm-side" />
                     </div>
                 </div>
-            <Stat/>
-            <div className='text-center space-y-8 bg-gradient-to-b from-blue-500 from-50% to-red-500 to-50% px-4 py-8 pb-24'>
+                <Stat/>
+            </div>
+            <div className='text-center space-y-8 bg-gradient-to-b from-white from-60% to-[#ffb629] to-40% px-4 py-8 pb-24'>
                 <p style={{color: color.darkTxt}} className='text-2xl capitalize font-semibold'>transporting across the world</p>
-                <div className='bg-red-400 flex gap-4'>
+                <div className='flex gap-4'>
                     {trans.map((item,idx)=><Trans key={idx} {...item}/>)}
                 </div>
                 <button style={{background: color.blueBg}} className='font-medium text-white w-fit py-2 px-6 md:text-lg'>More Work</button>
             </div>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
+            </div>
+            <div className='flex gap-12 text-[#1c1f35] py-20 bg-gradient-to-r from-[#091242] from-[50%] to-[#f4f4f4] to-[50%]'>
+                {/* <div className='bg-[#091242]'> */}
+                    <div className='bg-red-400 relative h-[90%] overflow-hidden ml-24'>
+                        <img className=' object-cover' src={side2} alt="bg-img" />
+                        <div style={{background: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' absolute left-1/2 -translate-x-1/2 bottom-0 flex items-center capitalize text-lg font-medium gap-4 py-2 px-4'>
+                            <img src={all} alt="icons" />
+                            <p>moving your product across borders</p>
+                        </div>
+                    </div>
+                {/* </div> */}
+                <div className=' space-y-8'>
+                    <div className='-space-y-4'>
+                        <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
+                        <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+                    </div>
+                    <div className='grid grid-cols-2 gap-4'>
+                        {facts.map((item,idx)=><Fact key={idx} {...item}/>)}
+                    </div>
+                </div>
             </div>
             <div className=' md:space-y-8'>
                 <Caption mid={true} dark={true} txt="the transporters" txt2="meet expert team" />
@@ -94,7 +133,10 @@ const Home = ()=>{
                 <News/>
                 <div className=' bg-blue-300 w-1/5 mx-auto'><button style={{background: color.blueBg}} className='font-medium text-white py-2 w-full md:text-lg'>More Blog</button></div>
             </div>
-            <Footer/>
+            <div>
+                <img src={end} alt="home-end" />
+                <Footer/>
+            </div>
         </div>
     )
 }
