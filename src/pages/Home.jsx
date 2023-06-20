@@ -42,7 +42,7 @@ const Home = ()=>{
         {icon: drum,txt: 'transparent pricing'}
     ]
     return(
-        <div className='space-y-20'>
+        <div className=' space-y-8 xl:space-y-20'>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='flex gap-4 w-3/4 mx-auto my-8'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
@@ -131,10 +131,10 @@ const Home = ()=>{
             </div>
             <div className=' space-y-4 mx-4 lg:my-8 lg:w-3/4 lg:mx-auto xl:w-3/5'>
                 <News/>
-                <div className=' bg-blue-300 w-1/5 mx-auto'><button style={{background: color.blueBg}} className='font-medium text-white py-2 w-full md:text-lg'>More Blog</button></div>
+                <div className=' bg-blue-300 w-2/4 md:w-1/5 mx-auto'><button style={{background: color.blueBg}} className='font-medium text-white py-2 w-full rounded-md md:text-lg'>More Blog</button></div>
             </div>
             <div>
-                <img src={end} alt="home-end" />
+                <img className='h-[30vh] object-cover xl:h-full' src={end} alt="home-end" />
                 <Footer/>
             </div>
         </div>
