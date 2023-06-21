@@ -52,8 +52,8 @@ const Home = ()=>{
             </div>
             <div>
                 <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
-                <div className=' -mt-40 flex bg-white w-3/4 mx-auto p-8 font-medium'>
-                    <div className='w-2/4 space-y-2'>
+                <div className=' xl-mt-40 xl:flex bg-white xl:w-3/4 mx-auto p-8 font-medium'>
+                    <div className='xl:w-2/4 space-y-2'>
                         <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
                         <div style={{color: color.grayTxt}} className=' space-y-2 text-base font-normal'>
                             <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
