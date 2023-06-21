@@ -80,11 +80,11 @@ const Home = ()=>{
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
             </div>
-            <div className='lg:flex pb-4 xl:pb-auto gap-12 text-[#1c1f35] xl:py-20 bg-gradient-to-b xl:bg-gradient-to-r from-[#091242] xl:from-[50%] to-[#f4f4f4] to-[50%]'>
+            <div className='lg:flex pb-4 lg:pb-auto gap-12 text-[#1c1f35] xl:py-20 bg-gradient-to-b xl:bg-gradient-to-r from-[#091242] xl:from-[50%] to-[#f4f4f4] to-[50%]'>
                 {/* <div className='bg-[#091242]'> */}
-                    <div className='bg-red-400 relative lg:h-[90%] overflow-hidden xl:ml-24'>
-                        <img className=' object-cover' src={side2} alt="bg-img" />
-                        <div style={{background: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' lg:absolute lg:left-1/2 lg:-translate-x-1/2 bottom-0 flex items-center capitalize text-lg font-medium gap-4 py-2 px-4'>
+                    <div className='bg-red-400 relative h-4/5 md:h-[50vh] lg:w-full xl:h-[90%] overflow-hidden xl:ml-24'>
+                        <img className='h-full w-full object-cover' src={side2} alt="bg-img" />
+                        <div style={{background: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' lg:absolute lg:w-4/5 lg:left-1/2 lg:-translate-x-1/2 bottom-0 flex items-center capitalize text-lg font-medium gap-4 py-2 px-4'>
                             <img src={all} alt="icons" />
                             <p>moving your product across borders</p>
                         </div>
@@ -96,7 +96,7 @@ const Home = ()=>{
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                     </div>
                     <div className='space-y-4 md:space-y-0 md:grid grid-cols-2 gap-4'>
-                        {facts.map((item,idx)=><div key={idx} className='bg-red-400'><Fact {...item}/></div>)}
+                        {facts.map((item,idx)=><div key={idx} className=''><Fact {...item}/></div>)}
                         {/* {facts.map((item,idx)=><Fact key={idx} {...item}/>)} */}
                     </div>
                 </div>
