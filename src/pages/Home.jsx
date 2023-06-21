@@ -106,9 +106,9 @@ const Home = ()=>{
                     <Card start={0} end={3} pat={'md:last:hidden xl:last:block'}/>
                 </div>
             </div>
-            <div style={{backgroundColor: color.blueBg}} className=' py-12 space-y-8'>
-                <div className='flex justify-between w-3/4 mx-auto'>
-                    <div className='text-white w-1/3 space-y-4'>
+            <div style={{backgroundColor: color.blueBg}} className='px-4 py-12 xl:px-0 space-y-8'>
+                <div className=' bg-red-400 space-y-4 lg:space-y-0 lg:flex lg:justify-between lg:w-3/4 lg:mx-auto'>
+                    <div className='text-white lg:w-3/4 xl:w-1/3 space-y-4 bg-red-500'>
                         <div>
                             <div className='-my-4'><Caption txt={"contact"} txt2={"get in touch with us"}/></div>
                             <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
@@ -122,7 +122,9 @@ const Home = ()=>{
                             <Input/>
                             <textarea placeholder='Your Message' className=' indent-4 placeholder:py-4 text-2xl lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                         </div>
-                        <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center mt-8 py-2 w-full md:text-xl md:py-3 md:w-1/3'>submit message</button>
+                        <div className='bg-red-200 w-fit md:mx-auto md:mt-8 md:w-1/3 lg:w-2/4 lg:mx-0 xl:w-1/3'>
+                            <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center py-2 w-full md:text-xl md:py-3'>submit message</button>
+                        </div>
                     </div>
                 </div>
                 <div>
