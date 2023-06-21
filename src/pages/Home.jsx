@@ -80,23 +80,24 @@ const Home = ()=>{
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
             </div>
-            <div className='flex gap-12 text-[#1c1f35] py-20 bg-gradient-to-r from-[#091242] from-[50%] to-[#f4f4f4] to-[50%]'>
+            <div className='lg:flex pb-4 xl:pb-auto gap-12 text-[#1c1f35] xl:py-20 bg-gradient-to-b xl:bg-gradient-to-r from-[#091242] xl:from-[50%] to-[#f4f4f4] to-[50%]'>
                 {/* <div className='bg-[#091242]'> */}
-                    <div className='bg-red-400 relative h-[90%] overflow-hidden ml-24'>
+                    <div className='bg-red-400 relative lg:h-[90%] overflow-hidden xl:ml-24'>
                         <img className=' object-cover' src={side2} alt="bg-img" />
-                        <div style={{background: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' absolute left-1/2 -translate-x-1/2 bottom-0 flex items-center capitalize text-lg font-medium gap-4 py-2 px-4'>
+                        <div style={{background: 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)'}} className=' lg:absolute lg:left-1/2 lg:-translate-x-1/2 bottom-0 flex items-center capitalize text-lg font-medium gap-4 py-2 px-4'>
                             <img src={all} alt="icons" />
                             <p>moving your product across borders</p>
                         </div>
                     </div>
                 {/* </div> */}
-                <div className=' space-y-8'>
+                <div className=' space-y-8 px-4 lg:space-y-0 lg:px-0 '>
                     <div className='-space-y-4'>
                         <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
                     </div>
-                    <div className='grid grid-cols-2 gap-4'>
-                        {facts.map((item,idx)=><Fact key={idx} {...item}/>)}
+                    <div className='space-y-4 md:space-y-0 md:grid grid-cols-2 gap-4'>
+                        {facts.map((item,idx)=><div key={idx} className='bg-red-400'><Fact {...item}/></div>)}
+                        {/* {facts.map((item,idx)=><Fact key={idx} {...item}/>)} */}
                     </div>
                 </div>
             </div>
@@ -122,7 +123,7 @@ const Home = ()=>{
                             <Input/>
                             <textarea placeholder='Your Message' className=' indent-4 placeholder:py-4 text-2xl lg:placeholder:text-2xl placeholder:text-lg placeholder:text-white/80 placeholder:text-white bg-transparent border border-white w-full col-span-2 row-span-2' name="" id=""></textarea>
                         </div>
-                        <div className='w-fit mx-auto mt-4 md:mt-8 md:w-1/3 lg:w-2/4 lg:mx-0 xl:w-1/3'>
+                        <div className='w-fit mx-auto mt-5 md:mt-8 md:w-1/3 lg:w-2/4 lg:mx-0 xl:w-1/3'>
                             <button style={{ color: color.darkTxt, background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)` }} className='font-medium capitalize text-center py-2 px-4 w-full rounded md:rounded-none md:text-xl md:py-3 md:px-0'>submit message</button>
                         </div>
                     </div>
