@@ -80,7 +80,7 @@ const Home = ()=>{
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
             </div>
-            <div className='lg:flex pb-4 lg:pb-auto gap-12 text-[#1c1f35] xl:py-20 bg-gradient-to-b xl:bg-gradient-to-r from-[#091242] xl:from-[50%] to-[#f4f4f4] to-[50%]'>
+            <div className='lg:flex pb-4 xl:pb-auto gap-12 text-[#1c1f35] xl:py-20 bg-gradient-to-b xl:bg-gradient-to-r from-[#091242] xl:from-[50%] to-[#f4f4f4] to-[50%]'>
                 {/* <div className='bg-[#091242]'> */}
                     <div className='bg-red-400 relative h-4/5 md:h-[50vh] lg:w-full xl:h-[90%] overflow-hidden xl:ml-24'>
                         <img className='h-full w-full object-cover' src={side2} alt="bg-img" />
@@ -90,7 +90,7 @@ const Home = ()=>{
                         </div>
                     </div>
                 {/* </div> */}
-                <div className=' space-y-8 px-4 lg:space-y-0 lg:px-0 '>
+                <div className=' space-y-8 px-4 lg:px-0 lg:space-y-4 xl:space-y-0 '>
                     <div className='-space-y-4'>
                         <Caption txt={'why choose'} txt2={'we create opportunity to reach potential'}/>
                         <p className=''>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
