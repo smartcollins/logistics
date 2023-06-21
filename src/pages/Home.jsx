@@ -72,10 +72,10 @@ const Home = ()=>{
             </div>
             <div className='text-center space-y-8 bg-gradient-to-b from-white from-10% xl:from-60% to-[#ffb629] to-40% px-4 py-8 xl:pb-24'>
                 <p style={{color: color.darkTxt}} className='text-2xl capitalize font-semibold'>transporting across the world</p>
-                <div className=' space-y-4 xl:space-y-0 xl:flex gap-4'>
-                    {trans.map((item,idx)=><Trans key={idx} {...item}/>)}
+                <div className=' space-y-4 md:space-y-0 md:grid md:grid-cols-2 xl:flex gap-4'>
+                    {trans.map((item,idx)=><div key={idx} className=' w-full md:last:hidden xl:last:flex'><Trans {...item}/></div>)}
                 </div>
-                <button style={{background: color.blueBg}} className='font-medium text-white w-fit py-2 px-6 md:text-lg'>More Work</button>
+                <button style={{background: color.blueBg}} className='font-medium text-white rounded w-fit py-2 px-6 md:text-lg'>More Work</button>
             </div>
             <div className='text-center py-8 mx-auto lg:w-3/4'>
                 <Review />
