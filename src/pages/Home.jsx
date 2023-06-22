@@ -50,7 +50,7 @@ const Home = ()=>{
                     {items}
                 </div>
             </div>
-            <div className='bg-red-600'>
+            <div>
                 <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
                 <div className=' lg-mt-40 xl:flex bg-white lg:w-3/4 mx-auto px-4 lg:p-8 font-medium space-y-4'>
                     <div className='xl:w-2/4 lg:space-y-2'>
@@ -64,7 +64,7 @@ const Home = ()=>{
                             <Fact icon={cash} txt={'optimized travel cost'}/>
                         </div>
                     </div>
-                    <div className='bg-red-500 h-[50vh] lg:h-full'>
+                    <div className=' h-[50vh] lg:h-full'>
                         <img className='w-full h-full object-cover' src={side} alt="hm-side" />
                     </div>
                 </div>
