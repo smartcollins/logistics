@@ -64,7 +64,7 @@ const Home = ()=>{
                             <Fact icon={cash} txt={'optimized travel cost'}/>
                         </div>
                     </div>
-                    <div className=' h-[50vh] xl:h-full lg:w-full bg-red-500'>
+                    <div className=' h-[50vh] xl:h-full lg:w-full'>
                         <img className='w-full h-full object-cover' src={side} alt="hm-side" />
                     </div>
                 </div>
