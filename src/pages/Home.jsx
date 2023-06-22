@@ -52,8 +52,8 @@ const Home = ()=>{
             </div>
             <div>
                 <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
-                <div className=' lg-mt-40 xl:flex bg-white lg:w-3/4 mx-auto px-4 lg:p-8 font-medium space-y-4'>
-                    <div className='xl:w-2/4 lg:space-y-2'>
+                <div className=' lg-mt-40 lg:flex bg-white lg:w-10/12 xl:w-3/4 mx-auto px-4 lg:p-8 font-medium space-y-4'>
+                    <div className='lg:w-full lg:space-y-2'>
                         <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
                         <div style={{color: color.grayTxt}} className=' space-y-2 text-base font-normal'>
                             <p className='-mt-2'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
@@ -64,7 +64,7 @@ const Home = ()=>{
                             <Fact icon={cash} txt={'optimized travel cost'}/>
                         </div>
                     </div>
-                    <div className=' h-[50vh] lg:h-full'>
+                    <div className=' h-[50vh] xl:h-full lg:w-full bg-red-500'>
                         <img className='w-full h-full object-cover' src={side} alt="hm-side" />
                     </div>
                 </div>
