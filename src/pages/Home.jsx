@@ -52,11 +52,11 @@ const Home = ()=>{
             </div>
             <div className='bg-red-600'>
                 <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
-                <div className=' xl-mt-40 xl:flex bg-white xl:w-3/4 mx-auto px-4 xl:p-8 font-medium space-y-4'>
-                    <div className='xl:w-2/4 space-y-2'>
+                <div className=' lg-mt-40 xl:flex bg-white lg:w-3/4 mx-auto px-4 lg:p-8 font-medium space-y-4'>
+                    <div className='xl:w-2/4 lg:space-y-2'>
                         <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
                         <div style={{color: color.grayTxt}} className=' space-y-2 text-base font-normal'>
-                            <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
+                            <p className='-mt-2'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
                             <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                         </div>
                         <div className=' space-y-4'>
@@ -64,7 +64,7 @@ const Home = ()=>{
                             <Fact icon={cash} txt={'optimized travel cost'}/>
                         </div>
                     </div>
-                    <div className='bg-red-500 h-[50vh]'>
+                    <div className='bg-red-500 h-[50vh] lg:h-full'>
                         <img className='w-full h-full object-cover' src={side} alt="hm-side" />
                     </div>
                 </div>
