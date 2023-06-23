@@ -34,7 +34,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>home</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/about'}>about</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>pages</Link>
-              <Link className="border-r last:border-none border-r-white w-full" to={'/'}>projects</Link>
+              <Link className="border-r last:border-none border-r-white w-full" to={'/project'}>projects</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/contact'}>contact</Link>
             </div>
             <div className=" hidden md:flex items-center justify-between w-2/5">
