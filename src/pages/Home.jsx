@@ -44,7 +44,7 @@ const Home = ()=>{
     return(
         <div className=' space-y-8 xl:space-y-20'>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className='flex gap-4 w-3/4 mx-auto my-8'>
+            <div className=' gap-4 my-8 px-4 xl:flex xl:w-3/4 xl:mx-auto'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
                 <div className='grid grid-cols-2 gap-4'>
                     {items}
