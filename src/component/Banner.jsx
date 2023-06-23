@@ -7,6 +7,7 @@ import {
   LinkedinLogo,
   InstagramLogo,
 } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   const blogGrdt = {
@@ -25,11 +26,16 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
         <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4">
           <div className=" bg-[#091242]/5 font-medium flex items-center justify-between -mx-4">
             <div className="flex items-center text-white w-full text-center md:w-2/4 xl:space-x-8">
-              <p className="border-r last:border-none border-r-white w-full">home</p>
+              {/* <p className="border-r last:border-none border-r-white w-full">home</p>
               <p className="border-r last:border-none border-r-white w-full">about</p>
               <p className="border-r last:border-none border-r-white w-full">pages</p>
               <p className="border-r last:border-none border-r-white w-full">projects</p>
-              <p className="border-r last:border-none border-r-white w-full">contact</p>
+              <p className="border-r last:border-none border-r-white w-full">contact</p> */}
+              <Link className="border-r last:border-none border-r-white w-full" to={'/'}>home</Link>
+              <Link className="border-r last:border-none border-r-white w-full" to={'/about'}>about</Link>
+              <Link className="border-r last:border-none border-r-white w-full" to={'/'}>pages</Link>
+              <Link className="border-r last:border-none border-r-white w-full" to={'/'}>projects</Link>
+              <Link className="border-r last:border-none border-r-white w-full" to={'/contact'}>contact</Link>
             </div>
             <div className=" hidden md:flex items-center justify-between w-2/5">
               <div className="flex items-center justify-between w-2/5">
