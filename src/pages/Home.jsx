@@ -42,7 +42,7 @@ const Home = () => {
         { icon: drum, txt: 'transparent pricing' }
     ]
     return (
-        <div className=' space-y-8 xl:space-y-20'>
+        <div className=' space-y-8 overflow-x-clip xl:space-y-20'>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' gap-4 my-8 px-4 xl:flex xl:w-3/4 xl:mx-auto'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'} />
@@ -52,7 +52,7 @@ const Home = () => {
             </div>
             <div>
                 <div style={{ backgroundImage: `url(${hm})` }} className=' h-80'></div>
-                <div className=' xl-mt-40 xl:flex bg-white xl:w-3/4 mx-auto p-8 font-medium'>
+                <div className=' xl:mt-40 xl:flex bg-white xl:w-3/4 mx-auto px-4 xl:p-8 font-medium space-y-8 xl:space-y-0'>
                     <div className='xl:w-2/4 space-y-2'>
                         <Caption txt={'why us'} txt2={'we provide full range global logistics solution'} />
                         <div style={{ color: color.grayTxt }} className=' space-y-2 text-base font-normal'>
@@ -70,7 +70,7 @@ const Home = () => {
                 </div>
                 <Stat />
             </div>
-            <div className='text-center space-y-8 bg-gradient-to-b from-white from-10% xl:from-60% to-[#ffb629] to-40% px-4 py-8 xl:pb-24'>
+            <div className='text-center space-y-8 bg-gradient-to-b from-white from-10% xl:from-60% to-[#ffb629] to-40% px-4 xl:pb-24'>
                 <p style={{ color: color.darkTxt }} className='text-2xl capitalize font-semibold'>transporting across the world</p>
                 <div className=' space-y-4 md:space-y-0 md:grid md:grid-cols-2 xl:flex gap-4'>
                     {trans.map((item, idx) => <div key={idx} className=' w-full md:last:hidden xl:last:flex'><Trans {...item} /></div>)}
