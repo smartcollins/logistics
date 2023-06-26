@@ -1,6 +1,6 @@
 import React from 'react';
 import banner from '../data/banner';
-import news from '../data/news';
+// import news from '../data/news';
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import News from '../component/News';
