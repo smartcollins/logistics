@@ -24,7 +24,7 @@ const ServiceInfo = () => {
       </div>
     ));
     return (
-        <div>
+        <div className=' overflow-x-clip'>
             <div>{banner.slice(3, 4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{ color: color.grayTxt }} className='mx-auto w-11/12 my-4 space-y-4 lg:my-8 lg:w-3/4 lg:space-y-16'>
                 <div className=' space-y-4'>
