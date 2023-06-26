@@ -30,7 +30,7 @@ const Team = () => {
   ));
 
   return (
-    <div>
+    <div className=" overflow-x-clip">
       <div>
         {banner.slice(8, 9).map((item, idx) => (
           <Banner key={idx} {...item} />
