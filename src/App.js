@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 // import './App.css';
+// import Footer from './component/Footer';
+
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
-import Footer from './component/Footer';
 import Nav from './component/Nav';
 import ErrorPage from './pages/ErrorPage';
 import About from './pages/About';
