@@ -26,13 +26,15 @@ const Service = () => {
         txt: 'care for environment'
     }]
 
-    const itm = itmAry.map((item, idx) => <div key={idx} className='flex gap-4 lg:items-start'>
+    const itm = itmAry.map((item, idx) => (
+      <div key={idx} className="flex gap-4 lg:items-start">
         <img src={item.icon} alt="icons" />
-        <div className='lg:mt-4'>
-            <p className='capitalize text-xl lg:font-medium'>{item.txt}</p>
-            <p>Leverage agile frameworks to provide arobust synopis for strategy foster collaborative thinking</p>
+        <div className="lg:mt-4">
+          <p className="capitalize text-xl lg:font-medium">{item.txt}</p>
+          <p>Leverage agile frameworks to provide arobust synopis for strategy foster collaborative thinking</p>
         </div>
-    </div>)
+      </div>
+    ));
 
     return (
         <div className=' overflow-x-clip'>
