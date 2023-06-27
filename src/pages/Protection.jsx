@@ -14,12 +14,7 @@ const Protection = () => {
                     <p className='text-white text-2xl font-bold'>enter password</p>
                     <div className='w-full flex items-center justify-center gap-4'>
                         <input className=' w-full bg-transparent text-white indent-4 placeholder:capitalize caret-[#999999] py-2 border border-[#4e5683] outline-[#4e5683]' type="text" placeholder='enter your password' />
-                        <button style={{
-                            background: `linear-gradient(94.06deg,
-                                ${color.grdt} -1.21%, ${color.grdt2} 58.66%,
-                                ${color.grdt3} 116.84%)`
-                        }}
-                            className='w-2/4 font-medium text-base py-2'>submit</button>
+                        <button style={{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`}} className='w-2/4 font-medium text-base py-2'>submit</button>
                     </div>
                 </div>
             </div>
