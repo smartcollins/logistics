@@ -1,8 +1,8 @@
 import React from "react";
-import color from "../data/color";
-import icon2 from "../icons/cal-w-Icon.svg";
-import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, } from "phosphor-react";
 import { Link } from "react-router-dom";
+import icon2 from "../icons/cal-w-Icon.svg";
+import color from "../data/color";
+import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, } from "phosphor-react";
 
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   const blogGrdt = {
@@ -14,10 +14,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   return (
     <div className="h-[80vh] bg-red-200 text-white capitalize">
       {/* <div style={blog?{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%),url(${img})` }:{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'> */}
-      <div
-        style={blog ? blogGrdt : { backgroundImage: `url(${img})` }}
-        className="bg-no-repeat bg-cover bg-center h-full relative"
-      >
+      <div style={blog ? blogGrdt : { backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
         <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4">
           <div className=" bg-[#091242]/5 font-medium flex items-center justify-between -mx-4">
             {/* <div className="flex items-center text-white w-full text-center md:w-2/4 xl:space-x-8"> */}
