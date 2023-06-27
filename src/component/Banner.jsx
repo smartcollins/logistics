@@ -1,12 +1,7 @@
 import React from "react";
 import color from "../data/color";
 import icon2 from "../icons/cal-w-Icon.svg";
-import {
-  TwitterLogo,
-  FacebookLogo,
-  LinkedinLogo,
-  InstagramLogo,
-} from "phosphor-react";
+import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, } from "phosphor-react";
 import { Link } from "react-router-dom";
 
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
