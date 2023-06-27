@@ -1,7 +1,6 @@
 import React from 'react';
 import color from '../data/color';
 
-
 const Fact = ({ icon, txt }) => {
     return (
         <div className='flex items-center gap-4'>
@@ -15,6 +14,5 @@ const Fact = ({ icon, txt }) => {
         </div>
     )
 }
-
 
 export default Fact; 
