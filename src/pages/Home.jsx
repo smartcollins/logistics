@@ -44,19 +44,19 @@ const Home = () => {
     return (
         <div className=' space-y-8 overflow-x-clip xl:space-y-20'>
             <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
-            <div className=' gap-4 my-8 px-4 xl:flex xl:w-3/4 xl:mx-auto'>
-                <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'} />
-                <div className=' space-y-4 xl:grid xl:grid-cols-2 xl:gap-4'>
+            <div className='xl:flex gap-4 px-4 lg:w-10/12 xl:w-3/4 mx-auto my-8'>
+                <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
+                <div className='space-y-4 md:space-y-0 md:grid grid-cols-2 gap-4'>
                     {items}
                 </div>
             </div>
             <div>
-                <div style={{ backgroundImage: `url(${hm})` }} className=' h-80'></div>
-                <div className=' xl:mt-40 xl:flex bg-white xl:w-3/4 mx-auto px-4 xl:p-8 font-medium space-y-8 xl:space-y-0'>
-                    <div className='xl:w-2/4 space-y-2'>
-                        <Caption txt={'why us'} txt2={'we provide full range global logistics solution'} />
-                        <div style={{ color: color.grayTxt }} className=' space-y-2 text-base font-normal'>
-                            <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
+                <div style={{backgroundImage: `url(${hm})`}} className=' h-80'></div>
+                <div className=' lg-mt-40 lg:flex bg-white lg:w-10/12 xl:w-3/4 mx-auto px-4 lg:p-8 font-medium space-y-4'>
+                    <div className='lg:w-full lg:space-y-2'>
+                        <Caption txt={'why us'} txt2={'we provide full range global logistics solution'}/>
+                        <div style={{color: color.grayTxt}} className=' space-y-2 text-base font-normal'>
+                            <p className='-mt-2'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.</p>
                             <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                         </div>
                         <div className=' space-y-4'>
@@ -64,8 +64,8 @@ const Home = () => {
                             <Fact icon={cash} txt={'optimized travel cost'} />
                         </div>
                     </div>
-                    <div>
-                        <img src={side} alt="hm-side" />
+                    <div className=' h-[50vh] xl:h-full lg:w-full'>
+                        <img className='w-full h-full object-cover' src={side} alt="hm-side" />
                     </div>
                 </div>
                 <Stat />
