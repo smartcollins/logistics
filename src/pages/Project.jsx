@@ -23,7 +23,7 @@ const Project = () => {
   ));
 
   return (
-    <div>
+    <div className=" overflow-x-clip">
       <div>
         {banner.slice(4, 5).map((item, idx) => (
           <Banner key={idx} {...item} />

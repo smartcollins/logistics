@@ -66,7 +66,7 @@ const ProjectInfo = () => {
     ));
 
     return (
-        <div>
+        <div className=" overflow-x-clip">
             <Banner img={banner} txt={"warehouse transportation"} info={"air cargo transportataion"} />
             <div style={{ background: color.grayBg }} className="h-full py-4 md:py-8 lg:py-12">
                 <div className="gap-8 mx-auto capitalize w-11/12 space-y-4 md:flex md:items-center md:space-y-0 lg:w-3/4">

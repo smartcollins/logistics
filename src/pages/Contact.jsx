@@ -11,7 +11,7 @@ import Footer from '../component/Footer'
 
 const Contact = () => {
     return (
-        <div className=' capitalize text-white'>
+        <div className=' capitalize text-white overflow-x-clip'>
             <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{ background: color.blueBg }} className='lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
                 <div className='mx-auto w-fit text-center'>
