@@ -1,16 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import icon2 from "../icons/cal-w-Icon.svg";
 import color from "../data/color";
 import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, } from "phosphor-react";
 
 const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
-  const blogGrdt = {
-    background: `linear-gradient(91.25deg, rgba(3, 45, 95, 0.54) 9.39%, rgba(9, 18, 95, 0.49) 93.62%),
-    url(${img})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  };
   return (
     <div className="h-[80vh] bg-red-200 text-white capitalize">
       <div style={{ backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
