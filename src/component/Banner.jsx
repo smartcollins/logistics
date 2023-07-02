@@ -16,14 +16,14 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
       <div style={blog ? blogGrdt : { backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
         <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4 bg-red-500">
           <div className=" bg-[#091242]/5 font-medium flex items-center justify-between">
-            <div className="flex items-center text-white w-full text-center md:w-2/4 bg-blue-400">
+            <div className="flex items-center text-white w-full text-center md:w-[60%] md:-ml-5 lg:-ml-7 bg-red-200">
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>home</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/about'}>about</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>pages</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/project'}>projects</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/contact'}>contact</Link>
-            </div>
-            <div className=" hidden md:flex items-center justify-between w-2/5">
+            </div>            
+            <div className=" hidden md:flex items-center justify-between bg-red-800 w-2/5">
               <div className="flex items-center justify-between w-2/5">
                 <InstagramLogo size={20} color="#ffffff" />
                 <LinkedinLogo size={20} color="#ffffff" weight="fill" />
