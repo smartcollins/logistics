@@ -14,16 +14,17 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   return (
     <div className="h-[80vh] bg-red-200 text-white capitalize">
       <div style={blog ? blogGrdt : { backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
-        <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4 bg-red-500">
+        {/* <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4 bg-red-500"> */}
+        <div className="lg:w-3/4 lg:m-auto">
           <div className=" bg-[#091242]/5 font-medium flex items-center justify-between">
-            <div className="flex items-center text-white w-full text-center md:w-[60%] md:-ml-5 lg:-ml-7 bg-red-200">
+            <div className="flex items-center text-white w-full text-center md:w-[60%] md:-ml-5 lg:-ml-9">
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>home</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/about'}>about</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>pages</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/project'}>projects</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/contact'}>contact</Link>
             </div>            
-            <div className=" hidden md:flex items-center justify-between bg-red-800 w-2/5">
+            <div className=" hidden md:flex items-center justify-between w-2/5">
               <div className="flex items-center justify-between w-2/5">
                 <InstagramLogo size={20} color="#ffffff" />
                 <LinkedinLogo size={20} color="#ffffff" weight="fill" />
@@ -50,7 +51,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
             </div>
           ) : (
             // <div className=" absolute top-1/2 -translate-y-1/2 w-full md:w-2/4">
-            <div className=" absolute top-1/2 -translate-y-1/2 w-full md:w-2/4 lg:w-2/3 xl:w-2/4">
+            <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 md:w-2/4 lg:w-2/3 xl:w-2/4">
               <p style={{ borderLeft: `2px solid ${color.grdt}` }} className="bg-[#041c37]/50 w-fit px-2 py-1">
                 {txt}
               </p>
