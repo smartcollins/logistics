@@ -10,7 +10,7 @@ const Nav = () => {
     return (
         <div className='text-white capitalize'>
             <div style={{ backgroundColor: color.blueBg }} className='flex items-center justify-between py-4'>
-                <div className='mx-auto flex w-3/4'>
+                <div className='mx-auto flex w-3/4 bg-red-500'>
                 <div className='w-1/3'>
                     <Logo />
                 </div>

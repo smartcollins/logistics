@@ -15,8 +15,9 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
     <div className="h-[80vh] bg-red-200 text-white capitalize">
       {/* <div style={blog?{ background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%),url(${img})` }:{ backgroundImage: `url(${img})` }} className='bg-no-repeat bg-cover bg-center h-full relative'> */}
       <div style={blog ? blogGrdt : { backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
-        <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4">
-          <div className=" bg-[#091242]/5 font-medium flex items-center justify-between -mx-4">
+        <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4 bg-red-500">
+          {/* <div className=" bg-[#091242]/5 font-medium flex items-center justify-between -mx-4"> */}
+          <div className=" bg-[#091242]/5 font-medium flex items-center justify-between">
             {/* <div className="flex items-center text-white w-full text-center md:w-2/4 xl:space-x-8"> */}
             <div className="flex items-center text-white w-full text-center md:w-2/4">
               {/* <p className="border-r last:border-none border-r-white w-full">home</p>
@@ -32,12 +33,14 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
             </div>
             <div className=" hidden md:flex items-center justify-between w-2/5">
               <div className="flex items-center justify-between w-2/5">
+              {/* <div className="flex items-center justify-between w-full"> */}
                 <InstagramLogo size={20} color="#ffffff" />
                 <LinkedinLogo size={20} color="#ffffff" weight="fill" />
                 <TwitterLogo size={20} color="#ffffff" weight="fill" />
                 <FacebookLogo size={20} color="#ffffff" weight="fill" />
               </div>
-              <button className="p-4 text-black bg-white w-2/4 capitalize">
+              <button className="p-4 text-black bg-white/50 w-2/4 capitalize">
+              {/* <button className="py-4 w-full text-black bg-white/50 capitalize"> */}
                 request quote
               </button>
             </div>
