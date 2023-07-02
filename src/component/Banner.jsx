@@ -14,10 +14,10 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   return (
     <div className="h-[80vh] bg-red-200 text-white capitalize">
       <div style={blog ? blogGrdt : { backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
-        {/* <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4 bg-red-500"> */}
-        <div className="lg:w-3/4 lg:m-auto">
-          <div className=" bg-[#091242]/5 font-medium flex items-center justify-between">
-            <div className="flex items-center text-white w-full text-center md:w-[60%] md:-ml-5 lg:-ml-9">
+        <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4">
+        {/* <div className="lg:w-3/4 lg:m-auto"> */}
+          <div className=" bg-[#091242]/5 font-medium flex items-center justify-between -mx-4">
+            <div className="flex items-center text-white w-full text-center md:w-3/5 md:-ml-5 xl:-ml-9">
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>home</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/about'}>about</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>pages</Link>
@@ -31,7 +31,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 <TwitterLogo size={20} color="#ffffff" weight="fill" />
                 <FacebookLogo size={20} color="#ffffff" weight="fill" />
               </div>
-              <button className="p-4 text-black bg-white/50 w-2/4 capitalize">
+              <button className="p-4 text-black bg-white w-2/4 capitalize">
                 request quote
               </button>
             </div>
