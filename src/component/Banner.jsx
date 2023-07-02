@@ -14,24 +14,25 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   return (
     <div className="h-[80vh] bg-red-200 text-white capitalize">
       <div style={blog ? blogGrdt : { backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
-        <div className="lg:w-3/4 lg:m-auto md:mx-8 mx-4">
+        <div className="lg:w-3/4 lg:m-auto bg-red-500">
         {/* <div className="lg:w-3/4 lg:m-auto"> */}
-          <div className=" bg-[#091242]/5 font-medium flex items-center justify-between -mx-4">
-            <div className="flex items-center text-white w-full text-center md:w-3/5 md:-ml-5 xl:-ml-9">
+          {/* <div className=" bg-[#091242]/5 font-medium flex items-center justify-between"> */}
+          <div className="font-medium flex items-center justify-between bg-blue-300/50">
+            <div className="flex items-center text-white w-full text-center lg:w-3/5 lg:-ml-5 xl:-ml-9 bg-red-600">
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>home</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/about'}>about</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/'}>pages</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/project'}>projects</Link>
               <Link className="border-r last:border-none border-r-white w-full" to={'/contact'}>contact</Link>
             </div>            
-            <div className=" hidden md:flex items-center justify-between w-2/5">
-              <div className="flex items-center justify-between w-2/5">
+            <div className=" hidden md:flex items-center justify-between w-2/5 bg-blue-500">
+              <div className="flex items-center justify-between w-2/5 md:w-full lg:w-2/5 bg-red-400">
                 <InstagramLogo size={20} color="#ffffff" />
                 <LinkedinLogo size={20} color="#ffffff" weight="fill" />
                 <TwitterLogo size={20} color="#ffffff" weight="fill" />
                 <FacebookLogo size={20} color="#ffffff" weight="fill" />
               </div>
-              <button className="p-4 text-black bg-white w-2/4 capitalize">
+              <button className="p-4 text-black bg-white/50 w-2/4 capitalize md:hidden lg:block">
                 request quote
               </button>
             </div>
@@ -51,7 +52,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
             </div>
           ) : (
             // <div className=" absolute top-1/2 -translate-y-1/2 w-full md:w-2/4">
-            <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 md:w-2/4 lg:w-2/3 xl:w-2/4">
+            <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-2/4 lg:w-2/3 xl:w-2/4 bg-red-500">
               <p style={{ borderLeft: `2px solid ${color.grdt}` }} className="bg-[#041c37]/50 w-fit px-2 py-1">
                 {txt}
               </p>
