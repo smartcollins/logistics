@@ -3,8 +3,12 @@
 // import Footer from './component/Footer';
 
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
+import color from './data/color';
+import Logo from './component/Logo';
+import { Clock, Envelope, Phone } from 'phosphor-react';
+
 import Home from './pages/Home';
-import Nav from './component/Nav';
+// import Nav from './component/Nav';
 import ErrorPage from './pages/ErrorPage';
 import About from './pages/About';
 import Service from './pages/Service';
@@ -27,11 +31,11 @@ function App() {
       element: <Home />,
       errorElement: <ErrorPage />,
     },
-    {
-      path: "/nav",
-      element: <Nav />,
-      errorElement: <ErrorPage />,
-    },
+    // {
+    //   path: "/nav",
+    //   element: <Nav />,
+    //   errorElement: <ErrorPage />,
+    // },
     {
       path: "/about",
       element: <About />,
@@ -100,6 +104,45 @@ function App() {
   ])
   return (
     <div>
+      <div className='text-white capitalize'>
+            <div style={{ backgroundColor: color.blueBg }} className='flex items-center justify-between py-4'>
+                <div className='mx-auto flex w-3/4 bg-red-500'>
+                <div className='w-1/3'>
+                    <Logo />
+                </div>
+                <div className='flex items-center justify-between gap-4 w-full'>
+                    <div className='flex items-center gap-4 w-full '>
+                        <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
+                            <Clock size={20} color="#f6b426" />
+                        </div>
+                        <div>
+                            <p>Mon - Sat 9.00 - 18.00</p>
+                            <p>Sunday Closed</p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-4 w-full '>
+                        <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
+                            <Envelope size={20} color="#f6b426" />
+                        </div>
+                        <div>
+                            <p>Email</p>
+                            <p>contact@logistics.com</p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-4 w-full '>
+                        <div className='p-3 rounded-full bg-[#111c55] border border-[#273270]'>
+                            <Phone size={20} color="#f6b426" />
+                        </div>
+                        <div>
+                            <p>Call us</p>
+                            <p>(00) 112 365 489</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+      {/* <Nav/> */}
       <RouterProvider router={router} />
     </div>
   );
