@@ -10,7 +10,8 @@ import {
 
 const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
   return (
-    <div className="h-[80vh] bg-red-200 text-white capitalize">
+    // <div className="h-[80vh] bg-red-200 text-white capitalize">
+    <div style={{color:'white',textTransform:'capitalize'}} className={extra?"h-[100vh] md:h-[82vh] bg-red-200":"bg-red-200 h-[80vh] xl:h-[60vh]"}>
       <div style={{ backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
         <div className="bg-[#091242]/30">
           <div className="lg:w-3/4 lg:m-auto">
@@ -41,7 +42,7 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
               </p>
               {extra && (
                 <div>
-                  <p className=" font-[Krub] font-medium w-3/5 my-2 ">{txt2}</p>
+                  <p className=" font-[Krub] font-medium mr-4 md:w-3/5 my-2 ">{txt2}</p>
                   <button
                     style={{
                       background: `linear-gradient(94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%)`,
