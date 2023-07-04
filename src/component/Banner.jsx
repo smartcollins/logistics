@@ -15,20 +15,20 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
                 <Link className="border-r last:border-none border-r-white w-full" to={"/"}>home</Link>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>about</Link>
                 {/* <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>pages</Link> */}
-                <div className=" relative bg-red-500 text-center border-r last:border-none border-r-white w-full group">
-                  <div className="flex items-center gap-1 justify-center mx-auto w-3/4 bg-red-400">
+                <div className=" relative text-center border-r last:border-none border-r-white w-full group">
+                  <div className="flex items-center gap-1 justify-center mx-auto w-3/4">
                     <p>pages</p>
                     <CaretDown color="#fdfdfd" size={20}/>
                   </div>
-                  <div className="hidden z-10 group-hover:flex flex-col absolute w-full text-left bg-blue-500">
-                    <Link to={'/blog'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">blog</Link>
-                    <Link to={'/change'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">change</Link>
-                    <Link to={'/errorpage'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">errorpage</Link>
-                    <Link to={'/liecenses'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">liecenses</Link>
-                    <Link to={'/pricing'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">pricing</Link>
-                    <Link to={'/project'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">project</Link>
-                    <Link to={'/service'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">service</Link>
-                    <Link to={'/team'} className=" hover:bg-blue-500/50 w-3/5 mx-auto bg-red-300">team</Link>
+                  <div style={{backgroundColor:color.blueBg}} className="hidden z-10 group-hover:flex flex-col gap-2 absolute w-full text-left py-1">
+                    <Link to={'/blog'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">blog</Link>
+                    <Link to={'/change'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">change</Link>
+                    <Link to={'/errorpage'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">errorpage</Link>
+                    <Link to={'/liecenses'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">liecenses</Link>
+                    <Link to={'/pricing'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">pricing</Link>
+                    <Link to={'/project'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">project</Link>
+                    <Link to={'/service'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">service</Link>
+                    <Link to={'/team'} className=" hover:bg-blue-500/20 w-3/5 mx-auto">team</Link>
                   </div>
                 </div>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/project"}>projects</Link>
