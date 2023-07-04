@@ -20,7 +20,7 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
                     <p>pages</p>
                     <CaretDown color="#fdfdfd" size={20}/>
                   </div>
-                  <div className="hidden z-10 group-hover:block absolute w-full text-left bg-blue-500">
+                  <div className="hidden z-10 group-hover:flex flex-col absolute w-full text-left bg-blue-500">
                     <Link to={'/blog'} className=" w-3/5 mx-auto bg-red-300">blog</Link>
                     <Link to={'/change'} className=" w-3/5 mx-auto bg-red-300">change</Link>
                     <Link to={'/errorpage'} className=" w-3/5 mx-auto bg-red-300">errorpage</Link>
