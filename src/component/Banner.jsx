@@ -21,14 +21,14 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
                     <CaretDown color="#fdfdfd" size={20}/>
                   </div>
                   <div className="hidden z-10 group-hover:block absolute w-full text-left bg-blue-500">
-                    <Link className=" w-3/5 mx-auto bg-red-300">blog</Link>
-                    <Link className=" w-3/5 mx-auto bg-red-300">change</Link>
-                    <Link className=" w-3/5 mx-auto bg-red-300">errorLinkage</Link>
-                    <Link className=" w-3/5 mx-auto bg-red-300">liecenses</Link>
-                    <Link className=" w-3/5 mx-auto bg-red-300">Linkricing</Link>
-                    <Link className=" w-3/5 mx-auto bg-red-300">Linkroject</Link>
-                    <Link className=" w-3/5 mx-auto bg-red-300">service</Link>
-                    <Link className=" w-3/5 mx-auto bg-red-300">team</Link>
+                    <Link to={'/blog'} className=" w-3/5 mx-auto bg-red-300">blog</Link>
+                    <Link to={'/change'} className=" w-3/5 mx-auto bg-red-300">change</Link>
+                    <Link to={'/errorpage'} className=" w-3/5 mx-auto bg-red-300">errorpage</Link>
+                    <Link to={'/liecenses'} className=" w-3/5 mx-auto bg-red-300">liecenses</Link>
+                    <Link to={'/pricing'} className=" w-3/5 mx-auto bg-red-300">pricing</Link>
+                    <Link to={'/project'} className=" w-3/5 mx-auto bg-red-300">project</Link>
+                    <Link to={'/service'} className=" w-3/5 mx-auto bg-red-300">service</Link>
+                    <Link to={'/team'} className=" w-3/5 mx-auto bg-red-300">team</Link>
                   </div>
                 </div>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/project"}>projects</Link>
