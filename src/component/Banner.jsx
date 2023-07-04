@@ -1,12 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import color from "../data/color";
-import {
-  TwitterLogo,
-  FacebookLogo,
-  LinkedinLogo,
-  InstagramLogo,
-} from "phosphor-react";
+import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } from "phosphor-react";
 
 const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
   return (
@@ -19,7 +14,14 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
               <div className="flex items-center text-white w-full text-center lg:w-3/5 lg:-ml-5 xl:-ml-9">
                 <Link className="border-r last:border-none border-r-white w-full" to={"/"}>home</Link>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>about</Link>
-                <Link className="border-r last:border-none border-r-white w-full"to={"/"}>pages</Link>
+                {/* <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>pages</Link> */}
+                <div className=" relative bg-red-500 text-center border-r last:border-none border-r-white w-full">
+                  <div className="flex items-center gap-1 justify-center mx-auto w-3/4 bg-red-400">
+                    <p>pages</p>
+                    <CaretDown color="#fdfdfd" size={20}/>
+                  </div>
+                  <div className="absolute"></div>
+                </div>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/project"}>projects</Link>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/contact"}>contact</Link>
               </div>
