@@ -1,12 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import color from "../data/color";
-import {
-  TwitterLogo,
-  FacebookLogo,
-  LinkedinLogo,
-  InstagramLogo,
-} from "phosphor-react";
+import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } from "phosphor-react";
 
 const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
   return (
@@ -19,7 +14,23 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
               <div className="flex items-center text-white w-full text-center lg:w-3/5 lg:-ml-5 xl:-ml-9">
                 <Link className="border-r last:border-none border-r-white w-full" to={"/"}>home</Link>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>about</Link>
-                <Link className="border-r last:border-none border-r-white w-full"to={"/"}>pages</Link>
+                {/* <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>pages</Link> */}
+                <div className=" relative text-center border-r last:border-none border-r-white w-full group">
+                  <div className="flex items-center gap-1 justify-center mx-auto w-3/4">
+                    <p>pages</p>
+                    <CaretDown color="#fdfdfd" size={20}/>
+                  </div>
+                  <div style={{backgroundColor:color.blueBg}} className="hidden z-10 rounded group-hover:flex flex-col items-center gap-2 absolute w-full text-left py-1">
+                    <Link to={'/blog'} className=" hover:bg-blue-500/20 w-3/5 text-center ">blog</Link>
+                    <Link to={'/change'} className=" hover:bg-blue-500/20 w-3/5 text-center ">change</Link>
+                    <Link to={'/errorpage'} className=" hover:bg-blue-500/20 w-3/5 text-center ">errorpage</Link>
+                    <Link to={'/liecenses'} className=" hover:bg-blue-500/20 w-3/5 text-center ">liecenses</Link>
+                    <Link to={'/pricing'} className=" hover:bg-blue-500/20 w-3/5 text-center ">pricing</Link>
+                    <Link to={'/project'} className=" hover:bg-blue-500/20 w-3/5 text-center ">project</Link>
+                    <Link to={'/service'} className=" hover:bg-blue-500/20 w-3/5 text-center ">service</Link>
+                    <Link to={'/team'} className=" hover:bg-blue-500/20 w-3/5 text-center ">team</Link>
+                  </div>
+                </div>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/project"}>projects</Link>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/contact"}>contact</Link>
               </div>
