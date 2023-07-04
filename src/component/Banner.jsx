@@ -15,12 +15,21 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
                 <Link className="border-r last:border-none border-r-white w-full" to={"/"}>home</Link>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>about</Link>
                 {/* <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>pages</Link> */}
-                <div className=" relative bg-red-500 text-center border-r last:border-none border-r-white w-full">
+                <div className=" relative bg-red-500 text-center border-r last:border-none border-r-white w-full group">
                   <div className="flex items-center gap-1 justify-center mx-auto w-3/4 bg-red-400">
                     <p>pages</p>
                     <CaretDown color="#fdfdfd" size={20}/>
                   </div>
-                  <div className="absolute"></div>
+                  <div className="hidden z-10 group-hover:block absolute w-full text-left bg-blue-500">
+                    <p className=" w-3/5 mx-auto bg-red-300">blog</p>
+                    <p className=" w-3/5 mx-auto bg-red-300">change</p>
+                    <p className=" w-3/5 mx-auto bg-red-300">errorpage</p>
+                    <p className=" w-3/5 mx-auto bg-red-300">liecenses</p>
+                    <p className=" w-3/5 mx-auto bg-red-300">pricing</p>
+                    <p className=" w-3/5 mx-auto bg-red-300">project</p>
+                    <p className=" w-3/5 mx-auto bg-red-300">service</p>
+                    <p className=" w-3/5 mx-auto bg-red-300">team</p>
+                  </div>
                 </div>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/project"}>projects</Link>
                 <Link className="border-r last:border-none border-r-white w-full" to={"/contact"}>contact</Link>
