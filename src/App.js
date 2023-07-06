@@ -113,7 +113,12 @@ function App() {
       path: "about",
       element: <About />,
       errorElement: <ErrorPage />,
-    },]
+    },{
+        path: "/service",
+        element: <Service />,
+        errorElement: <ErrorPage />,
+    },
+      ]
   }])
 
   return (
