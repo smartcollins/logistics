@@ -18,6 +18,7 @@ import protection from '../images/br-protection.png'
 
 const banner = [{
     img: home,
+    path: 'home',
     txt: 'Logistics & Supply Chain Solutions',
     info: 'Your Gateway to any Destination in the World',
     extra: true,
@@ -25,59 +26,73 @@ const banner = [{
     btn_txt: 'explore more',
 }, {
     img: about,
+    path: 'about',
     txt: 'about us',
     info: 'about our logistics'
 }, {
     img: service,
+    path: 'service',
     txt: 'services',
     info: 'our logistics service'
 }, {
     img: service2,
+    path: 'service2',
     txt: 'service single',
     info: 'service details'
 }, {
     img: project,
+    path: 'project',
     txt: 'gallery',
     info: 'our projects'
 }, {
     img: project2,
+    path: 'project2',
     txt: 'warehouse transportation',
     info: 'cargo transportataion'
 }, {
     img: blog,
+    path: 'blog',
     txt: 'blog',
     info: 'our latest news'
 }, {
     img: blog2,
+    path: 'blog2',
     txt: '12 march',
     // blog: true,
     info: 'how technology can help redraw the supply chain map'
 }, {
     img: team,
+    path: 'team',
     txt: 'team',
     info: 'our team'
 }, {
     img: contact,
+    path: 'contact',
     txt: 'contact',
     info: 'contact us'
 }, {
     img: pricing,
+    path: 'pricing',
     txt: 'pricing',
     info: 'our best price'
 }, {
     img: error,
+    path: 'error',
     txt: 'error',
     info: 'an error occurred'
 }, {
     img: change,
+    path: 'change',
     txt: 'update',
     info: 'change log'
 }, {
     img: liecense,
+    path: 'liecense',
     txt: 'liecense',
     info: 'all assets liecenses'
 }, {
     img: protection,
+    path: 'protection',
     txt: 'protection',
     info: 'password protection'
 }]
