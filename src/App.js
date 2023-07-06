@@ -5,8 +5,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Nav from './component/Nav';
-import Footer from './component/Footer';
+import Nav from "./component/Nav";
+import Footer from "./component/Footer";
 import ErrorPage from "./pages/ErrorPage";
 import About from "./pages/About";
 import Service from "./pages/Service";
@@ -102,60 +102,61 @@ function App() {
   //   },
   // ]);
 
-  const routes = createBrowserRouter([{
-    path: '/',
-    element: <Layout/>,
-    errorElement: <ErrorPage/>,
-    children: [{
-      // path: 'home',
-      index: true,
-      element: <Home/>
-    },{
-      path: "about",
-      element: <About />,
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
       errorElement: <ErrorPage />,
-    },{
-        path: "service",
-        element: <Service />,
-        errorElement: <ErrorPage />,
-    },{
-      path: "change",
-      element: <Change />,
-      errorElement: <ErrorPage />,
-  },{
-    path: "contact",
-    element: <Contact />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "liecenses",
-    element: <Liecenses />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "pricing",
-    element: <Pricing />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "project",
-    element: <Project />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "protection",
-    element: <Protection />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "team",
-    element: <Team />,
-    errorElement: <ErrorPage />,
-  },
-      ]
-  }])
+      children: [
+        {
+          // path: 'home',
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        {
+          path: "service",
+          element: <Service />,
+        },
+        {
+          path: "change",
+          element: <Change />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
+        {
+          path: "liecenses",
+          element: <Liecenses />,
+        },
+        {
+          path: "pricing",
+          element: <Pricing />,
+        },
+        {
+          path: "project",
+          element: <Project />,
+        },
+        {
+          path: "protection",
+          element: <Protection />,
+        },
+        {
+          path: "team",
+          element: <Team />,
+        },
+      ],
+    },
+  ]);
 
   return (
     <div>
-
       {/* <RouterProvider router={router} /> */}
       <RouterProvider router={routes} />
-
     </div>
   );
 }
