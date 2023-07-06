@@ -133,6 +133,10 @@ function App() {
     path: "pricing",
     element: <Pricing />,
     errorElement: <ErrorPage />,
+  },{
+    path: "project",
+    element: <Project />,
+    errorElement: <ErrorPage />,
   },
       ]
   }])
