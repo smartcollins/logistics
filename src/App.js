@@ -126,28 +126,36 @@ function App() {
           element: <Change />,
         },
         {
-          path: "contact",
-          element: <Contact />,
+          path: "project",
+          element: <Project />,
         },
         {
-          path: "liecenses",
-          element: <Liecenses />,
+          path: "blog",
+          element: <Blog />,
+        },
+        {
+          path: "team",
+          element: <Team />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
         },
         {
           path: "pricing",
           element: <Pricing />,
         },
         {
-          path: "project",
-          element: <Project />,
+          path: "change",
+          element: <Change />,
+        },
+        {
+          path: "licenses",
+          element: <Liecenses />,
         },
         {
           path: "protection",
           element: <Protection />,
-        },
-        {
-          path: "team",
-          element: <Team />,
         },
       ],
     },
