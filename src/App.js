@@ -137,6 +137,10 @@ function App() {
     path: "project",
     element: <Project />,
     errorElement: <ErrorPage />,
+  },{
+    path: "protection",
+    element: <Protection />,
+    errorElement: <ErrorPage />,
   },
       ]
   }])
