@@ -21,85 +21,106 @@ import Pricing from "./pages/Pricing";
 import Change from "./pages/Change";
 import Liecenses from "./pages/Liecenses";
 import Protection from "./pages/Protection";
+import Layout from "./Layout";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/about",
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <Home />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/nav",
+  //     element: <Nav />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/about",
+  //     element: <About />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/service",
+  //     element: <Service />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/service-info",
+  //     element: <ServiceInfo />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/project",
+  //     element: <Project />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/project-info",
+  //     element: <ProjectInfo />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/blog",
+  //     element: <Blog />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/blog-info",
+  //     element: <BlogInfo />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/team",
+  //     element: <Team />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/contact",
+  //     element: <Contact />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/pricing",
+  //     element: <Pricing />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/change",
+  //     element: <Change />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/liecenses",
+  //     element: <Liecenses />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  //   {
+  //     path: "/protection",
+  //     element: <Protection />,
+  //     errorElement: <ErrorPage />,
+  //   },
+  // ]);
+
+  const routes = createBrowserRouter([{
+    path: '/',
+    element: <Layout/>,
+    errorElement: <ErrorPage/>,
+    children: [{
+      path: 'home',
+      element: <Home/>
+    },{
+      path: "about",
       element: <About />,
       errorElement: <ErrorPage />,
-    },
-    {
-      path: "/service",
-      element: <Service />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/service-info",
-      element: <ServiceInfo />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/project",
-      element: <Project />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/project-info",
-      element: <ProjectInfo />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/blog",
-      element: <Blog />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/blog-info",
-      element: <BlogInfo />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/team",
-      element: <Team />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/contact",
-      element: <Contact />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/pricing",
-      element: <Pricing />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/change",
-      element: <Change />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/liecenses",
-      element: <Liecenses />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/protection",
-      element: <Protection />,
-      errorElement: <ErrorPage />,
-    },
-  ]);
+    },]
+  }])
 
   return (
     <div>
 
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+      <RouterProvider router={routes} />
 
     </div>
   );
