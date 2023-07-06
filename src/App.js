@@ -121,6 +121,10 @@ function App() {
       path: "change",
       element: <Change />,
       errorElement: <ErrorPage />,
+  },{
+    path: "contact",
+    element: <Contact />,
+    errorElement: <ErrorPage />,
   },
       ]
   }])
