@@ -125,6 +125,10 @@ function App() {
     path: "contact",
     element: <Contact />,
     errorElement: <ErrorPage />,
+  },{
+    path: "liecenses",
+    element: <Liecenses />,
+    errorElement: <ErrorPage />,
   },
       ]
   }])
