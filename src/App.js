@@ -107,7 +107,8 @@ function App() {
     element: <Layout/>,
     errorElement: <ErrorPage/>,
     children: [{
-      path: 'home',
+      // path: 'home',
+      index: true,
       element: <Home/>
     },{
       path: "about",
