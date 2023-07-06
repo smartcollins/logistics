@@ -129,6 +129,10 @@ function App() {
     path: "liecenses",
     element: <Liecenses />,
     errorElement: <ErrorPage />,
+  },{
+    path: "pricing",
+    element: <Pricing />,
+    errorElement: <ErrorPage />,
   },
       ]
   }])
