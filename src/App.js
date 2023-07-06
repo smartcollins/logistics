@@ -114,10 +114,14 @@ function App() {
       element: <About />,
       errorElement: <ErrorPage />,
     },{
-        path: "/service",
+        path: "service",
         element: <Service />,
         errorElement: <ErrorPage />,
-    },
+    },{
+      path: "change",
+      element: <Change />,
+      errorElement: <ErrorPage />,
+  },
       ]
   }])
 
