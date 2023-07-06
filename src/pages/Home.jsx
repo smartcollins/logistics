@@ -44,7 +44,6 @@ const Home = () => {
     ]
     return (
         <div className=' space-y-8 overflow-x-clip xl:space-y-20'>
-            <div>{banner.slice(0, 1).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className='xl:flex gap-4 px-4 lg:w-10/12 xl:w-3/4 mx-auto my-8'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
                 <div className='space-y-4 md:space-y-0 md:grid grid-cols-2 gap-4'>
@@ -136,7 +135,6 @@ const Home = () => {
             </div>
             <div>
                 <img className='h-[30vh] object-cover xl:h-full' src={end} alt="home-end" />
-                <Footer />
             </div>
             <Outlet/>
         </div>
