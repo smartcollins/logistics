@@ -122,10 +122,6 @@ function App() {
           element: <Service />,
         },
         {
-          path: "change",
-          element: <Change />,
-        },
-        {
           path: "project",
           element: <Project />,
         },
