@@ -1,14 +1,11 @@
 import React from 'react';
 import color from '../data/color'
-import banner from '../data/banner';
 import cube from '../icons/cube-icon.svg'
 import shield from '../icons/shield-icon.svg'
 import leaf from '../icons/env-icon.svg'
 import side from '../images/service-side.png'
-import Banner from '../component/Banner';
 import Caption from '../component/Caption'
 import Work from '../component/Work';
-import Footer from '../component/Footer';
 import Review from '../component/Review';
 import Stat from '../component/Stat';
 
@@ -38,7 +35,6 @@ const Service = () => {
 
     return (
         <div className=' overflow-x-clip'>
-            <div>{banner.slice(2, 3).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' text-center my-8 w-11/12 mx-auto space-y-8 xl:w-3/4'>
                 <Caption mid={true} dark={true} txt={'what we do'} txt2={'logistics services'} />
                 <div className='py-8 space-y-8'>
@@ -62,7 +58,6 @@ const Service = () => {
             <div className='xl:w-4/5 mx-auto'>
                 <Stat />
             </div>
-            <Footer />
         </div>
     )
 }
