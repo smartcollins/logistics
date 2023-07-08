@@ -15,19 +15,6 @@ const Layout = () => {
   console.log(recent)
   return (
     <div>
-
-      {/* {
-        recent === [] ? <div>
-            {banner.slice(0,1).map((itm, idx) => (
-        <Banner key={idx} {...itm} />
-      ))}
-        </div>:<div>
-            {recent.map((itm, idx) => (
-                <Banner key={idx} {...itm} />
-            ))}
-        </div>
-      } */}
-
       {recent.map((itm, idx) => (
         <Banner key={idx} {...itm} />
       ))}
