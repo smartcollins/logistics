@@ -6,12 +6,9 @@ import Banner from "./component/Banner";
 
 const Layout = () => {
   const location = useLocation();
-  const recent = banner.filter((item) => {
-    console.log(item)
-    return (`/${item.path}` === location.pathname) || (item.path === 'home' && location.pathname === '/')
-});
+  const recent = banner.filter((item) => ((`/${item.path}` === location.pathname) || (item.path === 'home' && location.pathname === '/')))
+
   console.log(location)
-  
   console.log(recent)
   return (
     <div>
