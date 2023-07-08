@@ -1,5 +1,4 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 import banner from '../data/banner';
 import color from '../data/color';
 import trans from '../data/trans';
@@ -136,7 +135,6 @@ const Home = () => {
             <div>
                 <img className='h-[30vh] object-cover xl:h-full' src={end} alt="home-end" />
             </div>
-            <Outlet/>
         </div>
     )
 }
