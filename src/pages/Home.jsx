@@ -1,5 +1,4 @@
 import React from 'react';
-import banner from '../data/banner';
 import color from '../data/color';
 import trans from '../data/trans';
 import cube from '../icons/cube-icon.svg'
@@ -15,9 +14,7 @@ import hm from '../images/hm-abt.jpg'
 import side2 from '../images/hm-side2.png'
 import end from '../images/hm-end.png'
 import sponsor from "../images/client_logo.png";
-import Banner from '../component/Banner';
 import Caption from '../component/Caption';
-import Footer from '../component/Footer';
 import Card from '../component/Card';
 import Work from '../component/Work';
 import News from '../component/News';
