@@ -130,6 +130,10 @@ function App() {
           element: <Project />,
         },
         {
+          path: "project-info",
+          element: <ProjectInfo />,
+        },
+        {
           path: "blog",
           element: <Blog />,
         },
