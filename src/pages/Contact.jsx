@@ -1,18 +1,14 @@
 import React from 'react';
 import client from '../images/client_logo.png'
-import banner from '../data/banner';
 import color from '../data/color';
-import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import Icon from '../component/Icon';
 import Input from '../component/Input';
 import Asked from '../component/Asked';
-import Footer from '../component/Footer'
 
 const Contact = () => {
     return (
         <div className=' capitalize text-white overflow-x-clip'>
-            <div>{banner.slice(9, 10).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{ background: color.blueBg }} className='lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
                 <div className='mx-auto w-fit text-center'>
                     <Caption mid={true} txt={'contact'} txt2={'get in touch with us'} />
@@ -33,7 +29,6 @@ const Contact = () => {
                 <img className='mx-auto xl:w-full h-full object-cover' src={client} alt="client-logo" />
             </div>
             <Asked />
-            <Footer />
         </div>
     )
 }

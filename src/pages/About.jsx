@@ -1,16 +1,13 @@
 import React from 'react';
-import banner from '../data/banner';
 import color from '../data/color';
 import sponsor from "../images/client_logo.png";
 import side from "../images/about-side.png";
-import Banner from '../component/Banner';
 import Caption from '../component/Caption';
 import Work from '../component/Work';
 import Card from '../component/Card';
 import Review from '../component/Review'
 import Price from '../component/Price';
 import Asked from '../component/Asked';
-import Footer from '../component/Footer';
 
 
 
@@ -19,7 +16,6 @@ const About = () => {
     const btn = btnAry.map((item, idx) => <button key={idx} className='bg-[#f4f4f4] text-[#1c1f35] capitalize py-2 rounded font-medium last:mx-auto last:w-2/4 last:bg-[#FFB82B] last:text-white last:col-span-2 md:first:bg-[#FFB82B] md:first:text-white md:last:bg-[#f4f4f4] md:last:text-[#1c1f35] md:w-2/4'>{item}</button>)
     return (
         <div className=' space-y-4 overflow-x-clip md:space-y-8 lg:space-y-16'>
-            <div>{banner.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div>
                 <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto lg:flex-nowrap xl:w-3/4 lg:gap-8">
                     <div className='md:h-[50vh] md:w-full xl:h-full lg:w-2/4'>
@@ -61,7 +57,6 @@ const About = () => {
             <div>
                 <img className=" mx-auto h-16 md:w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery" />
             </div>
-            <Footer />
         </div>
     )
 }

@@ -3,11 +3,8 @@ import side from "../images/team-side.png";
 import sponsor from "../images/client_logo.png";
 import user from "../icons/user-icon.svg";
 import timer from "../icons/timer-icon.svg";
-import banner from "../data/banner";
-import Banner from "../component/Banner";
 import Caption from "../component/Caption";
 import Card from "../component/Card";
-import Footer from "../component/Footer";
 
 const Team = () => {
   const abtAry = [
@@ -31,11 +28,6 @@ const Team = () => {
 
   return (
     <div className=" overflow-x-clip">
-      <div>
-        {banner.slice(8, 9).map((item, idx) => (
-          <Banner key={idx} {...item} />
-        ))}
-      </div>
       <div className="my-8">
         <Caption mid={true} dark={true} txt={"team"} txt2={"meet expert team"}/>
       </div>
@@ -57,7 +49,6 @@ const Team = () => {
       <div className="my-8 xl:my-8">
         <img className=" mx-auto h-16 w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery"/>
       </div>
-      <Footer />
     </div>
   );
 };

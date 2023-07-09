@@ -1,9 +1,6 @@
 import React from "react";
-import banner from "../data/banner";
 import project from "../data/project";
-import Banner from "../component/Banner";
 import Carousel from "../component/Carousel";
-import Footer from "../component/Footer";
 import Review from "../component/Review";
 import Stat from "../component/Stat";
 import { ArrowSquareOut } from "phosphor-react";
@@ -24,11 +21,6 @@ const Project = () => {
 
   return (
     <div className=" overflow-x-clip">
-      <div>
-        {banner.slice(4, 5).map((item, idx) => (
-          <Banner key={idx} {...item} />
-        ))}
-      </div>
       <div className="hidden lg:grid grid-cols-3 gap-4 w-3/4 my-8 mx-auto">
         {grid}
       </div>
@@ -39,7 +31,6 @@ const Project = () => {
         <Review />
       </div>
       <Stat />
-      <Footer />
     </div>
   );
 };

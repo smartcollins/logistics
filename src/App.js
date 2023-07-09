@@ -5,8 +5,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Nav from './component/Nav';
-import Footer from './component/Footer';
+import Nav from "./component/Nav";
+import Footer from "./component/Footer";
 import ErrorPage from "./pages/ErrorPage";
 import About from "./pages/About";
 import Service from "./pages/Service";
@@ -102,60 +102,65 @@ function App() {
   //   },
   // ]);
 
-  const routes = createBrowserRouter([{
-    path: '/',
-    element: <Layout/>,
-    errorElement: <ErrorPage/>,
-    children: [{
-      // path: 'home',
-      index: true,
-      element: <Home/>
-    },{
-      path: "about",
-      element: <About />,
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
       errorElement: <ErrorPage />,
-    },{
-        path: "service",
-        element: <Service />,
-        errorElement: <ErrorPage />,
-    },{
-      path: "change",
-      element: <Change />,
-      errorElement: <ErrorPage />,
-  },{
-    path: "contact",
-    element: <Contact />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "liecenses",
-    element: <Liecenses />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "pricing",
-    element: <Pricing />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "project",
-    element: <Project />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "protection",
-    element: <Protection />,
-    errorElement: <ErrorPage />,
-  },{
-    path: "team",
-    element: <Team />,
-    errorElement: <ErrorPage />,
-  },
-      ]
-  }])
+      children: [
+        {
+          // path: 'home',
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        {
+          path: "service",
+          element: <Service />,
+        },
+        {
+          path: "project",
+          element: <Project />,
+        },
+        {
+          path: "blog",
+          element: <Blog />,
+        },
+        {
+          path: "team",
+          element: <Team />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
+        {
+          path: "pricing",
+          element: <Pricing />,
+        },
+        {
+          path: "change",
+          element: <Change />,
+        },
+        {
+          path: "licenses",
+          element: <Liecenses />,
+        },
+        {
+          path: "protection",
+          element: <Protection />,
+        },
+      ],
+    },
+  ]);
 
   return (
     <div>
-
       {/* <RouterProvider router={router} /> */}
       <RouterProvider router={routes} />
-
     </div>
   );
 }

@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Footer from "./component/Footer";
-import Banner from "./component/Banner";
 import banner from "./data/banner";
+import Banner from "./component/Banner";
+import Footer from "./component/Footer";
 
 const Layout = () => {
   const location = useLocation();
-  const recent = banner.filter((item) => `/${item.path}` === location.pathname);
+  const recent = banner.filter((item) => ((`/${item.path}` === location.pathname) || (item.path === 'home' && location.pathname === '/')))
   return (
     <div>
       {recent.map((itm, idx) => (
