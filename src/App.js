@@ -17,7 +17,6 @@ import Protection from "./pages/Protection";
 import Layout from "./Layout";
 
 function App() {
-
   const routes = createBrowserRouter([
     {
       path: "/",
