@@ -122,6 +122,10 @@ function App() {
           element: <Service />,
         },
         {
+          path: "service-info",
+          element: <ServiceInfo />,
+        },
+        {
           path: "project",
           element: <Project />,
         },
