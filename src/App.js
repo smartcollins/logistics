@@ -138,6 +138,10 @@ function App() {
           element: <Blog />,
         },
         {
+          path: "blog-info",
+          element: <BlogInfo />,
+        },
+        {
           path: "team",
           element: <Team />,
         },
