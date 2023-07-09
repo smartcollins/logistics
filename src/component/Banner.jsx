@@ -23,7 +23,7 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
                   <div style={{backgroundColor:color.blueBg}} className="hidden z-10 rounded group-hover:flex flex-col items-center gap-2 absolute w-full text-left py-1">
                     <Link to={'/blog'} className=" hover:bg-blue-500/20 w-3/5 text-center ">blog</Link>
                     <Link to={'/change'} className=" hover:bg-blue-500/20 w-3/5 text-center ">change</Link>
-                    <Link to={'/errorpage'} className=" hover:bg-blue-500/20 w-3/5 text-center ">errorpage</Link>
+                    {/* <Link to={'/errorpage'} className=" hover:bg-blue-500/20 w-3/5 text-center ">errorpage</Link> */}
                     <Link to={'/liecenses'} className=" hover:bg-blue-500/20 w-3/5 text-center ">liecenses</Link>
                     <Link to={'/pricing'} className=" hover:bg-blue-500/20 w-3/5 text-center ">pricing</Link>
                     <Link to={'/project'} className=" hover:bg-blue-500/20 w-3/5 text-center ">project</Link>
