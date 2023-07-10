@@ -1,38 +1,42 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import color from "../data/color";
 import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } from "phosphor-react";
 
 const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
+  const location = useLocation();
+  const style = 'border-r last:border-none border-r-white w-full'
+  const style2 = 'hover:bg-blue-500/20 w-3/5 text-center'
+  const ary = [
+    {dest:'blog'},
+    {dest:'change'},
+    {dest:'liecenses'},
+    {dest:'pricing'},
+    {dest:'project'},
+    {dest:'service'},
+    {dest:'team'}
+  ]
+  const items = ary.map((item,idx)=><Link key={idx} to={`/${item.dest}`} className={location.pathname === `/${item.dest}`?`${style2} border-b-2 border-white`:style2}>{item.dest}</Link>)
   return (
-    // <div className="h-[80vh] bg-red-200 text-white capitalize">
     <div style={{color:'white',textTransform:'capitalize'}} className={extra?"h-[100vh] md:h-[82vh] bg-red-200":"bg-red-200 h-[80vh] xl:h-[60vh]"}>
       <div style={{ backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
         <div className="bg-[#091242]/30">
           <div className="lg:w-3/4 lg:m-auto">
             <div className=" font-medium flex items-center justify-between">
               <div className="flex items-center text-white w-full text-center lg:w-3/5 lg:-ml-5 xl:-ml-9">
-                <Link className="border-r last:border-none border-r-white w-full" to={"/"}>home</Link>
-                <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>about</Link>
-                {/* <Link className="border-r last:border-none border-r-white w-full" to={"/about"}>pages</Link> */}
-                <div className=" relative text-center border-r last:border-none border-r-white w-full group">
+                <Link className={style} to={"/"}>home</Link>
+                <Link className={style} to={"/about"}>about</Link>
+                <div className={`relative text-center group ${style}`}>
                   <div className="flex items-center gap-1 justify-center mx-auto w-3/4">
                     <p>pages</p>
                     <CaretDown color="#fdfdfd" size={20}/>
                   </div>
                   <div style={{backgroundColor:color.blueBg}} className="hidden z-10 rounded group-hover:flex flex-col items-center gap-2 absolute w-full text-left py-1">
-                    <Link to={'/blog'} className=" hover:bg-blue-500/20 w-3/5 text-center ">blog</Link>
-                    <Link to={'/change'} className=" hover:bg-blue-500/20 w-3/5 text-center ">change</Link>
-                    <Link to={'/errorpage'} className=" hover:bg-blue-500/20 w-3/5 text-center ">errorpage</Link>
-                    <Link to={'/liecenses'} className=" hover:bg-blue-500/20 w-3/5 text-center ">liecenses</Link>
-                    <Link to={'/pricing'} className=" hover:bg-blue-500/20 w-3/5 text-center ">pricing</Link>
-                    <Link to={'/project'} className=" hover:bg-blue-500/20 w-3/5 text-center ">project</Link>
-                    <Link to={'/service'} className=" hover:bg-blue-500/20 w-3/5 text-center ">service</Link>
-                    <Link to={'/team'} className=" hover:bg-blue-500/20 w-3/5 text-center ">team</Link>
+                    {items}
                   </div>
                 </div>
-                <Link className="border-r last:border-none border-r-white w-full" to={"/project"}>projects</Link>
-                <Link className="border-r last:border-none border-r-white w-full" to={"/contact"}>contact</Link>
+                <Link className={style} to={"/project"}>projects</Link>
+                <Link className={style} to={"/contact"}>contact</Link>
               </div>
               <div className=" hidden md:flex items-center justify-between w-2/5">
                 <div className="flex items-center justify-between w-2/5 md:w-full lg:w-2/5">
