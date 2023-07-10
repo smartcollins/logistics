@@ -16,7 +16,7 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
     {dest:'service'},
     {dest:'team'}
   ]
-  const items = ary.map((item,idx)=><Link key={idx} className={location.pathname === `/${item.dest}`?`${style} border-b-2 border-white`:style}>{item.dest}</Link>)
+  const items = ary.map((item,idx)=><Link key={idx} to={`/${item.dest}`} className={location.pathname === `/${item.dest}`?`${style} border-b-2 border-white`:style}>{item.dest}</Link>)
   return (
     <div style={{color:'white',textTransform:'capitalize'}} className={extra?"h-[100vh] md:h-[82vh] bg-red-200":"bg-red-200 h-[80vh] xl:h-[60vh]"}>
       <div style={{ backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
