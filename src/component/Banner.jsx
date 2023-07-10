@@ -5,7 +5,7 @@ import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } fro
 
 const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
   const location = useLocation();
-  // const style = ''
+  const style = 'border-r last:border-none border-r-white w-full'
   const style2 = 'hover:bg-blue-500/20 w-3/5 text-center'
   const ary = [
     {dest:'blog'},
