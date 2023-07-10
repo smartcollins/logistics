@@ -7,6 +7,15 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
   const location = useLocation();
   console.log(location);
   const style = 'hover:bg-blue-500/20 w-3/5 text-center'
+  const ary = [
+    {dest:'blog'},
+    {dest:'change'},
+    {dest:'liecenses'},
+    {dest:'pricing'},
+    {dest:'project'},
+    {dest:'service'},
+    {dest:'team'}
+  ]
   return (
     <div style={{color:'white',textTransform:'capitalize'}} className={extra?"h-[100vh] md:h-[82vh] bg-red-200":"bg-red-200 h-[80vh] xl:h-[60vh]"}>
       <div style={{ backgroundImage: `url(${img})` }} className="bg-no-repeat bg-cover bg-center h-full relative">
