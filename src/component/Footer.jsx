@@ -142,8 +142,7 @@ const Footer = () => {
     { path: "error", txt: "not found" },
   ];
 
-  const listClass =
-    "even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white";
+  const listClass = "even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white";
   const list = listAry.slice(0, 5).map((item, idx) => (
     <Link key={idx} to={`/${item.path}`} className={listClass}>
       {item.txt}
@@ -156,10 +155,7 @@ const Footer = () => {
   ));
 
   return (
-    <div
-      style={{ backgroundColor: color.blueBg }}
-      className=" capitalize text-white"
-    >      
+    <div style={{ backgroundColor: color.blueBg }} className=" capitalize text-white">      
       <div className="bg-white/5">
         <div className=" lg:flex md:space-x-4 px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto">
           <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto md:-ml-4 md:px-4">
@@ -171,10 +167,7 @@ const Footer = () => {
       <div className="px-4 lg:w-3/4 mx-auto">
         <div className="md:flex items-start justify-between py-4 md:space-x-4">
           <div style={{ backgroundColor: color.blueBg }} className=" w-full normal-case mb-4">
-            <p className="">
-              Leverage agile frameworks to provide a robust synopsis for
-              strategy collaborative thinking to further the overall value
-              proposition.
+            <p className="">Leverage agile frameworks to provide a robust synopsis for strategy collaborative thinking to further the overall value proposition.
             </p>
             {icon}
           </div>
