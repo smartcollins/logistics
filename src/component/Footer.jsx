@@ -119,7 +119,17 @@ const Footer = () => {
     const topAry = ['pages', 'utility', 'subscribe']
     const top = topAry.map((item, idx) => <p key={idx} className='last:md:w-2/4 md:w-2/5 md:py-0 py-2'>{item}</p>)
 
-    const listAry = ['about us', 'our team', 'our project', 'pricing', 'contact', 'style guide', 'changelog', 'licenses', 'protected', 'not found']
+    const listAry = [
+     {path:'about',txt:'about us'},
+     {path:'team',txt:'our team'},
+     {path:'project',txt:'our project'},
+     {path:'pricing',txt:'pricing'},
+     {path:'contact',txt:'contact'},
+     {path:'home',txt:'style guide'},
+     {path:'change',txt:'changelog'},
+     {path:'liecense',txt:'liecenses'},
+     {path:'protection',txt:'protected'},
+     {path:'error',txt:'not found'}]
     const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
     const list = listAry.slice(0, 5).map((item, idx) => <p key={idx} className={listClass}>{item}</p>)
     const list2 = listAry.slice(5, 10).map((item, idx) => <p key={idx} className={listClass}>{item}</p>)
