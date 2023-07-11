@@ -162,10 +162,7 @@ const Footer = () => {
     >      
       <div className="bg-white/5">
         <div className=" lg:flex md:space-x-4 px-4 items-center justify-between font-[Rubik] font-semibold text-lg flex flex-wrap md:flex-nowrap lg:w-3/4 lg:mx-auto">
-          <div
-            style={{ backgroundColor: color.blueBg }}
-            className="w-full flex-none md:flex-auto md:-ml-4 md:px-4"
-          >
+          <div style={{ backgroundColor: color.blueBg }} className="w-full flex-none md:flex-auto md:-ml-4 md:px-4">
             <Logo />
           </div>
           {top}
@@ -173,10 +170,7 @@ const Footer = () => {
       </div>
       <div className="px-4 lg:w-3/4 mx-auto">
         <div className="md:flex items-start justify-between py-4 md:space-x-4">
-          <div
-            style={{ backgroundColor: color.blueBg }}
-            className=" w-full normal-case mb-4"
-          >
+          <div style={{ backgroundColor: color.blueBg }} className=" w-full normal-case mb-4">
             <p className="">
               Leverage agile frameworks to provide a robust synopsis for
               strategy collaborative thinking to further the overall value
@@ -215,13 +209,9 @@ const Footer = () => {
         </div>
         <div className="lg:flex items-center justify-between border-t border-t-white py-4 space-y-2 lg:space-y-0">
           <p className=" w-full">
-            Copyright © TransitFlow | Designed by VictorFlow - Powered by
-            Webflow.
+            Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.
           </p>
-          <div
-            style={{ color: color.grayTxt }}
-            className="flex items-center justify-between lg:w-3/4"
-          >
+          <div style={{ color: color.grayTxt }} className="flex items-center justify-between lg:w-3/4">
             <p>Style Guide</p>
             <p>Licenses</p>
             <p>Changelog</p>
