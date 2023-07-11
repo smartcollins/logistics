@@ -92,6 +92,7 @@ import Logo from './Logo';
 import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosphor-react';
 
 
+
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
 
@@ -126,11 +127,12 @@ const Footer = () => {
      {path:'project',txt:'our project'},
      {path:'pricing',txt:'pricing'},
      {path:'contact',txt:'contact'},
-     {path:'home',txt:'style guide'},
+     {path:'',txt:'style guide'},
      {path:'change',txt:'changelog'},
      {path:'liecense',txt:'liecenses'},
      {path:'protection',txt:'protected'},
      {path:'error',txt:'not found'}]
+
     const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
     const list = listAry.slice(0, 5).map((item, idx) => <Link key={idx} to={`/${item.path}`} className={listClass}>{item.txt}</Link>)
     const list2 = listAry.slice(5, 10).map((item, idx) => <Link key={idx} to={`/${item.path}`} className={listClass}>{item.txt}</Link>)
