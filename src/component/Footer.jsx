@@ -86,6 +86,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import color from '../data/color'
 import Logo from './Logo';
 import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosphor-react';
@@ -131,8 +132,8 @@ const Footer = () => {
      {path:'protection',txt:'protected'},
      {path:'error',txt:'not found'}]
     const listClass = 'even:w-fit even:ml-auto md:even:m-0 last:col-span-2 last:text-[#f6b426] last:text-center md:last:col-span-full md:last:text-left lg:last:text-white'
-    const list = listAry.slice(0, 5).map((item, idx) => <p key={idx} className={listClass}>{item}</p>)
-    const list2 = listAry.slice(5, 10).map((item, idx) => <p key={idx} className={listClass}>{item}</p>)
+    const list = listAry.slice(0, 5).map((item, idx) => <Link key={idx} className={listClass}>{item}</Link>)
+    const list2 = listAry.slice(5, 10).map((item, idx) => <Link key={idx} className={listClass}>{item}</Link>)
 
     return (
         <div style={{ backgroundColor: color.blueBg }} className=' capitalize text-white'>
