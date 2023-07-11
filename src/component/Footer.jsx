@@ -91,7 +91,7 @@ import color from '../data/color'
 import Logo from './Logo';
 import { Envelope, Phone, LinkedinLogo, TwitterLogo, FacebookLogo } from 'phosphor-react';
 
-
+//Bug: issues with liecense navigation
 
 const Footer = () => {
     // const linear = {background: linear-gradient(`94.06deg, ${color.grdt} -1.21%, ${color.grdt2} 58.66%, ${color.grdt3} 116.84%`)};
