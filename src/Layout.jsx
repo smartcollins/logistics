@@ -5,6 +5,9 @@ import Banner from "./component/Banner";
 import Footer from "./component/Footer";
 
 const Layout = () => {
+
+  //Bug: issues with liecense navigation
+
   const location = useLocation();
   const recent = banner.filter((item) => ((`/${item.path}` === location.pathname) || (item.path === 'home' && location.pathname === '/')))
   return (

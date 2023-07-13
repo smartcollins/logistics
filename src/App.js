@@ -72,7 +72,7 @@ function App() {
           element: <Change />,
         },
         {
-          path: "licenses",
+          path: "liecense",
           element: <Liecenses />,
         },
         {
