@@ -1,8 +1,5 @@
 import React from 'react';
-import banner from '../data/banner';
 import color from '../data/color';
-import Banner from '../component/Banner';
-import Footer from '../component/Footer';
 
 
 const Liecenses = () => {
@@ -38,13 +35,11 @@ const Liecenses = () => {
     ))
     return (
         <div>
-            <div>{banner.slice(13, 14).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' md:w-3/4 mx-auto px-4 space-y-4 my-8'>
                 {item}
             </div>
-            <Footer />
         </div>
     )
 }
 
-export default Liecenses; 
+export default Liecenses;
