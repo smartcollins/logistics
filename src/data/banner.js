@@ -58,7 +58,6 @@ const banner = [{
     img: blog2,
     path: 'blog2',
     txt: '12 march',
-    // blog: true,
     info: 'how technology can help redraw the supply chain map'
 }, {
     img: team,
