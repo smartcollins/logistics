@@ -3,7 +3,7 @@ import color from "../data/color";
 import work from "../data/work";
 import { Link } from "react-router-dom";
 
-const Work = ({ start, end,dest,home}) => {
+const Work = ({ start, end, dest, home }) => {
   return (
     <div className="space-y-8">
       <div className= {home?"w-full":"space-y-4 gap-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto"}>
@@ -21,7 +21,7 @@ const Work = ({ start, end,dest,home}) => {
           </Link>
         ))}
       </div>
-      {home?undefined:<button style={{ background: color.blueBg }} className="text-white py-2 px-8 rounded">More Works</button>}
+      {home ? undefined : <button style={{ background: color.blueBg }} className="text-white py-2 px-8 rounded">More Works</button>}
     </div>
   );
 };
