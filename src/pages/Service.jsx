@@ -38,7 +38,7 @@ const Service = () => {
             <div className=' text-center my-8 w-11/12 mx-auto space-y-8 xl:w-3/4'>
                 <Caption mid={true} dark={true} txt={'what we do'} txt2={'logistics services'} />
                 <div className='py-8 space-y-8'>
-                    <Work/>
+                    <Work dest={'/service-info'}/>
                 </div>
             </div>
             <div style={{ background: color.grayBg }}>

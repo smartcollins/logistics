@@ -38,7 +38,7 @@ const About = () => {
             <div style={{ background: color.grayBg }} className=' py-8'>
                 <Caption dark={true} mid={true} txt={'what we do'} txt2={'our logistics services'}/>
                 <div className='text-center mx-auto w-3/4'>
-                    <Work/>
+                    <Work dest={'/service-info'}/>
                 </div>
             </div>
             <div className=' md:space-y-8'>

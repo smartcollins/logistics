@@ -1,12 +1,9 @@
 import React from 'react';
-import banner from '../data/banner';
 import color from '../data/color';
 import ship from '../icons/ship-icon.svg'
 import img from '../images/ser-info.png'
 import img2 from '../images/ser-info2.png'
 import img3 from '../images/ser-info3.png'
-import Banner from '../component/Banner';
-import Footer from '../component/Footer';
 import { ArrowRight, PlayCircle } from 'phosphor-react';
 
 
@@ -25,10 +22,9 @@ const ServiceInfo = () => {
     ));
     return (
         <div className=' overflow-x-clip'>
-            <div>{banner.slice(3, 4).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div style={{ color: color.grayTxt }} className='mx-auto w-11/12 my-4 space-y-4 lg:my-8 lg:w-3/4 lg:space-y-16'>
                 <div className=' space-y-4'>
-                    <img className='xl:w-full xl:h-[30vh]' src={img} alt="sea transport" />
+                    <img className='xl:w-full xl:h-[45vh]' src={img} alt="sea transport" />
                     <div className='flex items-center gap-4'>
                         <img src={ship} alt="ship-icon" />
                         <p className=' text-lg font-bold capitalize text-black'>sea transport service</p>
@@ -59,7 +55,6 @@ const ServiceInfo = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
