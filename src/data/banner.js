@@ -36,7 +36,7 @@ const banner = [{
     info: 'our logistics service'
 }, {
     img: service2,
-    path: 'service2',
+    path: 'service-info',
     txt: 'service single',
     info: 'service details'
 }, {
