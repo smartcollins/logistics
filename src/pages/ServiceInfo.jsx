@@ -24,7 +24,7 @@ const ServiceInfo = () => {
         <div className=' overflow-x-clip'>
             <div style={{ color: color.grayTxt }} className='mx-auto w-11/12 my-4 space-y-4 lg:my-8 lg:w-3/4 lg:space-y-16'>
                 <div className=' space-y-4'>
-                    <img className='xl:w-full xl:h-[30vh]' src={img} alt="sea transport" />
+                    <img className='xl:w-full xl:h-[45vh]' src={img} alt="sea transport" />
                     <div className='flex items-center gap-4'>
                         <img src={ship} alt="ship-icon" />
                         <p className=' text-lg font-bold capitalize text-black'>sea transport service</p>
