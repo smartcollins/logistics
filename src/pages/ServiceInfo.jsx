@@ -6,7 +6,6 @@ import img from '../images/ser-info.png'
 import img2 from '../images/ser-info2.png'
 import img3 from '../images/ser-info3.png'
 import Banner from '../component/Banner';
-import Footer from '../component/Footer';
 import { ArrowRight, PlayCircle } from 'phosphor-react';
 
 
@@ -59,7 +58,6 @@ const ServiceInfo = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
