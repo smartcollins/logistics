@@ -4,7 +4,6 @@ import news from '../data/news';
 import cargo from '../images/blog-info.png';
 import Banner from '../component/Banner';
 import Caption from '../component/Caption';
-import Footer from '../component/Footer'
 import { InstagramLogo, FacebookLogo, TwitterLogo, LinkedinLogo } from 'phosphor-react';
 
 
@@ -84,7 +83,6 @@ const BlogInfo = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
