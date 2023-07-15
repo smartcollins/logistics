@@ -4,7 +4,6 @@ import img from "../images/1.png";
 import color from "../data/color";
 import project from "../data/project";
 import Banner from "../component/Banner";
-import Footer from "../component/Footer";
 import { ArrowRight, ArrowSquareOut, PlayCircle } from "phosphor-react";
 
 const ProjectInfo = () => {
@@ -99,7 +98,6 @@ const ProjectInfo = () => {
                     <div className="hidden lg:grid grid-cols-3 gap-4 my-8">{grid}</div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };
