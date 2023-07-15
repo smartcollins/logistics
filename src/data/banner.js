@@ -45,8 +45,8 @@ const banner = [{
     txt: 'gallery',
     info: 'our projects'
 }, {
-    img: project2,
-    path: 'project2',
+    img: project,
+    path: 'project-info',
     txt: 'warehouse transportation',
     info: 'cargo transportataion'
 }, {
