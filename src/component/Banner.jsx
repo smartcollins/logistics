@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import color from "../data/color";
 import cal from "../icons/cal-w-Icon.svg";
 import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } from "phosphor-react";
@@ -7,7 +7,7 @@ import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } fro
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   const location = useLocation();
   const style = 'border-r last:border-none border-r-white w-full'
-  const style2 = 'hover:bg-blue-500/20 w-3/5 text-center'
+  const style2 = 'hover:bg-blue-500/20 text-left w-full overflow-hidden truncate text-center px-1 md:px-0 md:w-3/5'
   const ary = [
     {dest:'blog'},
     {dest:'change'},
@@ -30,7 +30,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 <div className={`relative text-center group ${style}`}>
                   <div className="flex items-center gap-1 justify-center mx-auto w-3/4">
                     <p>pages</p>
-                    <CaretDown color="#fdfdfd" size={20}/>
+                    <CaretDown className="hidden md:block" color="#fdfdfd" size={20}/>
                   </div>
                   <div style={{backgroundColor:color.blueBg}} className="hidden z-10 rounded group-hover:flex flex-col items-center gap-2 absolute w-full text-left py-1">
                     {items}
@@ -49,7 +49,8 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 <button className="p-4 text-black bg-white w-2/4 capitalize md:hidden lg:block">request quote</button>
               </div>
             </div>
-            <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-2/4 lg:w-2/3 xl:w-2/4">
+            {/* <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-2/4 lg:w-2/3 xl:w-2/4"> */}
+            <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-3/4 xl:w-2/4">
               {blog?
               <div className="flex gap-4 py-1">
                 <img src={cal} alt="calender" />
