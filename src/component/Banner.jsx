@@ -11,7 +11,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   const ary = [
     {dest:'blog'},
     {dest:'change'},
-    {dest:'liecenses'},
+    {dest:'liecense'},
     {dest:'pricing'},
     {dest:'project'},
     {dest:'service'},
@@ -51,7 +51,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
             </div>
             <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-2/4 lg:w-2/3 xl:w-2/4">
               {blog?
-              <div className="flex gap-4">
+              <div className="flex gap-4 py-1">
                 <img src={cal} alt="calender" />
                 <div>
                   <p className=" text-4xl font-bold">12</p>
@@ -61,7 +61,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
               <p style={{ borderLeft: `2px solid ${color.grdt}` }} className="bg-[#041c37]/50 w-fit px-2 py-1">
                 {txt}
               </p>}
-              <p className="font-[Rubik] font-semibold text-4xl/normal w-3/4">
+              <p style={blog?{width:'100%'}:{width:'75%'}} className="font-[Rubik] font-semibold text-4xl/normal">
                 {info}
               </p>
               {extra && (
