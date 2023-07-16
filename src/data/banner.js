@@ -45,7 +45,7 @@ const banner = [{
     txt: 'gallery',
     info: 'our projects'
 }, {
-    img: project,
+    img: project2,
     path: 'project-info',
     txt: 'warehouse transportation',
     info: 'cargo transportataion'
@@ -56,7 +56,8 @@ const banner = [{
     info: 'our latest news'
 }, {
     img: blog2,
-    path: 'blog2',
+    blog: true,
+    path: "blog-info",
     txt: '12 march',
     info: 'how technology can help redraw the supply chain map'
 }, {
