@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import project from "../data/project";
 import Carousel from "../component/Carousel";
 import Review from "../component/Review";
@@ -11,12 +12,13 @@ const Project = () => {
   ));
 
   const grid = project.map((item, idx) => (
-    <div key={idx} className=" relative w-fit group">
+    <Link to={'/project-info'} key={idx} className=" relative w-fit group">
+      
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[85%] w-[85%] hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center">
         <ArrowSquareOut size={50} color="#fdaf3b" />
       </div>
       <img src={item.img} alt="news" />
-    </div>
+    </Link>
   ));
 
   return (
