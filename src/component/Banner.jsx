@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import color from "../data/color";
+import cal from "../icons/cal-w-Icon.svg";
 import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } from "phosphor-react";
 
-const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
+const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   const location = useLocation();
   const style = 'border-r last:border-none border-r-white w-full'
   const style2 = 'hover:bg-blue-500/20 w-3/5 text-center'
@@ -49,9 +50,17 @@ const Banner = ({ img, txt, txt2, extra, info, btn_txt }) => {
               </div>
             </div>
             <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-2/4 lg:w-2/3 xl:w-2/4">
+              {blog?
+              <div className="flex gap-4">
+                <img src={cal} alt="calender" />
+                <div>
+                  <p className=" text-4xl font-bold">12</p>
+                  <p className=" text-lg">march</p>
+                </div>
+              </div>:
               <p style={{ borderLeft: `2px solid ${color.grdt}` }} className="bg-[#041c37]/50 w-fit px-2 py-1">
                 {txt}
-              </p>
+              </p>}
               <p className="font-[Rubik] font-semibold text-4xl/normal w-3/4">
                 {info}
               </p>
