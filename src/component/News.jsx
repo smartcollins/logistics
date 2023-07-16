@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import cal from "../icons/cal-Icon.svg";
 import color from "../data/color";
 import news from "../data/news";
 
 const News = ({ start, end }) => {
   return news.slice(start, end).map((item, idx) => (
-    <div key={idx} className="lg:flex gap-4 border-y py-4 group">
+    <Link to={'/blog-info'} key={idx} className="lg:flex gap-4 border-y py-4 group">
       <div className=" lg:w-3/4 relative w-full">
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-5/6 w-5/6 hidden bg-[#1c1f35]/80 group-hover:flex items-center justify-center font-bold text-white">Read more</p>
         <img className="h-full w-full object-cover md:h-[40vh] lg:h-full" src={item.img} alt="news"/>
@@ -32,7 +33,7 @@ const News = ({ start, end }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </Link>
   ));
 };
 

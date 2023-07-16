@@ -1,10 +1,7 @@
 import React from "react";
-import banner from "../images/br-project2.png";
 import img from "../images/1.png";
 import color from "../data/color";
 import project from "../data/project";
-import Banner from "../component/Banner";
-import Footer from "../component/Footer";
 import { ArrowRight, ArrowSquareOut, PlayCircle } from "phosphor-react";
 
 const ProjectInfo = () => {
@@ -67,7 +64,6 @@ const ProjectInfo = () => {
 
     return (
         <div className=" overflow-x-clip">
-            <Banner img={banner} txt={"warehouse transportation"} info={"air cargo transportataion"} />
             <div style={{ background: color.grayBg }} className="h-full py-4 md:py-8 lg:py-12">
                 <div className="gap-8 mx-auto capitalize w-11/12 space-y-4 md:flex md:items-center md:space-y-0 lg:w-3/4">
                     <div className="lg:w-3/4">
@@ -99,7 +95,6 @@ const ProjectInfo = () => {
                     <div className="hidden lg:grid grid-cols-3 gap-4 my-8">{grid}</div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

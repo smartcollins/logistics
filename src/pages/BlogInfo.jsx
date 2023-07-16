@@ -1,10 +1,7 @@
 import React from 'react';
 import color from '../data/color';
-import news from '../data/news';
 import cargo from '../images/blog-info.png';
-import Banner from '../component/Banner';
 import Caption from '../component/Caption';
-import Footer from '../component/Footer'
 import { InstagramLogo, FacebookLogo, TwitterLogo, LinkedinLogo } from 'phosphor-react';
 
 
@@ -35,7 +32,6 @@ const BlogInfo = () => {
 
     return (
         <div>
-            <div>{news.slice(1, 2).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' m-4 space-y-8 gap-8 lg:w-3/4 lg:space-y-0 lg:my-12 lg:flex lg:mx-auto'>
                 <div className=' first-letter:capitalize space-y-2'>
                     <p style={{ color: color.darkTxt }} className=' capitalize text-xl font-bold'>your logistics solutions</p>
@@ -84,7 +80,6 @@ const BlogInfo = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
