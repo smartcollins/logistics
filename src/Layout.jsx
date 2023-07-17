@@ -8,7 +8,7 @@ const Layout = () => {
   const location = useLocation();
   const recent = banner.filter((item) => ((`/${item.path}` === location.pathname) || (item.path === 'home' && location.pathname === '/')))
   return (
-    <div>
+    <div className="overflow-x-clip">
       {recent.map((itm, idx) => (
         <Banner key={idx} {...itm} />
       ))}
