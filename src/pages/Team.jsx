@@ -46,7 +46,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <div className="my-8 xl:my-8">
+      <div className="my-4 md:my-8 xl:my-8">
         <img className=" mx-auto h-16 w-11/12 md:object-cover md:h-full xl:w-3/4" src={sponsor} alt="delivery"/>
       </div>
     </div>
