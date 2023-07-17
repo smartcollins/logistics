@@ -14,7 +14,7 @@ const About = () => {
     const btnAry = ['our goal', 'our approach', 'our target']
     const btn = btnAry.map((item, idx) => <button key={idx} className='bg-[#f4f4f4] text-[#1c1f35] capitalize py-2 rounded font-medium last:mx-auto last:w-2/4 last:bg-[#FFB82B] last:text-white last:col-span-2 md:first:bg-[#FFB82B] md:first:text-white md:last:bg-[#f4f4f4] md:last:text-[#1c1f35] md:w-2/4'>{item}</button>)
     return (
-        <div className=' space-y-4 overflow-x-clip md:space-y-8 lg:space-y-16'>
+        <div className=' space-y-4 md:space-y-8 lg:space-y-16'>
             <div>
                 <div className="flex flex-wrap items-center justify-between w-11/12 mx-auto lg:flex-nowrap xl:w-3/4 lg:gap-8">
                     <div className='mt-4 md:my-8 md:h-[50vh] md:w-full xl:h-full lg:w-2/4'>
