@@ -13,7 +13,6 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
     {dest:'change'},
     {dest:'liecense'},
     {dest:'pricing'},
-    {dest:'project'},
     {dest:'service'},
     {dest:'team'}
   ]
