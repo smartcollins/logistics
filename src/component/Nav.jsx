@@ -49,7 +49,7 @@ const Nav = () => {
         // </div>
 
         <div className="text-white capitalize">
-            <div style={{ backgroundColor: color.blueBg }} className="flex items-center justify-between py-4 lg:py-8">
+            <div style={{ backgroundColor: color.blueBg }} className="flex items-center justify-between py-4">
                 <div className="mx-4 w-full lg:flex lg:w-3/4 lg:mx-auto">
                     <div className="hidden xl:block w-1/3">
                     <Logo />
