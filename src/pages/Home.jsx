@@ -26,7 +26,6 @@ import Fact from '../component/Fact';
 import Trans from '../component/Trans';
 
 
-
 const Home = () => {
     const works = [{ start: 0, end: 1 }, { start: 1, end: 2 }, { start: 2, end: 3 }, { start: 4, end: 5 }]
     const items = works.map((item, idx) => <Work key={idx} home={true} {...item} />)
@@ -137,4 +136,4 @@ const Home = () => {
 }
 
 
-export default Home; 
+export default Home;
