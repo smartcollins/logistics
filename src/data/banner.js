@@ -15,7 +15,6 @@ import liecense from '../images/br-liecense.png'
 import protection from '../images/br-protection.png'
 
 
-
 const banner = [{
     img: home,
     path: 'home',
