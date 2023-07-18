@@ -60,4 +60,4 @@ const ServiceInfo = () => {
 }
 
 
-export default ServiceInfo; 
+export default ServiceInfo;

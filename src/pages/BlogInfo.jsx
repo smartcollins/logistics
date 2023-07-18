@@ -85,4 +85,4 @@ const BlogInfo = () => {
 }
 
 
-export default BlogInfo; 
+export default BlogInfo;
