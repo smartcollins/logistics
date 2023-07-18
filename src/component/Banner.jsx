@@ -48,7 +48,6 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 <button className="p-4 text-black bg-white w-2/4 capitalize md:hidden lg:block">request quote</button>
               </div>
             </div>
-            {/* <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-2/4 lg:w-2/3 xl:w-2/4"> */}
             <div className=" absolute top-1/2 -translate-y-1/2 w-full mx-4 md:mx-8 lg:mx-0 md:w-3/4 xl:w-2/4">
               {blog?
               <div className="flex gap-4 py-1">
