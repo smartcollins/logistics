@@ -1,8 +1,6 @@
 import React from 'react';
 import color from '../data/color';
 import Logo from './Logo';
-import Banner from './Banner';
-import banner from '../data/banner'
 import { Clock, Envelope, Phone } from 'phosphor-react';
 
 
