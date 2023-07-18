@@ -12,4 +12,4 @@ const Fact = ({ icon, txt }) => {
     )
 }
 
-export default Fact; 
+export default Fact;

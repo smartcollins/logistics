@@ -36,4 +36,4 @@ const Carousel = ({ items, show, scroll, dot }) => {
 }
 
 
-export default Carousel; 
+export default Carousel;
