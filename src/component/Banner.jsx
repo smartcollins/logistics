@@ -39,7 +39,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 <Link className={style} to={"/contact"}>contact</Link>
               </div>
               <div className=" hidden md:flex items-center justify-between w-2/5">
-                <div className="flex items-center justify-between w-2/5 md:w-full lg:w-2/5">
+                <div className="flex items-center justify-between w-2/5 md:w-4/5 lg:w-2/5">
                   <InstagramLogo size={20} color="#ffffff" />
                   <LinkedinLogo size={20} color="#ffffff" weight="fill" />
                   <TwitterLogo size={20} color="#ffffff" weight="fill" />
