@@ -6,7 +6,7 @@ import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } fro
 
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   const location = useLocation();
-  const style = 'border-r last:border-none border-r-white w-full'
+  const style = 'border-r last:border-none border-r-white w-full py-1 lg:py-0'
   const style2 = 'hover:bg-blue-500/20 text-left w-full overflow-hidden truncate text-center px-1 md:px-0 md:w-3/5'
   const ary = [
     {dest:'blog'},
