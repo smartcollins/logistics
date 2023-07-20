@@ -6,7 +6,7 @@ import { TwitterLogo, FacebookLogo, LinkedinLogo, InstagramLogo, CaretDown } fro
 
 const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
   const location = useLocation();
-  const style = 'border-r last:border-none border-r-white w-full'
+  const style = 'border-r last:border-none border-r-white w-full py-1 lg:py-0'
   const style2 = 'hover:bg-blue-500/20 text-left w-full overflow-hidden truncate text-center px-1 md:px-0 md:w-3/5'
   const ary = [
     {dest:'blog'},
@@ -39,7 +39,7 @@ const Banner = ({ img, txt, txt2, blog, extra, info, btn_txt }) => {
                 <Link className={style} to={"/contact"}>contact</Link>
               </div>
               <div className=" hidden md:flex items-center justify-between w-2/5">
-                <div className="flex items-center justify-between w-2/5 md:w-full lg:w-2/5">
+                <div className="flex items-center justify-between w-2/5 md:w-4/5 lg:w-2/5">
                   <InstagramLogo size={20} color="#ffffff" />
                   <LinkedinLogo size={20} color="#ffffff" weight="fill" />
                   <TwitterLogo size={20} color="#ffffff" weight="fill" />

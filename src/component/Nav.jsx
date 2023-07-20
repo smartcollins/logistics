@@ -4,8 +4,21 @@ import Logo from "./Logo";
 import { Clock, Envelope, Phone } from "phosphor-react";
 
 const Nav = () => {
+  const ary = [{
+    icon: Clock,
+    txt: 'mon - sat 9.00 - 18.00',
+    txt2: 'Sunday Closed'
+  },{
+    icon: Envelope,
+    txt: 'email',
+    txt2: 'contact@logistics.com'
+  },{
+    icon: Phone,
+    txt: 'call us',
+    txt2: '(00) 112 365 489'
+  }]
   return (
-    <div className="text-white capitalize">
+    <div className="text-white capitalize hidden md:block">
       <div style={{ backgroundColor: color.blueBg }} className="flex items-center justify-between py-4">
         <div className="mx-4 w-full lg:flex lg:w-3/4 lg:mx-auto">
           <div className="hidden xl:block w-1/3">

@@ -1,9 +1,9 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import banner from "./data/banner";
-import Banner from "./component/Banner";
-import Nav from "./component/Nav";
-import Footer from "./component/Footer";
+import banner from "../data/banner";
+import Banner from "./Banner";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 const Layout = () => {
   const location = useLocation();
