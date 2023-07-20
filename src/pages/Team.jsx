@@ -27,7 +27,7 @@ const Team = () => {
   ));
 
   return (
-    <div className=" overflow-x-clip">
+    <div>
       <div className="my-8">
         <Caption mid={true} dark={true} txt={"team"} txt2={"meet expert team"}/>
       </div>
