@@ -4,7 +4,7 @@ import color from '../data/color';
 
 const Protection = () => {
     return (
-        <div className=' overflow-x-clip'>
+        <div>
             <div style={{ backgroundColor: color.blueBg }} className='h-[45vh] my-8 lg:mx-auto lg:w-3/4 capitalize text-center flex flex-col items-center'>
                 <div className='space-y-4 w-full px-4 my-auto md:px-0 md:m-auto md:w-3/4 lg:m-auto lg:w-2/4 lg:h-2/4 flex flex-col items-center justify-between'>
                     <p className='text-white text-2xl font-bold'>enter password</p>

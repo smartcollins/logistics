@@ -8,7 +8,7 @@ import Asked from '../component/Asked';
 
 const Contact = () => {
     return (
-        <div className=' capitalize text-white overflow-x-clip'>
+        <div className=' capitalize text-white'>
             <div style={{ background: color.blueBg }} className='lg:w-3/4 md:px-16 px-4 mx-auto my-8 py-8'>
                 <div className='mx-auto w-fit text-center'>
                     <Caption mid={true} txt={'contact'} txt2={'get in touch with us'} />

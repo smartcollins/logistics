@@ -22,7 +22,7 @@ const Project = () => {
   ));
 
   return (
-    <div className=" overflow-x-clip">
+    <div>
       <div className="hidden lg:grid grid-cols-3 gap-4 w-3/4 my-8 mx-auto">
         {grid}
       </div>

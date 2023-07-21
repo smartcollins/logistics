@@ -7,7 +7,7 @@ import Footer from '../component/Footer';
 
 const ErrorPage = () => {
     return (
-        <div className=' overflow-x-clip'>
+        <div>
             <div>{banner.slice(11, 12).map((item, idx) => <Banner key={idx} {...item} />)}</div>
             <div className=' text-center text-[#1c1f35] my-4'>
                 <p className='md:text-[200px] text-9xl font-semibold'>4<span className='text-[#ffbb2b]'>0</span>4</p>

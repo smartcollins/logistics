@@ -21,7 +21,7 @@ const ServiceInfo = () => {
       </div>
     ));
     return (
-        <div className=' overflow-x-clip'>
+        <div>
             <div style={{ color: color.grayTxt }} className='mx-auto w-11/12 my-4 space-y-4 lg:my-8 lg:w-3/4 lg:space-y-16'>
                 <div className=' space-y-4'>
                     <img className='xl:w-full xl:h-[45vh]' src={img} alt="sea transport" />

@@ -38,7 +38,7 @@ const Home = () => {
         { icon: drum, txt: 'transparent pricing' }
     ]
     return (
-        <div className=' space-y-8 overflow-x-clip xl:space-y-20'>
+        <div className='space-y-8 xl:space-y-20'>
             <div className='xl:flex gap-4 px-4 lg:w-10/12 xl:w-3/4 mx-auto my-8'>
                 <Caption txt={'what we do'} txt2={'safe & reliable cargo solutions'}/>
                 <div className='space-y-4 md:space-y-0 md:grid grid-cols-2 gap-4'>
