@@ -63,7 +63,7 @@ const ProjectInfo = () => {
     ));
 
     return (
-        <div className=" overflow-x-clip">
+        <div>
             <div style={{ background: color.grayBg }} className="h-full py-4 md:py-8 lg:py-12">
                 <div className="gap-8 mx-auto capitalize w-11/12 space-y-4 md:flex md:items-center md:space-y-0 lg:w-3/4">
                     <div className="lg:w-3/4">
